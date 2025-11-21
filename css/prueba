@@ -1,0 +1,45 @@
+/* =========================
+   HEADER Y NAVEGACIÓN
+========================= */
+.header {
+  background-color: var(--color-blanco);
+  border-bottom: 1px solid var(--color-gris-suave);
+  padding: 0.5rem 0; /* espacio arriba y abajo */
+}
+
+/* Contenedor interno para alinear logo y menú */
+.header-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;              /* centrar en la página */
+  padding: 0 1rem;             /* espacio lateral */
+  display: flex;               /* pone logo y menú en misma fila */
+  align-items: center;         /* centrarlos verticalmente */
+  justify-content: space-between; /* logo a un lado, menú al otro */
+}
+
+/* Estilos para el logo */
+.logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Navegación */
+.nav-principal ul {
+  display: flex;      /* links en fila */
+  gap: 2rem;          /* separación entre enlaces */
+}
+
+/* Enlaces del menú */
+.nav-principal a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-texto);
+}
+
+/* Hover del menú (al pasar el mouse) */
+.nav-principal a:hover {
+  color: var(--color-principal);
+  text-decoration: underline;
+  text-underline-offset: 4px; /* subrayado elegante */
+}
