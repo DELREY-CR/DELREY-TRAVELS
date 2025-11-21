@@ -1,45 +1,94 @@
-/* =========================
-   HEADER Y NAVEGACIÓN
-========================= */
-.header {
-  background-color: var(--color-blanco);
-  border-bottom: 1px solid var(--color-gris-suave);
-  padding: 0.5rem 0; /* espacio arriba y abajo */
+/* ============================
+   HERO CON TEXTO SOBRE LA IMAGEN
+============================ */
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0; /* márgenes arriba y abajo */
 }
 
-/* Contenedor interno para alinear logo y menú */
-.header-contenedor {
+/* CONTENEDOR DE LA IMAGEN */
+.hero-imagen {
+  position: relative;
+  width: 85%;            /* ancho del banner */
   max-width: 1200px;
-  margin: 0 auto;              /* centrar en la página */
-  padding: 0 1rem;             /* espacio lateral */
-  display: flex;               /* pone logo y menú en misma fila */
-  align-items: center;         /* centrarlos verticalmente */
-  justify-content: space-between; /* logo a un lado, menú al otro */
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-/* Estilos para el logo */
-.logo img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
+/* IMAGEN AJUSTADA (menos larga) */
+.hero-imagen img {
+  width: 100%;
+  height: 380px;        /* AJUSTA ESTA ALTURA A TU GUSTO */
+  object-fit: cover;    /* recorta sin deformarse */
+  display: block;
 }
 
-/* Navegación */
-.nav-principal ul {
-  display: flex;      /* links en fila */
-  gap: 2rem;          /* separación entre enlaces */
+/* TEXTO SOBRE LA IMAGEN */
+.hero-texto {
+  position: absolute;
+  top: 50%;               /* centro vertical */
+  left: 50%;              /* centro horizontal */
+  transform: translate(-50%, -50%);
+  max-width: 480px;
+
+  /* Rectángulo translúcido */
+  background: rgba(255, 255, 255, 0.25);
+  padding: 25px 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  color: #000;
+  text-align: center;
 }
 
-/* Enlaces del menú */
-.nav-principal a {
+/* TÍTULO */
+.hero-texto h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* PÁRRAFOS */
+.hero-texto p {
   font-size: 1rem;
-  font-weight: 500;
-  color: var(--color-texto);
+  margin-bottom: 10px;
+  color: #000;
 }
 
-/* Hover del menú (al pasar el mouse) */
-.nav-principal a:hover {
-  color: var(--color-principal);
-  text-decoration: underline;
-  text-underline-offset: 4px; /* subrayado elegante */
+/* ETIQUETA */
+.hero-etiqueta {
+  font-weight: 600;
+  color: #000;
+}
+
+/* BOTONES */
+.hero-botones {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-primario,
+.btn-secundario {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-primario {
+  background: #fff;
+  color: #000;
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-secundario {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
 }
