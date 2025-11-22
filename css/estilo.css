@@ -327,9 +327,9 @@ section p {
 }
 
 .sobre-mi-imagen img {
-  width: 80%; /* ocupa todo el contenedor */
+  width: 80%; /* ajusta el tamaño de la imagen */
   height: auto; /* mantiene proporciones */
-  max-height: 450px;   /* ← controla la altura máxima de la imagen */
+  max-height: 500px;   /* ← controla la altura máxima de la imagen */
   object-fit: cover; /* recorta sin deformarse */
   border-radius: 10px; /* opcional: para que quede más elegante */
 }
