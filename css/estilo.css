@@ -162,8 +162,7 @@ section p {
 
 /* CONTENEDOR DEL HERO */
 .hero {
-  width: 100%;
-  /* ancho completo */
+  width: 100%;/* ancho completo */
   display: flex;
   /* pone el contenido en fila */
   justify-content: center;
@@ -176,7 +175,7 @@ section p {
 .hero-imagen {
   position: relative; /* para posicionar el texto sobre la imagen */
   width: 100%; /* ancho del banner */
-  max-width: 1200px; /* ancho máximo */
+  max-width: 1000px; /* ancho máximo */
 
 }
 
@@ -191,6 +190,7 @@ section p {
   display: block;
   /* elimina espacio abajo de la imagen */
 }
+
 
 .hero-texto {
   position: absolute;
@@ -296,7 +296,7 @@ section p {
   gap: 2rem;  /* espacio entre imagen y texto */
   justify-content: space-between; /* separa imagen y texto */
   padding: 0px 20px;  /* espacio interno */
-  max-width: 1200px; /* ancho máximo */
+  max-width: 1000px; /* ancho máximo */
   margin: 0 auto;/* centra el contenedor */
   background-color: var(--color-secundario);
 }
@@ -331,7 +331,12 @@ section p {
   height: auto; /* mantiene proporciones */
   max-height: 500px;   /* ← controla la altura máxima de la imagen */
   object-fit: cover; /* recorta sin deformarse */
-  border-radius: 10px; /* opcional: para que quede más elegante */
+  border-radius: 20px; /* opcional: para que quede más elegante */
+    
+  /* EFECTO PREMIUM PARA MEZCLAR LA IMAGEN */
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.35); /* halo suave alrededor */
+  backdrop-filter: blur(6px); /* mezcla y suaviza */
+  filter: brightness(0.95) contrast(1.05); /* pequeño ajuste visual */
 }
 
 
