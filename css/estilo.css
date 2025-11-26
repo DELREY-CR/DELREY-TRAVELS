@@ -253,7 +253,7 @@ section p {
 
 .sobre-mi h2 {
   font-size: 3rem; /* Tamaño del título */
-  margin-bottom: 1rem; /* Espacio debajo del título */
+  margin-bottom: 2rem; /* Espacio debajo del título */
   color: var(--color-texto); /* Color del texto */
   text-align: center; /* Centra el título */
 }
@@ -268,18 +268,19 @@ section p {
 .sobre-mi-imagen img {
   border-radius: 15px; /* Bordes redondeados para la imagen */
   width: 100%; /* Se adapta al contenedor */
-  max-width: 600px; /* Pero no crece más de 600px */
+  max-width: 800px; /* Pero no crece más de 600px */
   height: auto; /* Altura automática para mantener proporción */
 }
 
 .sobre-mi-redes {
-  margin-top: 30px; /* Espacio arriba */
+  margin-top: 20px; /* Espacio reducido arriba */
   text-align: center; /* Centra el contenido */
 }
 
 .sobre-mi-redes h3 {
   font-size: 1.2rem; /* Tamaño del título */
-  margin-bottom: 15px; /* Espacio debajo del título */
+  margin: 0 0 20px 0; /* Espacio debajo del título */
+  margin-top: 50px; /* Espacio arriba */
   color: var(--color-texto); /* Color del texto */
 }
 
@@ -317,6 +318,11 @@ section p {
 /* Flickr */
 .fa-flickr {
   color: #0063dc; /* azul Flickr */
+}
+
+/* TikTok */
+.fa-tiktok {
+  color: #000000; /* negro TikTok */
 }
 
 /* Hover premium */
