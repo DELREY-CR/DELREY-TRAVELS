@@ -9,6 +9,8 @@
   <meta name="author" content="Del Rey Travels">
   <link rel="icon" href="img/favicon.jpg" type="image/jpeg">
   <link rel="stylesheet" href="css/estilo.css">
+  
+  <!-- Google Fonts: IMPORTANTE - Mantener en TODOS los archivos HTML para formato consistente -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
     rel="stylesheet">
@@ -45,8 +47,8 @@
 
       <div class="hero-contenedor">
         <div class="hero-texto">
-          <h1>Viaja con la tranquilidad de saber que cada decisión ya fue pensada para ti</h1>
-          <p class="hero-etiqueta">Asesoría • Itinerarios • Tips </p>
+          <h1>Organiza tu viaje de forma simple</h1>
+          <p class="hero-etiqueta">Asesoría • Itinerarios • Experiencias</p>
 
           <div class="hero-botones">
             <a href="servicios.html">Mis servicios</a>
@@ -128,7 +130,7 @@
             qué considerar y cómo ahorrar desde el primer paso.</p>
 
           <div class="ver-mas-container">
-            <a href="servicios.html" class="btn-ver-mas">Ver más</a>
+            <a href="servicios.html" class="btn-primario">Ver más</a>
           </div>
         </article>
 
@@ -137,9 +139,9 @@
           <img src="img/reservas-precios.webp" alt="Itinerario de viaje organizado por rutas y precios" width="400"
             height="300" loading="lazy">
           <p class="parrafo-servicio">Itinerario optimizado con actividades, rutas lógicas, zonas recomendadas y
-            estimación general de los costos de tu viaje.</p>
+            estimación general de costos de tu viaje.</p>
           <div class="ver-mas-container">
-            <a href="servicios.html" class="btn-ver-mas">Ver más</a>
+            <a href="servicios.html" class="btn-primario">Ver más</a>
           </div>
         </article>
 
@@ -151,7 +153,7 @@
             recomendaciones exactas de dónde reservar.</p>
 
           <div class="ver-mas-container">
-            <a href="servicios.html" class="btn-ver-mas">Ver más</a>
+            <a href="servicios.html" class="btn-primario">Ver más</a>
           </div>
         </article>
       </div>
@@ -168,30 +170,32 @@
 
         <div class="contacto-left">
           <form action="https://formspree.io/f/mzzjordv" method="POST" class="formulario-contacto">
+            <fieldset>
+              <legend>Déjame tus datos</legend>
 
-            <div class="campo-form">
-              <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" autocomplete="name" required>
-            </div>
+              <div class="campo-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
 
-            <div class="campo-form">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="_replyto" autocomplete="email" required>
-            </div>
+              <div class="campo-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" autocomplete="email" required>
+              </div>
 
-            <div class="campo-form">
-              <label for="phone">Teléfono:</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel">
-            </div>
+              <div class="campo-form">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
 
-            <div class="campo-form">
-              <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" rows="4" placeholder="Cuéntame destino, fechas y tipo de viaje."
-                required></textarea>
-            </div>
+              <div class="campo-form">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Cuéntame destino, fechas y tipo de viaje."
+                  required></textarea>
+              </div>
 
-            <button type="submit" class="btn-primario">Enviar mensaje</button>
-
+              <button type="submit" class="btn-primario">Enviar mensaje</button>
+            </fieldset>
           </form>
         </div>
 

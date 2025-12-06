@@ -9,6 +9,15 @@
     <meta name="author" content="Del Rey Travels">
     <link rel="icon" href="img/favicon.jpg" type="image/jpeg">
     <link rel="stylesheet" href="css/estilo.css">
+    
+    <!-- Google Fonts: IMPORTANTE - Mantener en TODOS los archivos HTML para formato consistente -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <title>Blog de Del Rey Travels — Guías, itinerarios y tips de viaje</title>
 </head>
 
@@ -34,22 +43,22 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <main id="inicio">
-        <!-- HERO BLOG -->
-        <section class="hero hero-blog">
-            <div class="hero-contenido">
-                <h1>Blog de Del Rey Travels</h1>
-                <p>
-                    Guías, itinerarios reales y consejos prácticos para que planifiques tu viaje con más claridad,
-                    menos estrés y un presupuesto más ordenado.
-                </p>
-                <p class="hero-etiqueta">Guías de destinos • Presupuestos • Itinerarios reales</p>
-            </div>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-contenedor">
+                <div class="hero-texto">
+                    <h1>Historias y consejos para viajar mejor</h1>
+                    <p class="hero-etiqueta">Asesoría • Itinerarios • Experiencias</p>
 
-            <div class="hero-banner">
-                <img src="img/viajero.webp" alt="Persona escribiendo su diario de viaje con mapa y cámara"
-                    width="200" height="100">
+                    <div class="hero-botones">
+                        <a href="index.html">Inicio</a>
+                        <a href="index.html#contacto">Contacto</a>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <div class="separador-delrey"></div>
 
         <!-- LISTADO DE ARTÍCULOS -->
         <section class="blog-resumen">
@@ -61,77 +70,88 @@
             <div class="blog-contenedor">
                 <!-- POST 1 -->
                 <article class="post">
-                    <img src="img/tailandia.jpg" alt="Templo en Tailandia al atardecer" width="350" height="250">
+                    <img src="img/tailandia.jpg" alt="Templo en Tailandia al atardecer" class="post-imagen">
                     <h3>Guía básica para tu primer viaje a Tailandia</h3>
                     <p>
                         Qué tener en cuenta antes de comprar el pasaje: clima, temporada de lluvias, presupuesto diario
                         recomendado
                         y consejos para moverte entre Bangkok, playas e islas.
                     </p>
-                    <a href="#" class="btn-ver-mas">Leer artículo</a>
+                    <a href="#" class="btn-primario">Leer artículo</a>
                 </article>
 
                 <!-- POST 2 -->
                 <article class="post">
-                    <img src="img/viaje.jpg" alt="Persona con mochila frente a un paisaje" width="350" height="250">
+                    <img src="img/viaje.jpg" alt="Persona con mochila frente a un paisaje" class="post-imagen">
                     <h3>Cómo organizar un viaje largo sin morir en el intento</h3>
                     <p>
                         Paso a paso para ordenar ideas, tiempos y reservas cuando tienes varios destinos: qué priorizar,
                         cómo armar
                         un cronograma realista y en qué momentos conviene dejar espacios libres.
                     </p>
-                    <a href="#" class="btn-ver-mas">Leer artículo</a>
+                    <a href="#" class="btn-primario">Leer artículo</a>
                 </article>
 
                 <!-- POST 3 -->
                 <article class="post">
-                    <img src="img/reservas.jpg" alt="Persona reservando alojamientos desde el computador" width="350"
-                        height="250">
+                    <img src="img/reservas.jpg" alt="Persona reservando alojamientos desde el computador" class="post-imagen">
                     <h3>Errores comunes al reservar alojamientos</h3>
                     <p>
                         Cosas que parecen detalles, pero arruinan un viaje: zonas poco prácticas, alojamientos lejos del
                         transporte,
                         políticas de cancelación engañosas y fotos que no muestran la realidad.
                     </p>
-                    <a href="#" class="btn-ver-mas">Leer artículo</a>
+                    <a href="#" class="btn-primario">Leer artículo</a>
                 </article>
                 
             </div>
         </section>
 
+        <div class="separador-delrey"></div>
+
        <!-- CONTACTO -->
     <section id="contacto" class="contacto">
-      <h2>Hablemos de tu próximo viaje</h2>
-      <p class="contacto-intro">Cuéntame a dónde quieres ir y qué tipo de experiencia buscas.</p>
+      <h2>Contacto</h2>
+      <p class="subtitulo">Cuéntame a dónde quieres ir y qué tipo de experiencia buscas.</p>
 
-      <form action="https://formspree.io/f/mzzjordv" method="POST" class="formulario-contacto">
-        <fieldset>
-          <legend>Déjame tus datos</legend>
+      <div class="contacto-contenedor">
 
-          <div class="campo-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
-          </div>
+        <div class="contacto-left">
+          <form action="https://formspree.io/f/mzzjordv" method="POST" class="formulario-contacto">
+            <fieldset>
+              <legend>Déjame tus datos</legend>
 
-          <div class="campo-form">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="_replyto" autocomplete="email" required>
-          </div>
+              <div class="campo-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
 
-          <div class="campo-form">
-            <label for="phone">Teléfono:</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
-          </div>
+              <div class="campo-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" autocomplete="email" required>
+              </div>
 
-          <div class="campo-form">
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Cuéntame destino, fechas y tipo de viaje."
-              required></textarea>
-          </div>
+              <div class="campo-form">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
 
-          <button type="submit" class="btn-primario">Enviar mensaje</button>
-        </fieldset>
-      </form>
+              <div class="campo-form">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Cuéntame destino, fechas y tipo de viaje."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primario">Enviar mensaje</button>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="contacto-right">
+          <img src="img/contacto1.webp" alt="Planificación de itinerarios personalizados" loading="lazy">
+        </div>
+
+      </div>
     </section>
   </main>
 
@@ -167,10 +187,15 @@
 
             <div class="footer-logo">
                 <p>Todos los derechos reservados © <span id="year"></span> Del Rey Travels</p>
-                <img src="img/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="80" height="80">
+                <img src="img/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="80" height="80" loading="lazy">
             </div>
         </div>
     </footer>
+
+    <!-- SCRIPT PARA EL AÑO -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
     <!-- SCRIPT PARA EL AÑO -->
     <script>
