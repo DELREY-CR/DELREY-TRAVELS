@@ -3,11 +3,15 @@
 ========================= */
 :root {
   --color-fondo: #2a7e8630;
+  /* Verde azulado transparente para fondo suave */
   --color-texto: #222222;
+  /* Gris oscuro legible */
   --color-principal: #3b6e69;
-  /* Color principal beige/crema de la marca */
-  --color-secundario: #000000;
-  /* Para detalles, botones, subrayados etc */
+  /* Verde azulado - Color de marca para viajes/naturaleza */
+  --color-secundario: #2c5f5d;
+  /* Verde oscuro para contrastes y hover */
+  --color-acento: #F4A261;
+  /* Amarillo/naranja cálido para CTAs y elementos destacados */
   --color-blanco: #ffffff;
   --color-gris-suave: #e0e0e0;
   /* Color para bordes sutiles */
@@ -140,7 +144,7 @@ section p {
 .btn-primario {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--color-principal);
+  background-color: var(--color-acento);
   color: var(--color-blanco);
   border-radius: 4px;
   font-weight: bold;
@@ -150,6 +154,10 @@ section p {
 }
 
 .btn-primario:hover {
+  background-color: var(--color-secundario);
+}
+
+.btn-acento:hover {
   background-color: var(--color-secundario);
 }
 
@@ -281,6 +289,11 @@ section p {
 /* =========================
    ESTILOS PARA TARJETAS DE BLOG/POSTS - Artículos y contenido
 ========================= */
+
+/* Sección blog-resumen */
+.blog-resumen {
+  text-align: center; /* Centra el subtítulo */
+}
 
 /* Contenedor de posts del blog */
 .blog-contenedor {
@@ -481,15 +494,15 @@ section p {
   display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
   margin-top: 1rem; /* Espacio encima del botón */
   padding: 10px 20px; /* Espaciado interno del botón */
-  background-color: var(--color-blanco); /* Fondo blanco para el botón */
-  color: var(--color-texto);  /* Color del texto del botón */
+  background-color: var(--color-acento); /* Naranja cálido para CTAs principales */
+  color: var(--color-blanco);  /* Color del texto del botón */
   border-radius: 4px; /* Bordes redondeados */
   font-weight: bold; /* Texto en negrita */
   font-size: 1rem; /* Tamaño del texto del botón */
 }
 
 .hero-texto a:hover {
-  background-color:#222222; /* Fondo oscuro al pasar el mouse */
+  background-color: var(--color-secundario); /* Verde oscuro al pasar el mouse */
   color: var(--color-blanco);  /* Color del texto del botón */
   transition: background-color 0.3s ease; /* Efecto de transición */
 }
