@@ -10,7 +10,7 @@
   /* Verde azulado - Color de marca para viajes/naturaleza */
   --color-secundario: #2c5f5d;
   /* Verde oscuro para contrastes y hover */
-  --color-acento: #F4A261;
+  --color-acento: #FF8A3D;
   /* Amarillo/naranja cálido para CTAs y elementos destacados */
   --color-blanco: #ffffff;
   --color-gris-suave: #e0e0e0;
@@ -212,13 +212,11 @@ section p {
   background-color: var(--color-blanco);
   border: 1.5px solid var(--color-gris-suave);
   border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  flex: 1;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Botones al fondo */
+  padding: 20px; /* Espaciado interno de la tarjeta */
+  text-align: center; /* Centra el contenido dentro de la tarjeta */
+  max-width: 350px; /* Limita el ancho máximo de cada tarjeta */
+  display: grid; /* Grid divide la tarjeta en 6 filas fijas para alinear elementos */
+  grid-template-rows: auto auto auto 1fr auto auto; /* Fila 1-3: auto (se ajustan al contenido), Fila 4: 1fr (absorbe diferencias), Fila 5-6: auto (quedan al fondo) */
 }
 
 /* Resumen del servicio (descripción corta) */
@@ -226,7 +224,9 @@ section p {
   font-size: 1.05rem;
   color: var(--color-texto);
   line-height: 1.6;
-  margin: 15px 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
 }
 
 /* Nombre del pack del servicio */
@@ -234,8 +234,9 @@ section p {
   font-size: 1.2rem;
   color: var(--color-principal);
   font-weight: 600;
-  margin: 20px 0 15px;
+  margin: 30px 0 15px;
   font-family: var(--fuente-principal);
+  
 }
 
 /* Lista de características del servicio */
