@@ -4,7 +4,7 @@
 :root {
   --color-fondo: #2a7e8630;
   /* Verde azulado transparente para fondo suave */
-  --color-texto: #222222;
+  --color-texto: #1F3A37;
   /* Gris oscuro legible */
   --color-principal: #3b6e69;
   /* Verde azulado - Color de marca para viajes/naturaleza */
@@ -13,10 +13,13 @@
   --color-acento: #FF8A3D;
   /* Amarillo/naranja cálido para CTAs y elementos destacados */
   --color-blanco: #ffffff;
+  /* Blanco puro para fondos limpios */
   --color-gris-suave: #e0e0e0;
   /* Color para bordes sutiles */
   --fuente-principal: 'Inter', sans-serif;
+  /* Tipografía principal para textos y párrafos */
   --fuente-titulos: 'Playfair Display', serif;
+  /* Tipografía elegante para títulos */
 }
 
 /* =========================
@@ -31,8 +34,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* incluye padding y border en el ancho total */
   margin: 0;
+  /* elimina márgenes por defecto */
   padding: 0;
+  /* elimina relleno por defecto */
 }
 
 /* =========================
@@ -42,9 +48,13 @@
 
 body {
   font-family: var(--fuente-principal);
+  /* tipografía base del sitio */
   background-color: var(--color-fondo);
+  /* fondo general del sitio */
   color: var(--color-texto);
+  /* color de texto por defecto */
   line-height: 1.6;
+  /* altura de línea para mejor legibilidad */
 }
 
 .separador-delrey {
@@ -66,20 +76,27 @@ body {
 /* Listas sin viñetas (útil para la navegación) */
 ul {
   list-style: none;
+  /* quita los bullets de las listas */
 }
 
 /* Enlaces sin subrayado y heredando el color del texto */
 a {
   text-decoration: none;
+  /* quita el subrayado de los enlaces */
   color: inherit;
+  /* hereda el color del elemento padre */
   font-family: var(--fuente-principal);
+  /* usa la tipografía principal */
 }
 
 /* Imágenes responsive: no se salen del contenedor */
 img {
   max-width: 100%;
+  /* no excede el ancho del contenedor */
   height: auto;
-  display: block; 
+  /* mantiene la proporción original */
+  display: block;
+  /* elimina espacio extra debajo de la imagen */
 }
 
 /* Espaciado general del contenido principal */
@@ -108,7 +125,14 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem; /* 32px - Títulos de sección */
+  font-size: 2.2rem; /* 2.2rem - Títulos de sección */
+  line-height: 1.2; /* Altura de línea compacta */
+  margin-bottom: 10px; /* Espacio inferior reducido */
+}
+
+/* Estilo para el span dentro de h2 (color naranja acento) */
+h2 span {
+  color: #FF7A1A; /* Naranja acento */
 }
 
 h3 {
@@ -129,16 +153,14 @@ section p {
 
 /* Estilo general para TODOS los subtítulos del sitio */
 .subtitulo {
-  display: inline-block; /* Ajusta el ancho al contenido */
-  max-width: 900px; /* Limita el ancho para que el recuadro sea más estrecho */
-  background-color: var(--color-principal); /* Fondo del recuadro */
-  color: var(--color-blanco); /* Color del texto */
+  color: #FF7A1A; /* Naranja acento */
   font-size: 1rem; /* Tamaño de fuente */
-  text-align: center; /* Centra el texto dentro del recuadro */
-  padding: 8px 14px; /* Espaciado interno del recuadro */
-  border-radius: 8px; /* Bordes suavizados */
-  margin-bottom: 30px; /* Reducir espacio debajo del recuadro */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* Sutil sombra para elevar el recuadro */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 20px; /* Espacio debajo */
+  display: block; /* Elemento de bloque */
+  max-width: 900px; /* Limita el ancho */
+  margin-left: auto; /* Centra horizontalmente */
+  margin-right: auto; /* Centra horizontalmente */
 }
 
 /* Estilos generales para BOTONES reutilizables */
@@ -155,10 +177,6 @@ section p {
 }
 
 .btn-primario:hover {
-  background-color: var(--color-secundario);
-}
-
-.btn-acento:hover {
   background-color: var(--color-secundario);
 }
 
@@ -193,19 +211,17 @@ section p {
 }
 
 /* =========================
-   ESTILOS PARA TARJETAS DE SERVICIOS - Reutilizables en todo el sitio
+   ESTILOS PARA TARJETAS - Contenedor genérico reutilizable
 ========================= */
 
-/* Contenedor general de servicios */
-.servicios-contenedor {
+/* Contenedor genérico para todas las tarjetas del sitio (servicios, blog, etc.) */
+.contenedor-tarjetas {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: stretch; /* Todas las tarjetas con misma altura */
-  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 30px 0;
 }
 
 /* Tarjeta individual de servicio */
@@ -215,9 +231,10 @@ section p {
   border-radius: 10px;
   padding: 20px; /* Espaciado interno de la tarjeta */
   text-align: center; /* Centra el contenido dentro de la tarjeta */
-  max-width: 350px; /* Limita el ancho máximo de cada tarjeta */
-  display: grid; /* Grid divide la tarjeta en 6 filas fijas para alinear elementos */
-  grid-template-rows: auto auto auto 1fr auto auto; /* Fila 1-3: auto (se ajustan al contenido), Fila 4: 1fr (absorbe diferencias), Fila 5-6: auto (quedan al fondo) */
+  min-height: 400px; /* Altura mínima para que todas tengan el mismo tamaño base */
+  display: grid; /* Grid divide la tarjeta en filas flexibles para alinear elementos */
+  grid-template-rows: auto auto auto 1fr auto; /* img, h2, p, espacio flexible, botón */
+  align-content: start; /* Alinea el contenido al inicio */
 }
 
 .servicio:hover {
@@ -242,7 +259,7 @@ section p {
   font-weight: 600;
   margin: 30px 0 15px;
   font-family: var(--fuente-principal);
-  
+  min-height: 3em; /* Altura fija para alinear todos los títulos */
 }
 
 /* Lista de características del servicio */
@@ -264,7 +281,8 @@ section p {
 .servicio-precio {
   font-size: 1.1rem;
   color: var(--color-texto);
-  margin: 20px 0;
+  margin: 40px 0 5px;
+  /* 40px arriba, 0 laterales, 10px abajo */
   line-height: 1.6;
 }
 
@@ -282,19 +300,18 @@ section p {
   flex-grow: 1; /* Empuja el botón hacia abajo */
 }
 
-/* Contenedor de botón "Ver más" */
-.ver-mas-container {
-  margin-top: auto; /* Empuja hacia el fondo */
-}
-
 /* Espaciado específico para botones dentro de servicios */
 .servicio .btn-primario {
   margin-top: 20px;
   margin-bottom: 10px;
+  max-width: 200px; /* Limita el ancho del botón para mejor proporción */
+  width: 100%; /* Se adapta al contenido pero respeta el max-width */
+  margin-left: auto; /* Junto con margin-right: auto centra el botón */
+  margin-right: auto;
 }
 
 /* =========================
-   ESTILOS PARA TARJETAS DE BLOG/POSTS - Artículos y contenido
+   ESTILOS ESPECÍFICOS PARA TARJETAS DE BLOG
 ========================= */
 
 /* Sección blog-resumen */
@@ -302,24 +319,15 @@ section p {
   text-align: center; /* Centra el subtítulo */
 }
 
-/* Contenedor de posts del blog */
-.blog-contenedor {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsive */
-  gap: 30px; /* Espacio entre tarjetas */
-  padding: 30px 0;
-}
-
 /* Tarjeta individual de post/artículo */
 .post {
   background-color: var(--color-blanco);
-  border: 1px solid var(--color-gris-suave);
+  border: 1.5px solid var(--color-gris-suave);
   border-radius: 10px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -352,22 +360,14 @@ section p {
   line-height: 1.6;
   color: var(--color-texto);
   margin-bottom: 15px;
-  flex-grow: 1; /* Empuja el botón hacia abajo */
+  text-align: center;
 }
 
 /* Botón dentro del post */
 .post .btn-primario {
-  align-self: center; /* Centra el botón horizontalmente */
-  margin-top: 20px; /* Lo empuja al fondo */
-}
-
-/* Intro del blog (párrafo descriptivo) */
-.blog-intro {
-  text-align: center;
-  font-size: 1.1rem;
-  color: var(--color-texto);
-  margin-bottom: 20px;
-  max-width: 800px;
+  margin-top: 20px;
+  max-width: 200px; /* Limita el ancho del botón */
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -431,9 +431,13 @@ section p {
 /* Enlaces del menú */
 .nav-principal a {
   font-size: 1rem;
+  /* tamaño estándar */
   font-weight: 500;
+  /* peso medio */
   color: var(--color-texto);
+  /* color oscuro por defecto */
   font-family: var(--fuente-titulos);
+  /* usa la fuente de títulos */
 }
 
 /* Hover del menú (al pasar el mouse) */
@@ -477,6 +481,38 @@ section p {
   flex-direction: column; /* Elementos en columna */
   align-items: center; /* Centra horizontalmente el contenido */
   justify-content: center; /* Centra verticalmente el contenido */
+}
+
+/* Hero angosto para página de servicios */
+.hero-servicios-angosto {
+  height: 40vh;
+  /* altura reducida */
+  background-size: cover;
+  /* la imagen cubre todo el área */
+  background-position: center;
+  /* centra la imagen */
+  object-fit: cover;
+  /* recorta sin deformar */
+}
+
+/* Título posicionado sobre el hero angosto */
+.titulo-servicios-posicionado {
+  position: relative;
+  /* posicionamiento relativo */
+  margin-left: 40px;
+  /* espacio desde la izquierda */
+  margin-top: -80px;
+  /* sube el título sobre la imagen */
+  color: #ffffff;
+  /* texto blanco */
+  font-size: 2.2rem;
+  /* tamaño grande y legible */
+  text-align: left;
+  /* alineado a la izquierda */
+  max-width: 1200px;
+  /* ancho máximo del contenedor */
+  padding: 0 20px;
+  /* padding lateral */
 } 
 
 .hero-texto h1 {
@@ -526,6 +562,8 @@ section p {
   box-sizing: border-box;
 }
 
+
+
 /* ============================
    3 SECCIÓN SOBRE MÍ
 ============================ */
@@ -563,7 +601,7 @@ section p {
 .sobre-mi-imagen img {
   border-radius: 15px; /* Bordes redondeados para la imagen */
   width: 100%; /* Se adapta al contenedor */
-  max-width: 800px; /* Pero no crece más de 600px */
+  max-width: 600px; /* Pero no crece más de 600px */
   height: auto; /* Altura automática para mantener proporción */
 }
 
@@ -607,57 +645,147 @@ section p {
   text-align: center; /* Centra el título */
 }
 
+/* =========================
+   SECCIÓN CONTACTO DEL REY
+   ========================= */
 
-
-
-/* ============================
-    CONTACTO
-============================ */
-.contacto {
-  background-color: #2a7e8630; /* Fondo suave para la sección */
-  padding: 60px 20px; /* Espaciado interno */
-  text-align: center; /* Centra elementos inline/inline-block hijos (ej. .subtitulo) */
-}
-.contacto-contenedor {
-  max-width: 1200px;
-  background-color: var(--color-blanco);
-  margin: 0 auto; /* Centra el contenedor */
-  padding-top: 0px; /* Espacio arriba */
-  display: flex; /* Usa flexbox para diseño */
-  flex-direction: row; /* Mantiene los elementos en fila */
-  justify-content: space-between; /* Espacio entre texto e imagen */
-  gap: 50px; /* Espacio entre los elementos */
-  align-items: center; /* Alinea verticalmente al centro */
+.seccion-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  background-color:var(--color-fondo);   /* fondo suave Del Rey */
+  border-radius: 18px;
 }
 
-.contacto-left,
-.contacto-right {
-  flex: 1; /* Cada lado ocupa exactamente el 50% del espacio disponible */
+.contacto-columna {
+  flex: 1;
 }
 
-.contacto-right {
-  display: flex; /* Activa flexbox para centrar la imagen */
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
+/* Texto y títulos */
+
+.contacto-texto h2 span {
+  color: #FF7A1A; /* naranjo acento */
 }
 
-.contacto img {
-  
-  width: 100%; /* Ocupa todo el ancho del contenedor */
-  height: 100%; /* Ocupa toda la altura del contenedor */
-  padding: 20px 20px 20px 0px; /* Espaciado interno */
-  object-fit: cover; /* Recorta la imagen sin deformar, llenando todo el espacio */
-  object-position: center; /* Centra el recorte de la imagen */
+.subtitulo-contacto {
+  color: #4F6863;
+  margin-bottom: 20px;
 }
 
-.contacto label {
-  display: block; /* Hace que el label ocupe toda la línea */
-  margin-bottom: 8px; /* Espacio debajo del label */
-  font-weight: 600; /* Negrita para el texto del label */
-  color: var(--color-principal); /* Color del texto */
+/* Formulario */
+
+.contacto-form fieldset {
+  border: none;
+  padding: 0;
 }
 
+.contacto-form legend {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1F3A37;
+}
 
+.campo-form {
+  margin-bottom: 14px;
+}
 
+.campo-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  color: #43615C;
+}
 
+.campo-form input,
+.campo-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #C3D7D2;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+}
 
+.campo-form input:focus,
+.campo-form textarea:focus {
+  outline: none;
+  border-color: #1F6D63;
+  box-shadow: 0 0 0 2px rgba(31, 109, 99, 0.15);
+}
+
+/* Botón */
+
+.btn-contacto {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 999px;
+  border: none;
+  background-color: #FF7A1A;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.btn-contacto:hover {
+  background-color: #e56e18;
+}
+
+/* Imagen y redes */
+
+.contacto-imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.contacto-imagen img {
+  width: 260px;
+  height: 260px;
+  border-radius: 24px; /* si la quieres circular: 50% */
+  object-fit: cover;
+}
+
+/* Bloque redes dentro del contacto */
+
+.contacto-redes {
+  text-align: center;
+}
+
+.contacto-redes p {
+  font-weight: 600;
+  color: #1F3A37;
+  margin-bottom: 8px;
+}
+
+.contacto-redes nav a {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  color: #1F6D63;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contacto-redes nav a:hover {
+  transform: scale(1.15);
+  color: #FF7A1A;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .seccion-contacto {
+    flex-direction: column;
+    padding: 40px 16px;
+  }
+
+  .contacto-imagen img {
+    width: 220px;
+    height: 220px;
+  }
+}
