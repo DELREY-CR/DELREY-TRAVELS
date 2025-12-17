@@ -49,7 +49,7 @@
 body {
   font-family: var(--fuente-principal);
   /* tipografía base del sitio */
-  background-color: var(--color-fondo);
+  background-color: var(--color-blanco);
   /* fondo general del sitio */
   color: var(--color-texto);
   /* color de texto por defecto */
@@ -153,7 +153,7 @@ section p {
 
 /* Estilo general para TODOS los subtítulos del sitio */
 .subtitulo {
-  color: #FF7A1A; /* Naranja acento */
+  color:var(--color-texto);
   font-size: 1rem; /* Tamaño de fuente */
   text-align: center; /* Centra el texto */
   margin-bottom: 20px; /* Espacio debajo */
@@ -569,7 +569,6 @@ section p {
 ============================ */
 
 .sobre-mi {
-  background-color: var(--color-fondo); /* Fondo igual al resto del sitio */
   padding: 60px 20px; /* Espaciado interno */
 }
 
@@ -634,7 +633,6 @@ section p {
     4 SECCIÓN SERVICIOS
 ============================ */ 
 .servicios {
-  background-color:#2a7e8630;
   padding: 60px 20px; /* Espaciado interno */
   text-align: center; /* Centra elementos inline/inline-block hijos (ej. .subtitulo) */
 }
@@ -666,15 +664,14 @@ section p {
 }
 
 /* Texto y títulos */
+.contacto-texto h2 {
+  margin-bottom: 50px;
+}
 
 .contacto-texto h2 span {
   color: #FF7A1A; /* naranjo acento */
 }
 
-.subtitulo-contacto {
-  color: #4F6863;
-  margin-bottom: 20px;
-}
 
 /* Formulario */
 
@@ -746,10 +743,12 @@ section p {
 }
 
 .contacto-imagen img {
-  width: 260px;
-  height: 260px;
-  border-radius: 24px; /* si la quieres circular: 50% */
+  width: 400px;
+  height: 400px;
+  border-radius: 50%; /* si la quieres circular: 50% */
+  margin-bottom: 20px;
   object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 /* Bloque redes dentro del contacto */
