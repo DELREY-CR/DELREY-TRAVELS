@@ -224,6 +224,8 @@ section p {
   padding: 30px 0;
 }
 
+
+
 /* Tarjeta individual de servicio */
 .servicio {
   background-color: var(--color-blanco);
@@ -735,25 +737,29 @@ section p {
 
 .contacto-form legend {
   font-weight: 600;
-  margin-bottom: 10px;
-  color: #1F3A37;
+  margin-bottom: 15px;
+  color: var(--color-acento);
+  margin-left: 40px;
+  font-size: 25px;
 }
 
 .campo-form {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .campo-form label {
   display: block;
+  margin-left: 40px;
   font-size: 0.9rem;
   margin-bottom: 4px;
-  color: #43615C;
+  color: var(--color-texto);
 }
 
 .campo-form input,
 .campo-form textarea {
-  width: 100%;
-  padding: 10px 12px;
+  width: 80%;
+  padding: 10px 10px;
+  margin-left: 40px;
   border-radius: 10px;
   border: 1px solid #C3D7D2;
   font-family: inherit;
@@ -770,16 +776,9 @@ section p {
 
 /* Botón */
 
-.btn-contacto {
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 999px;
-  border: none;
-  background-color: #FF7A1A;
-  color: #ffffff;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 6px;
+.btn-margen {
+  margin-top: 15px;
+  margin-left: 40px;
 }
 
 .btn-contacto:hover {
@@ -841,3 +840,4 @@ section p {
     height: 220px;
   }
 }
+
