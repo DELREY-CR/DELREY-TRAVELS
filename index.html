@@ -8,7 +8,7 @@
     content="Del Rey Travels: viajero apasionado que te ayuda a planificar tu próxima aventura con itinerarios personalizados, asesoría y tips reales de viaje.">
   <meta name="author" content="Del Rey Travels">
   <link rel="icon" href="img/favicon.jpg" type="image/jpeg">
-    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/estilo.css">
 
   <!-- Google Fonts: IMPORTANTE - Mantener en TODOS los archivos HTML para formato consistente -->
@@ -161,16 +161,14 @@
 
     <div class="separador-delrey"></div>
 
-     <!-- CONTACTO: estructura en dos columnas -->
+    <!-- CONTACTO: estructura en dos columnas -->
     <section id="contacto" class="seccion-contacto">
       <div class="contacto-columna contacto-texto">
-        <h2>Conversemos sobre<br><span>tu próximo destino</span></h2>
-      
 
         <form action="https://formspree.io/f/mzzjordv" method="POST" class="contacto-form">
           <fieldset>
-            <legend>Viajemos juntos</legend>
-            <div class="campo-form"> 
+            <legend>Dejame tus datos</legend>
+            <div class="campo-form">
               <label for="name">Nombre:</label>
               <input type="text" id="name" name="name" autocomplete="name" required>
             </div>
@@ -187,8 +185,8 @@
 
             <div class="campo-form">
               <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" rows="4"
-                placeholder="Cuéntame destino, fechas y tipo de viaje." required></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="Cuéntame destino, fechas y tipo de viaje."
+                required></textarea>
             </div>
 
             <button type="submit" class="btn-primario btn-margen">Enviar mensaje</button>
@@ -197,76 +195,50 @@
       </div>
 
       <div class="contacto-columna contacto-imagen">
+        <h2>Conversemos sobre<br><span>tu próximo destino</span></h2>
         <img src="img/contacto1.webp" alt="Planificación de itinerarios personalizados" loading="lazy">
-
-        <div class="contacto-redes">
-          <p>Sígueme y viaja conmigo</p>
-          <nav aria-label="Redes sociales">
-            <a href="mailto:contacto@delreytravels.com" aria-label="Correo">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-
-            <a href="https://www.instagram.com/delrey.travels?igsh=N255dGRhNTFlZXZl&utm_source=qr" target="_blank"
-              rel="noopener noreferrer" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="https://www.flickr.com/photos/198182539@N03/" target="_blank" rel="noopener noreferrer"
-              aria-label="Flickr">
-              <i class="fa-brands fa-flickr"></i>
-            </a>
-
-            <a href="https://www.tiktok.com/@delreytravels?_r=1&_t=ZM-91jToXag3Tf" target="_blank"
-              rel="noopener noreferrer" aria-label="TikTok">
-              <i class="fa-brands fa-tiktok"></i>
-            </a>
-          </nav>
-        </div>
       </div>
     </section>
   </main>
 
+  <div class="separador-delrey"></div>
+
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-contenedor">
+    <div class="footer__logo">
+      <img class="footer__logo-imagen" src="img/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="80" height="80"
+        loading="lazy">
 
-      <div class="footer-redes">
-        <h3>Sígueme y viaja conmigo</h3>
-        <nav aria-label="Redes sociales">
+      <nav class="footer__redes" aria-label="Redes sociales">
+        <a href="mailto:contacto@delreytravels.com" aria-label="Correo">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
 
-          <a href="mailto:contacto@delreytravels.com" aria-label="Correo">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
+        <a href="https://www.instagram.com/delrey.travels?igsh=N255dGRhNTFlZXZl&utm_source=qr" target="_blank"
+          rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
 
-          <a href="https://www.instagram.com/delrey.travels?igsh=N255dGRhNTFlZXZl&utm_source=qr" target="_blank"
-            rel="noopener noreferrer" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+        <a href="https://www.flickr.com/photos/198182539@N03/" target="_blank" rel="noopener noreferrer"
+          aria-label="Flickr">
+          <i class="fa-brands fa-flickr"></i>
+        </a>
 
-          <a href="https://www.flickr.com/photos/198182539@N03/" target="_blank" rel="noopener noreferrer"
-            aria-label="Flickr">
-            <i class="fa-brands fa-flickr"></i>
-          </a>
+        <a href="https://www.tiktok.com/@delreytravels?_r=1&_t=ZM-91jToXag3Tf" target="_blank" rel="noopener noreferrer"
+          aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
 
-          <a href="https://www.tiktok.com/@delreytravels?_r=1&_t=ZM-91jToXag3Tf" target="_blank"
-            rel="noopener noreferrer" aria-label="TikTok">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
+      </nav>
+      <p class="footer__parrafo">Sígueme y viaja conmigo</p>
+      <p class="footer__logo-texto">Todos los derechos reservados © <span id="year"></span> Del Rey Travels</p>
 
-        </nav>
-      </div>
-
-      <div class="footer-logo">
-        <p>Todos los derechos reservados © <span id="year"></span> Del Rey Travels</p>
-        <img src="img/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="80" height="80" loading="lazy">
-      </div>
+      <!-- SCRIPT PARA EL AÑO -->
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
     </div>
   </footer>
-
-  <!-- SCRIPT PARA EL AÑO -->
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 
 </body>
 
