@@ -30,7 +30,7 @@
         <img src="img/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="100" height="100">
       </a>
 
-      <nav class="nav-principal" aria-label="Navegación principal">
+      <nav class="header__navegacion" aria-label="Navegación principal">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -46,11 +46,11 @@
   <main id="inicio">
     <section class="hero">
 
-      <div class="hero-contenedor">
-        <div class="hero-texto">
+      <div class="hero__contenedor">
+        <div class="hero__texto">
           <h1>Organiza tu viaje de forma simple</h1>
-          <h2 class="hero-etiqueta">Asesoría • Itinerarios • Experiencias</h2>
-          <div class="hero-botones">
+          <h2 class="hero__etiqueta">Asesoría • Itinerarios • Experiencias</h2>
+          <div class="hero__botones">
             <a href="servicios.html">Mis servicios</a>
             <a href="blog.html#ultimas-publicaciones">Leer el blog</a>
           </div>
@@ -59,13 +59,13 @@
 
     </section>
 
-    <div class="separador-delrey"></div>
+    <div class="separador"></div>
 
     <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="sobre-mi">
-      <div class="sobre-mi-contenedor">
+      <div class="sobre-mi__contenedor">
 
-        <div class="sobre-mi-texto">
+        <div class="sobre-mi__texto">
           <h2>DelRey <br> <span>Travels</span></h2>
 
           <p>Soy Cristopher, aunque muchos me conocen como <strong>DelRey Travels</strong>. Viajar es mi pasión y
@@ -80,7 +80,7 @@
           <p>Mi misión es inspirarte a explorar el mundo y ayudarte a que tu próxima aventura sea épica, accesible y
             pensada a tu medida.</p>
 
-          <div class="sobre-mi-redes">
+          <div class="sobre-mi__redes">
             <h3>Sígueme y viaja conmigo</h3>
             <nav aria-label="Redes sociales">
 
@@ -107,83 +107,83 @@
           </div>
         </div>
 
-        <div class="sobre-mi-imagen">
+        <div class="sobre-mi__imagen">
           <img src="img/yo-soy.webp" alt="Viajes y tips sobre viajar barato y bien">
         </div>
 
       </div>
     </section>
 
-    <div class="separador-delrey"></div>
+    <div class="separador"></div>
 
     <!-- SERVICIOS -->
     <section id="servicios" class="servicios">
-      <h2>Servicios de viajes que <br> <span>puedo hacer por ti</span></h2>
-      <p class="subtitulo">Hechos a tu medida • Pensados para ahorrar • Optimizados de verdad</p>
+      <h2 class="servicios__titulo">Servicios de viajes que <br> <span>puedo hacer por ti</span></h2>
+      <p class="servicios__subtitulo">Hechos a tu medida • Pensados para ahorrar • Optimizados de verdad</p>
 
-      <div class="contenedor-tarjetas">
+      <div class="servicios__tarjetas">
         <!-- Servicio 1 -->
-        <article class="servicio">
+        <article class="servicios__item">
           <img src="img/servicio-1.webp" alt="Asesoría de Viaje Inteligente y planificación de viaje" width="400"
             height="300" loading="lazy">
-          <p class="parrafo-servicio">La guía ideal para iniciar tu viaje: definimos tu destino, ajustamos tu
+          <p class="servicios__texto">La guía ideal para iniciar tu viaje: definimos tu destino, ajustamos tu
             presupuesto y elegimos.</p>
 
-          <div class="ver-mas-container">
+          <div class="servicios__acciones">
             <a href="servicios.html#servicio-listados" class="btn-primario">Ver más</a>
           </div>
         </article>
 
         <!-- Servicio 2 -->
-        <article class="servicio">
+        <article class="servicios__item">
           <img src="img/servicio-2.webp" alt="Itinerario de viaje organizado por rutas y precios" width="400"
             height="300" loading="lazy">
-          <p class="parrafo-servicio">Un itinerario claro para tu viaje: rutas optimizadas, actividades y
+          <p class="servicios__texto">Un itinerario claro para tu viaje: rutas optimizadas, actividades y
             recomendaciones según tu estilo.</p>
-          <div class="ver-mas-container">
+          <div class="servicios__acciones">
             <a href="servicios.html#servicio-listados" class="btn-primario">Ver más</a>
           </div>
         </article>
 
         <!-- Servicio 3 -->
-        <article class="servicio">
+        <article class="servicios__item">
           <img src="img/servicio-3.webp" alt="Itinerario con cotización y reservas de viaje" width="400"
             height="300" loading="lazy">
-          <p class="parrafo-servicio">Tu itinerario más completo: cotización detallada y
+          <p class="servicios__texto">Tu itinerario más completo: cotización detallada y
             recomendaciones para reservar.</p>
 
-          <div class="ver-mas-container">
+          <div class="servicios__acciones">
             <a href="servicios.html#servicio-listados" class="btn-primario">Ver más</a>
           </div>
         </article>
       </div>
     </section>
 
-    <div class="separador-delrey"></div>
+    <div class="separador"></div>
 
     <!-- CONTACTO: estructura en dos columnas -->
-    <section id="contacto" class="seccion-contacto">
-      <div class="contacto-columna contacto-texto">
+    <section id="contacto" class="contacto">
+      <div class="contacto__columna contacto__texto">
 
-        <form action="https://formspree.io/f/mzzjordv" method="POST" class="contacto-form">
+        <form action="https://formspree.io/f/mzzjordv" method="POST" class="contacto__form">
           <fieldset>
             <legend>Dejame tus datos</legend>
-            <div class="campo-form">
+            <div class="contacto__campo">
               <label for="name">Nombre:</label>
               <input type="text" id="name" name="name" autocomplete="name" required>
             </div>
 
-            <div class="campo-form">
+            <div class="contacto__campo">
               <label for="email">Email:</label>
               <input type="email" id="email" name="_replyto" autocomplete="email" required>
             </div>
 
-            <div class="campo-form">
+            <div class="contacto__campo">
               <label for="phone">Teléfono:</label>
               <input type="tel" id="phone" name="phone" autocomplete="tel">
             </div>
 
-            <div class="campo-form">
+            <div class="contacto__campo">
               <label for="message">Mensaje:</label>
               <textarea id="message" name="message" rows="4" placeholder="Cuéntame destino, fechas y tipo de viaje."
                 required></textarea>
@@ -194,14 +194,14 @@
         </form>
       </div>
 
-      <div class="contacto-columna contacto-imagen">
+      <div class="contacto__columna contacto__imagen">
         <h2>Conversemos sobre<br><span>tu próximo destino</span></h2>
         <img src="img/contacto1.webp" alt="Planificación de itinerarios personalizados" loading="lazy">
       </div>
     </section>
   </main>
 
-  <div class="separador-delrey"></div>
+  <div class="separador"></div>
 
   <!-- FOOTER -->
   <footer class="footer">

@@ -57,7 +57,7 @@ body {
   /* altura de línea para mejor legibilidad */
 }
 
-.separador-delrey {
+.separador {
   width: 100%;               /* ancho completo */
   padding: 50px 0;           /* espacio arriba y abajo */
   background-color:var(--color-blanco); /* fondo blanco */
@@ -65,7 +65,7 @@ body {
   justify-content: center;   /* centra la línea */
 }
 
-.separador-delrey::before {
+.separador::before {
   content: '';               /* crea la línea decorativa */
   width: 120px;              /* ancho de la línea */
   height: 2px;               /* grosor de la línea */
@@ -152,7 +152,8 @@ section p {
 }
 
 /* Estilo general para TODOS los subtítulos del sitio */
-.subtitulo {
+.subtitulo,
+.servicios__subtitulo {
   color:var(--color-texto);
   font-size: 1rem; /* Tamaño de fuente */
   text-align: center; /* Centra el texto */
@@ -181,7 +182,7 @@ section p {
 }
 
 /* ICONOS DE REDES SOCIALES - Usados en todo el sitio */
-.sobre-mi-redes i,
+.sobre-mi__redes i,
 .footer-redes i {
   font-size: 30px;
   margin-right: 10px;
@@ -204,7 +205,7 @@ section p {
   color: #000000;
 }
 
-.sobre-mi-redes a i:hover,
+.sobre-mi__redes a i:hover,
 .footer-redes a i:hover {
   transform: scale(1.15);
   opacity: 0.85;
@@ -215,7 +216,8 @@ section p {
 ========================= */
 
 /* Contenedor genérico para todas las tarjetas del sitio (servicios, blog, etc.) */
-.contenedor-tarjetas {
+.contenedor-tarjetas,
+.servicios__tarjetas {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -227,7 +229,8 @@ section p {
 
 
 /* Tarjeta individual de servicio */
-.servicio {
+.servicio,
+.servicios__item {
   background-color: var(--color-blanco);
   border: 1.5px solid var(--color-gris-suave);
   border-radius: 10px;
@@ -238,13 +241,15 @@ section p {
   flex-direction: column; /* Coloca los elementos en columna */
 }
 
-.servicio:hover {
+.servicio:hover,
+.servicios__item:hover {
   transform: translateY(-5px); /* Eleva la tarjeta al hover */
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 /* Resumen del servicio (descripción corta) */
-.servicio-resumen {
+.servicio-resumen,
+.servicios__resumen {
   font-size: 1.05rem;
   color: var(--color-texto);
   line-height: 1.6;
@@ -254,7 +259,8 @@ section p {
 }
 
 /* Nombre del pack del servicio */
-.servicio-pack {
+.servicio-pack,
+.servicios__pack {
   font-size: 1.2rem;
   color: var(--color-principal);
   font-weight: 600;
@@ -264,7 +270,8 @@ section p {
 }
 
 /* Lista de características del servicio */
-.servicio-lista {
+.servicio-lista,
+.servicios__beneficios {
   text-align: left;
   margin: 15px 0;
   padding-left: 20px;
@@ -272,7 +279,8 @@ section p {
   flex-grow: 1; /* Expande la lista para ocupar el espacio disponible */
 }
 
-.servicio-lista li {
+.servicio-lista li,
+.servicios__beneficios li {
   margin-bottom: 10px;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -280,7 +288,8 @@ section p {
 }
 
 /* Precio del servicio */
-.servicio-precio {
+.servicio-precio,
+.servicios__precio {
   font-size: 1.1rem;
   color: var(--color-texto);
   margin: 40px 0 5px;
@@ -288,7 +297,8 @@ section p {
   line-height: 1.6;
 }
 
-.servicio-precio strong {
+.servicio-precio strong,
+.servicios__precio strong {
   color: var(--color-acento);
   font-weight: 700;
 }
@@ -296,7 +306,8 @@ section p {
 
 
 /* Párrafos generales dentro de servicios */
-.parrafo-servicio {
+.parrafo-servicio,
+.servicios__texto {
   font-size: 1.1rem;
   color: var(--color-texto);
   margin: 20px 0;
@@ -305,7 +316,8 @@ section p {
 }
 
 /* Espaciado específico para botones dentro de servicios */
-.servicio .btn-primario {
+.servicio .btn-primario,
+.servicios__item .btn-primario {
   margin-top: 30px; /* Empuja el botón hacia abajo automáticamente */
   margin-bottom: 30px;
   max-width: 200px; /* Limita el ancho del botón para mejor proporción */
@@ -364,7 +376,7 @@ section p {
 }
 
 /* Navegacion  */
-.nav-principal ul {
+.header__navegacion ul {
   display: flex;
   /* links en fila */
   gap: 2rem;
@@ -372,7 +384,7 @@ section p {
 }
 
 /* Enlaces del menú */
-.nav-principal a {
+.header__navegacion a {
   font-size: 1rem;
   /* tamaño estándar */
   font-weight: 500;
@@ -384,7 +396,7 @@ section p {
 }
 
 /* Hover del menú (al pasar el mouse) */
-.nav-principal a:hover {
+.header__navegacion a:hover {
   color: var(--color-principal);
   transition: color 0.3s ease;
 }
@@ -412,7 +424,7 @@ section p {
   justify-content: center; /* centra horizontalmente */
 }
 
-.hero-contenedor {
+.hero__contenedor {
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
   padding: 40px 60px; /* Espaciado interno */
   border-radius: 15px; /* Bordes redondeados */
@@ -458,12 +470,12 @@ section p {
   /* padding lateral */
 } 
 
-.hero-texto h1 {
+.hero__texto h1 {
   color: var(--color-blanco); /* Color blanco para el título del hero */
 }
 
 /* Etiqueta específica del hero */
-.hero-texto .hero-etiqueta {
+.hero__texto .hero__etiqueta {
   color: var(--color-blanco); /* Color blanco */
   font-family: var(--fuente-principal); /* Mantiene Inter en lugar de Playfair */
   font-size: 1rem; /* Tamaño más pequeño que el párrafo normal */
@@ -472,7 +484,7 @@ section p {
   margin-bottom: 1.5rem; /* Espacio debajo antes de los botones */
 }
 
-.hero-texto a {
+.hero__texto a {
   display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
   margin-top: 1rem; /* Espacio encima del botón */
   padding: 10px 20px; /* Espaciado interno del botón */
@@ -483,21 +495,21 @@ section p {
   font-size: 1rem; /* Tamaño del texto del botón */
 }
 
-.hero-texto a:hover {
+.hero__texto a:hover {
   background-color: var(--color-secundario); /* Verde oscuro al pasar el mouse */
   color: var(--color-blanco);  /* Color del texto del botón */
   transition: background-color 0.3s ease; /* Efecto de transición */
 }
 
 /* Contenedor de los botones del hero */
-.hero-botones {
+.hero__botones {
   display: flex; /* Propiedad: activa Flexbox (layout flexible en fila o columna) */
   gap: 40px; /* Propiedad: espacio entre elementos hijos (solo entre, no en bordes) */
   justify-content: center; /* Propiedad: alinea elementos horizontalmente al centro */
   flex-wrap: wrap; /* Propiedad: permite que elementos pasen a siguiente línea si no caben */
 }
 
-.hero-botones > * {
+.hero__botones > * {
   flex: 0 1 240px;    /* base 240px, pueden encoger si falta espacio */
   min-width: 120px;   /* no se hagan demasiado pequeños */
   max-width: 260px;   /* limite superior para que no ocupen demasiado */
@@ -505,11 +517,12 @@ section p {
   box-sizing: border-box;
 }
 
-/*HERO2*/
+/*HERO SECUNDARIO*/
 
-.hero2 {
+.hero--secundario {
   width: 100%;
-  min-height: 320px;              /* Altura tipo banner angosto */
+  height: 320px;                  /* Altura tipo banner angosto */
+  min-height: 320px;
   background-image: url("../img/banner-viajes.webp"); /* Ajusta tu imagen */
   background-size: cover;
   background-position: center;
@@ -519,7 +532,7 @@ section p {
 }
 
 /* Overlay sutil para legibilidad del texto */
-.hero2::before {
+.hero--secundario::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -527,7 +540,7 @@ section p {
 }
 
 /* Contenedor interno */
-.hero2 .hero-contenedor {
+.hero--secundario .hero__contenedor {
   position: relative;             /* Para estar sobre el overlay */
   background: transparent;        /* Sin fondo adicional */
   display: flex;
@@ -541,14 +554,14 @@ section p {
 }
 
 /* Texto del hero */
-.hero-texto h1 {
+.hero__texto h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
-.hero-etiqueta {
+.hero__etiqueta {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: #f28c28;                 /* Naranjo marca */
@@ -565,7 +578,7 @@ section p {
   padding: 60px 20px; /* Espaciado interno */
 }
 
-.sobre-mi-contenedor {
+.sobre-mi__contenedor {
   max-width: 1000px; /* Ancho máximo del contenedor */
   margin: 0 auto; /* Centra el contenedor */
   display: flex; /* Usa flexbox para diseño */
@@ -590,35 +603,35 @@ section p {
   text-align: center; /* Centra el texto */
 }
 
-.sobre-mi-imagen img {
+.sobre-mi__imagen img {
   border-radius: 15px; /* Bordes redondeados para la imagen */
   width: 100%; /* Se adapta al contenedor */
   max-width: 600px; /* Pero no crece más de 600px */
   height: auto; /* Altura automática para mantener proporción */
 }
 
-.sobre-mi-redes {
+.sobre-mi__redes {
   margin-top: 20px; /* Espacio reducido arriba */
   text-align: center; /* Centra el contenido */
 }
 
-.sobre-mi-redes h3 {
+.sobre-mi__redes h3 {
   font-size: 1.2rem; /* Tamaño del título */
   margin: 50px 0 20px; /* top 50px, right/left 0, bottom 20px */
   color: var(--color-texto); /* Color del texto */
 }
 
-.sobre-mi-redes nav {
+.sobre-mi__redes nav {
   display: flex; /* Coloca los íconos en fila */
   justify-content: center; /* Centra los íconos */
   gap: 20px; /* Espacio entre los íconos */
 }
 
-.sobre-mi-redes nav a {
+.sobre-mi__redes nav a {
   transition: transform 0.3s ease; /* Efecto de transición */
 }
 
-.sobre-mi-redes nav a:hover {
+.sobre-mi__redes nav a:hover {
   transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
 }
 
@@ -640,7 +653,7 @@ section p {
    SECCIÓN CONTACTO DEL REY
    ========================= */
 
-.seccion-contacto {
+.contacto {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -651,28 +664,28 @@ section p {
   margin: 0 auto;
 }
 
-.contacto-columna {
+.contacto__columna {
   flex: 1;
 }
 
 /* Texto y títulos */
-.contacto-texto h2 {
+.contacto__texto h2 {
   margin-bottom: 50px;
 }
 
-.contacto-texto h2 span {
+.contacto__texto h2 span {
   color: #FF7A1A; /* naranjo acento */
 }
 
 
 /* Formulario */
 
-.contacto-form fieldset {
+.contacto__form fieldset {
   border: none;
   padding: 0;
 }
 
-.contacto-form legend {
+.contacto__form legend {
   font-weight: 600;
   margin-bottom: 15px;
   color: var(--color-texto);
@@ -680,14 +693,14 @@ section p {
   text-align: center;
 }
 
-.campo-form {
+.contacto__campo {
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.campo-form label {
+.contacto__campo label {
   display: block;
   width: 100%;
   font-size: 0.9rem;
@@ -698,8 +711,8 @@ section p {
   margin-left: 0;
 }
 
-.campo-form input,
-.campo-form textarea {
+.contacto__campo input,
+.contacto__campo textarea {
   width: 60%;
   padding: 10px 10px;
   margin-left: 0;
@@ -711,8 +724,8 @@ section p {
   text-align: center;
 }
 
-.campo-form input:focus,
-.campo-form textarea:focus {
+.contacto__campo input:focus,
+.contacto__campo textarea:focus {
   outline: none;
   border-color: #1F6D63;
   box-shadow: 0 0 0 2px rgba(31, 109, 99, 0.15);
@@ -731,14 +744,14 @@ section p {
 
 /* Imagen y redes */
 
-.contacto-imagen {
+.contacto__imagen {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
 }
 
-.contacto-imagen img {
+.contacto__imagen img {
   width: 300px;
   height: 300px;
   border-radius: 50%; /* si la quieres circular: 50% */
@@ -774,12 +787,12 @@ section p {
 /* Responsive */
 
 @media (max-width: 768px) {
-  .seccion-contacto {
+  .contacto {
     flex-direction: column;
     padding: 40px 16px;
   }
 
-  .contacto-imagen img {
+  .contacto__imagen img {
     width: 220px;
     height: 220px;
   }

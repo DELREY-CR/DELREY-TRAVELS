@@ -33,7 +33,7 @@
         <img src="img/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="100" height="100">
       </a>
 
-      <nav class="nav-principal" aria-label="Navegación principal">
+      <nav class="header__navegacion" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="index.html#sobre-mi">Sobre mí</a></li>
@@ -49,16 +49,16 @@
   <main id="inicio">
 
     <!-- HERO -->
-    <section class="hero2">
-      <div class="hero-contenedor">
-        <div class="hero-texto">
+    <section class="hero hero--secundario">
+      <div class="hero__contenedor">
+        <div class="hero__texto">
           <h1>Artículos y consejos</h1>
-          <h2 class="hero-etiqueta">Asesoría • Itinerarios • Experiencias</h2>
+          <h2 class="hero__etiqueta">Asesoría • Itinerarios • Experiencias</h2>
         </div>
       </div>
     </section>
 
-    <div class="separador-delrey"></div>
+    <div class="separador"></div>
 
 
     <!-- ARTÍCULO (PLANTILLA) -->
@@ -130,33 +130,33 @@
     </article>
 
 
-    <div class="separador-delrey"></div>
+    <div class="separador"></div>
 
 
     <!-- SECCIÓN DE CONTACTO -->
-    <section id="contacto" class="seccion-contacto">
+    <section id="contacto" class="contacto">
 
-      <div class="contacto-columna contacto-texto">
-        <form action="https://formspree.io/f/mzzjordv" method="POST" class="contacto-form">
+      <div class="contacto__columna contacto__texto">
+        <form action="https://formspree.io/f/mzzjordv" method="POST" class="contacto__form">
           <fieldset>
             <legend>Déjame tus datos</legend>
 
-            <div class="campo-form">
+            <div class="contacto__campo">
               <label for="name">Nombre:</label>
               <input type="text" id="name" name="name" autocomplete="name" required>
             </div>
 
-            <div class="campo-form">
+            <div class="contacto__campo">
               <label for="email">Email:</label>
               <input type="email" id="email" name="_replyto" autocomplete="email" required>
             </div>
 
-            <div class="campo-form">
+            <div class="contacto__campo">
               <label for="phone">Teléfono:</label>
               <input type="tel" id="phone" name="phone" autocomplete="tel">
             </div>
 
-            <div class="campo-form">
+            <div class="contacto__campo">
               <label for="message">Mensaje:</label>
               <textarea id="message" name="message" rows="4" placeholder="Cuéntame destino, fechas y tipo de viaje."
                 required></textarea>
@@ -167,7 +167,7 @@
         </form>
       </div>
 
-      <div class="contacto-columna contacto-imagen">
+      <div class="contacto__columna contacto__imagen">
         <h2>Conversemos sobre<br><span>tu próximo destino</span></h2>
         <img src="img/contacto1.webp" alt="Planificación de itinerarios personalizados" loading="lazy">
       </div>
@@ -177,7 +177,7 @@
   </main>
 
 
-  <div class="separador-delrey"></div>
+  <div class="separador"></div>
 
 
   <!-- FOOTER -->
