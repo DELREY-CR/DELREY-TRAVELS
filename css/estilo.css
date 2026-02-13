@@ -5,8 +5,7 @@
   --color-fondo: #2a7e8630; /* Fondo suave/transparente */
   --color-texto: #1F3A37; /* Color base de texto */
   --color-principal: #3b6e69; /* Color marca principal */
-  --color-secundario: #2c5f5d; /* Color para hover/contraste */
-  --color-acento: #FF7A1A; /* Color CTA/acento */
+  --color-secundario: #FF7A1A; /* Color secundario */
   --color-blanco: #ffffff; /* Blanco para fondos */
   --color-gris-suave: #e0e0e0; /* Bordes/sombras suaves */
   --fuente-principal: 'Inter', sans-serif; /* Fuente base */
@@ -81,7 +80,7 @@ h2 {
 }
 
 h2 span {
-  color: var(--color-acento); /* Resalta palabra en h2 */
+  color: var(--color-secundario); /* Resalta palabra en h2 */
 }
 
 h3 {
@@ -140,12 +139,12 @@ section p {
 }
 
 .btn--primario {
-  background-color: var(--color-acento); /* Fondo CTA */
+  background-color: var(--color-secundario); /* Fondo CTA */
   color: var(--color-blanco); /* Texto blanco */
 }
 
 .btn--primario:hover {
-  background-color: var(--color-secundario); /* Hover oscuro */
+  background-color: var(--color-principal); /* Hover oscuro */
 }
 
 /* =========================
@@ -256,10 +255,6 @@ section p {
   justify-content: center; /* Centra vertical */
 }
 
-.hero__texto h1 {
-  color: var(--color-blanco); /* Título blanco */
-}
-
 .hero__texto .hero__etiqueta {
   color: var(--color-blanco); /* Texto blanco */
   font-family: var(--fuente-principal); /* Fuente base */
@@ -273,7 +268,7 @@ section p {
   display: inline-block; /* Botón-enlace */
   margin-top: 1rem; /* Aire superior */
   padding: 10px 20px; /* Tamaño clickable */
-  background-color: var(--color-acento); /* Fondo CTA */
+  background-color: var(--color-secundario); /* Fondo CTA */
   color: var(--color-blanco); /* Texto blanco */
   border-radius: 4px; /* Bordes */
   font-weight: bold; /* Negrita */
@@ -281,7 +276,7 @@ section p {
 }
 
 .hero__texto a:hover {
-  background-color: var(--color-secundario); /* Hover oscuro */
+  background-color: var(--color-principal); /* Hover oscuro */
   color: var(--color-blanco); /* Mantiene blanco */
   transition: background-color 0.3s ease; /* Animación */
 }
@@ -485,7 +480,7 @@ section p {
 }
 
 .servicios__precio strong {
-  color: var(--color-acento); /* Resalta precio */
+  color: var(--color-secundario); /* Resalta precio */
   font-weight: 700; /* Más fuerte */
 }
 
@@ -624,11 +619,10 @@ section p {
   display: flex; /* Centra */
   justify-content: center; /* Centra */
   margin: 0 auto; /* Centra */
-  margin-bottom: 20px; /* (se mantiene) */
   font-weight: bold; /* Destaca */
   font-size: 1.2rem; /* Tamaño */
   margin-bottom: 0.5rem; /* (se mantiene) */
-  color: var(--color-acento); /* Color acento */
+  color: var(--color-secundario); /* Color acento */
 }
 
 .footer__redes{
