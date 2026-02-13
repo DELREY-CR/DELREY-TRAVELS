@@ -2,906 +2,717 @@
    VARIABLES DE COLOR Y TIPOGRAFÍA
 ========================= */
 :root {
-  --color-fondo: #2a7e8630;
-  /* Verde azulado transparente para fondo suave */
-  --color-texto: #1F3A37;
-  /* Gris oscuro legible */
-  --color-principal: #3b6e69;
-  /* Verde azulado - Color de marca para viajes/naturaleza */
-  --color-secundario: #2c5f5d;
-  /* Verde oscuro para contrastes y hover */
-  --color-acento: #FF7A1A;
-  /* Amarillo/naranja cálido para CTAs y elementos destacados */
-  --color-blanco: #ffffff;
-  /* Blanco puro para fondos limpios */
-  --color-gris-suave: #e0e0e0;
-  /* Color para bordes sutiles */
-  --fuente-principal: 'Inter', sans-serif;
-  /* Tipografía principal para textos y párrafos */
-  --fuente-titulos: 'Playfair Display', serif;
-  /* Tipografía elegante para títulos */
+  --color-fondo: #2a7e8630; /* Fondo suave/transparente */
+  --color-texto: #1F3A37; /* Color base de texto */
+  --color-principal: #3b6e69; /* Color marca principal */
+  --color-secundario: #2c5f5d; /* Color para hover/contraste */
+  --color-acento: #FF7A1A; /* Color CTA/acento */
+  --color-blanco: #ffffff; /* Blanco para fondos */
+  --color-gris-suave: #e0e0e0; /* Bordes/sombras suaves */
+  --fuente-principal: 'Inter', sans-serif; /* Fuente base */
+  --fuente-titulos: 'Playfair Display', serif; /* Fuente títulos */
 }
 
 /* =========================
-   IMPORTACIÓN DE TIPOGRAFÍAS DESDE GOOGLE FONTS
-========================= */
-
-/* =========================
-
-  RESET BÁSICO para quitar formatos y margenes por defecto e iniciar desde cero, valores generales
+  RESET BÁSICO (quita estilos por defecto)
 ========================= */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  /* incluye padding y border en el ancho total */
-  margin: 0;
-  /* elimina márgenes por defecto */
-  padding: 0;
-  /* elimina relleno por defecto */
+  box-sizing: border-box; /* Incluye padding/border en el tamaño */
+  margin: 0; /* Quita márgenes */
+  padding: 0; /* Quita paddings */
 }
 
 /* =========================
-  ESTILOS GENERALES: Define look basico, color fondo, tipografia.
-   imagenes responsivas, limpia listas y enlaces. Centra titulos.
+  ESTILOS BASE (globales)
 ========================= */
-
 body {
-  font-family: var(--fuente-principal);
-  /* tipografía base del sitio */
-  background-color: var(--color-blanco);
-  /* fondo general del sitio */
-  color: var(--color-texto);
-  /* color de texto por defecto */
-  line-height: 1.6;
-  /* altura de línea para mejor legibilidad */
+  font-family: var(--fuente-principal); /* Tipografía general */
+  background-color: var(--color-blanco); /* Fondo general */
+  color: var(--color-texto); /* Color base de texto */
+  line-height: 1.6; /* Legibilidad */
 }
 
-.separador {
-  width: 100%;               /* ancho completo */
-  padding: 50px 0;           /* espacio arriba y abajo */
-  background-color:var(--color-blanco); /* fondo blanco */
-  display: flex;             /* para centrar la línea */
-  justify-content: center;   /* centra la línea */
-}
-
-.separador::before {
-  content: '';               /* crea la línea decorativa */
-  width: 120px;              /* ancho de la línea */
-  height: 2px;               /* grosor de la línea */
-  background-color: var(--color-texto); /* color negro de la línea */
-  border-radius: 10px;       /* bordes suavizados */
-}
-
-/* Listas sin viñetas (útil para la navegación) */
 ul {
-  list-style: none;
-  /* quita los bullets de las listas */
+  list-style: none; /* Quita viñetas de listas */
 }
 
-/* Enlaces sin subrayado y heredando el color del texto */
 a {
-  text-decoration: none;
-  /* quita el subrayado de los enlaces */
-  color: inherit;
-  /* hereda el color del elemento padre */
-  font-family: var(--fuente-principal);
-  /* usa la tipografía principal */
+  text-decoration: none; /* Quita subrayado */
+  color: inherit; /* Hereda color del contenedor */
+  font-family: var(--fuente-principal); /* Fuente base */
 }
 
-/* Imágenes responsive: no se salen del contenedor */
 img {
-  max-width: 100%;
-  /* no excede el ancho del contenedor */
-  height: auto;
-  /* mantiene la proporción original */
-  display: block;
-  /* elimina espacio extra debajo de la imagen */
+  max-width: 100%; /* Evita desbordes */
+  height: auto; /* Mantiene proporción */
+  display: block; /* Quita espacio inferior */
 }
 
-/* Espaciado general del contenido principal */
 main {
-  margin: 0; /* elimina margen por defecto */
-  padding: 0; /* elimina padding por defecto */
-  width: 100%; /* asegura que ocupe todo el ancho */
+  margin: 0; /* Quita margen por defecto */
+  padding: 0; /* Quita padding por defecto */
+  width: 100%; /* Ocupa todo el ancho */
 }
 
-
-/* Separación y línea para TODAS las secciones */
 section {
-  padding: 40px 0; /* espacio arriba y abajo */
-  margin-bottom: 0; /* sin espacio extra debajo */
-  scroll-margin-top: 110px; /* Espacio para que el scroll no quede debajo del header fijo */
+  padding: 40px 0; /* Espaciado vertical estándar */
+  margin-bottom: 0; /* Sin separación extra abajo */
+  scroll-margin-top: 110px; /* Compensa header fijo en scroll */
 }
 
-/* Títulos con jerarquía visual diferenciada */
+/* =========================
+  TIPOGRAFÍA (jerarquía títulos)
+========================= */
 h1, h2, h3 {
-  font-family: var(--fuente-titulos);
-  color: var(--color-texto);   /* texto oscuro por defecto */
+  font-family: var(--fuente-titulos); /* Fuente de títulos */
+  color: var(--color-texto); /* Color de títulos */
 }
 
 h1 {
-  font-size: 2.5rem; /* 40px - Título principal */
+  font-size: 2.5rem; /* Tamaño de título principal */
 }
 
 h2 {
-  font-size: 2.2rem; /* 2.2rem - Títulos de sección */
-  line-height: 1.2; /* Altura de línea compacta */
-  margin-bottom: 10px; /* Espacio inferior reducido */
+  font-size: 2.2rem; /* Tamaño de título de sección */
+  line-height: 1.2; /* Compacta el título */
+  margin-bottom: 10px; /* Separación inferior */
 }
 
-/* Estilo para el span dentro de h2 (color naranja acento) */
 h2 span {
-  color: var(--color-acento); /* Naranja acento */
+  color: var(--color-acento); /* Resalta palabra en h2 */
 }
 
 h3 {
-  font-size: 1.5rem; /* 24px - Títulos de tarjetas */
+  font-size: 1.5rem; /* Tamaño de subtítulo */
 }
 
-/* Títulos de sección centrados y con espacio inferior */
 section h2 {
-  text-align: center;
-  margin-bottom: 1rem;
+  text-align: center; /* Centra títulos en secciones */
+  margin-bottom: 1rem; /* Aire inferior */
 }
 
-/* Párrafos de sección con ancho máximo para que sean cómodos de leer */
 section p {
-  max-width: 800px;
-  margin: 0.5rem auto;
+  max-width: 800px; /* Ancho cómodo de lectura */
+  margin: 0.5rem auto; /* Centrado con separación */
 }
 
-/* Estilo general para TODOS los subtítulos del sitio */
-.subtitulo,
+/* =========================
+   UTILIDADES / REUTILIZABLES
+========================= */
+.separador {
+  width: 100%; /* Ocupa todo el ancho */
+  padding: 50px 0; /* Aire vertical */
+  background-color: var(--color-blanco); /* Fondo limpio */
+  display: flex; /* Permite centrar la línea */
+  justify-content: center; /* Centra la línea */
+}
+
+.separador::before {
+  content: ''; /* Dibuja el separador */
+  width: 120px; /* Largo de la línea */
+  height: 2px; /* Grosor de la línea */
+  background-color: var(--color-texto); /* Color de línea */
+  border-radius: 10px; /* Bordes suavizados */
+}
+
+.blog__subtitulo,
 .servicios__subtitulo {
-  color:var(--color-texto);
-  font-size: 1rem; /* Tamaño de fuente */
-  text-align: center; /* Centra el texto */
-  margin-bottom: 20px; /* Espacio debajo */
-  display: block; /* Elemento de bloque */
-  max-width: 900px; /* Limita el ancho */
-  margin-left: auto; /* Centra horizontalmente */
-  margin-right: auto; /* Centra horizontalmente */
+  color: var(--color-texto); /* Color texto */
+  font-size: 1rem; /* Tamaño subtítulo */
+  text-align: center; /* Centrado */
+  margin-bottom: 20px; /* Aire inferior */
+  display: block; /* Ocupa ancho completo */
+  max-width: 900px; /* Limita ancho */
+  margin-left: auto; /* Centra */
+  margin-right: auto; /* Centra */
 }
 
-/* Estilos generales para BOTONES reutilizables */
-.btn-primario {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--color-acento);
-  color: var(--color-blanco);
-  border-radius: 4px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.btn {
+  display: inline-block; /* Se comporta como botón */
+  padding: 10px 20px; /* Tamaño clickable */
+  border-radius: 4px; /* Bordes redondeados */
+  font-weight: bold; /* Destaca texto */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Mano en hover */
+  transition: background-color 0.3s ease; /* Animación */
 }
 
-.btn-primario:hover {
-  background-color: var(--color-secundario);
+.btn--primario {
+  background-color: var(--color-acento); /* Fondo CTA */
+  color: var(--color-blanco); /* Texto blanco */
 }
 
-/* ICONOS DE REDES SOCIALES - Usados en todo el sitio */
-.sobre-mi__redes i,
-.footer-redes i {
-  font-size: 30px;
-  margin-right: 10px;
-  transition: 0.25s ease;
-}
-
-.fa-envelope {
-  color: #D44638;
-}
-
-.fa-instagram {
-  color: #E1306C;
-}
-
-.fa-flickr {
-  color: #0063dc;
-}
-
-.fa-tiktok {
-  color: #000000;
-}
-
-.sobre-mi__redes a i:hover,
-.footer-redes a i:hover {
-  transform: scale(1.15);
-  opacity: 0.85;
+.btn--primario:hover {
+  background-color: var(--color-secundario); /* Hover oscuro */
 }
 
 /* =========================
-   ESTILOS PARA TARJETAS - Contenedor genérico reutilizable
+   ICONOS (FontAwesome)
 ========================= */
+.fa-envelope { color: #D44638; } /* Color ícono correo */
+.fa-instagram { color: #E1306C; } /* Color ícono Instagram */
+.fa-flickr { color: #0063dc; } /* Color ícono Flickr */
+.fa-tiktok { color: #000000; } /* Color ícono TikTok */
 
-/* Contenedor genérico para todas las tarjetas del sitio (servicios, blog, etc.) */
-.contenedor-tarjetas,
-.servicios__tarjetas {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 30px 0;
+.sobre-mi__redes i {
+  font-size: 30px; /* Tamaño íconos */
+  margin-right: 10px; /* Separación entre íconos */
+  transition: 0.25s ease; /* Animación */
 }
 
-
-
-/* Tarjeta individual de servicio */
-.servicio,
-.servicios__item {
-  background-color: var(--color-blanco);
-  border: 1.5px solid var(--color-gris-suave);
-  border-radius: 10px;
-  padding: 20px; /* Espaciado interno de la tarjeta */
-  text-align: center; /* Centra el contenido dentro de la tarjeta */
-  min-height: 600px; /* Altura mínima para que todas tengan el mismo tamaño base */
-  display: flex; /* Flexbox para alinear el contenido verticalmente */
-  flex-direction: column; /* Coloca los elementos en columna */
-}
-
-.servicio:hover,
-.servicios__item:hover {
-  transform: translateY(-5px); /* Eleva la tarjeta al hover */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-
-/* Resumen del servicio (descripción corta) */
-.servicio-resumen,
-.servicios__resumen {
-  font-size: 1.05rem;
-  color: var(--color-texto);
-  line-height: 1.6;
-  margin-top: 10px;
-  margin-bottom: 30px;
-
-}
-
-/* Nombre del pack del servicio */
-.servicio-pack,
-.servicios__pack {
-  font-size: 1.2rem;
-  color: var(--color-principal);
-  font-weight: 600;
-  margin: 30px 0 15px;
-  font-family: var(--fuente-principal);
-  min-height: 3em; /* Altura fija para alinear todos los títulos */
-}
-
-/* Lista de características del servicio */
-.servicio-lista,
-.servicios__beneficios {
-  text-align: left;
-  margin: 15px 0;
-  padding-left: 20px;
-  list-style: disc;
-  flex-grow: 1; /* Expande la lista para ocupar el espacio disponible */
-}
-
-.servicio-lista li,
-.servicios__beneficios li {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: var(--color-texto);
-}
-
-/* Precio del servicio */
-.servicio-precio,
-.servicios__precio {
-  font-size: 1.1rem;
-  color: var(--color-texto);
-  margin: 40px 0 5px;
-  /* 40px arriba, 0 laterales, 10px abajo */
-  line-height: 1.6;
-}
-
-.servicio-precio strong,
-.servicios__precio strong {
-  color: var(--color-acento);
-  font-weight: 700;
-}
-
-
-
-/* Párrafos generales dentro de servicios */
-.parrafo-servicio,
-.servicios__texto {
-  font-size: 1.1rem;
-  color: var(--color-texto);
-  margin: 20px 0;
-  text-align: center;
-  flex-grow: 1; /* Empuja el botón hacia abajo */
-}
-
-/* Espaciado específico para botones dentro de servicios */
-.servicio .btn-primario,
-.servicios__item .btn-primario {
-  margin-top: 30px; /* Empuja el botón hacia abajo automáticamente */
-  margin-bottom: 30px;
-  max-width: 200px; /* Limita el ancho del botón para mejor proporción */
-  width: 100%; /* Se adapta al contenido pero respeta el max-width */
-  margin-left: auto; /* Junto con margin-right: auto centra el botón */
-  margin-right: auto;
-  padding: 10px 20px;
+.sobre-mi__redes a i:hover {
+  transform: scale(1.15); /* Agranda al hover */
+  opacity: 0.85; /* Baja opacidad */
 }
 
 /* =========================
-   1 HEADER CON LOGO Y NAVEGACIÓN 
+   TARJETAS / GRIDS (contenedores)
 ========================= */
+.servicios__tarjetas,
+.blog__tarjetas {
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado */
+  display: grid; /* Grid de tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+  gap: 30px; /* Separación */
+  padding: 30px 0; /* Aire vertical */
+}
 
+/* =========================
+   HEADER
+========================= */
 .header {
-  background-color:var(--color-blanco);
-  /* Fondo blanco para el header */
-  border-bottom: 1px solid var(--color-gris-suave);
-  /* Línea sutil debajo del header */
-  padding: 0.5rem 0;
-  /* agregado espaciado vertical */
-  position: sticky;
-  /* Hace que el header se quede fijo al hacer scroll */
-  top: 0;
-  /* Posición superior */
-  z-index: 1000;
-  /* Asegura que el header esté por encima de otros elementos */
-
-
+  background-color: var(--color-blanco); /* Fondo header */
+  border-bottom: 1px solid var(--color-gris-suave); /* Línea inferior */
+  padding: 0.5rem 0; /* Aire vertical */
+  position: sticky; /* Se queda arriba al scroll */
+  top: 0; /* Pegado al tope */
+  z-index: 1000; /* Encima de todo */
 }
 
-/* Contenedor interno para alinear logo y menú */
 .header__contenedor {
-
-  max-width: 1200px;
-  /* Ancho máximo del contenedor */
-  margin: 0 auto;
-  /* centrar en la página */
-  padding: 0 1rem;
-  /* espacio lateral */
-  display: flex;
-  /* pone logo y menú en misma fila */
-  align-items: center;
-  /* centrarlos verticalmente */
-  justify-content: space-between;
-  /* logo a un lado, menú al otro */
+  max-width: 1200px; /* Ancho del header */
+  margin: 0 auto; /* Centrado */
+  padding: 0 1rem; /* Padding lateral */
+  display: flex; /* Logo + nav en fila */
+  align-items: center; /* Centra vertical */
+  justify-content: space-between; /* Separa extremos */
 }
 
-/* Estilos para el logo */
-.logo img {
-  width: 90px;
-  /* Ajusta el tamaño del logo */
-  height: 90px;
-  /* Ajusta el tamaño del logo */
-  object-fit: cover;
-  /* Asegura que la imagen mantenga su proporción */
+.header__logo img {
+  width: 90px; /* Tamaño logo */
+  height: 90px; /* Tamaño logo */
+  object-fit: cover; /* Recorta sin deformar */
 }
 
-/* Navegacion  */
 .header__navegacion ul {
-  display: flex;
-  /* links en fila */
-  gap: 2rem;
-  /* separación entre enlaces */
+  display: flex; /* Links en fila */
+  gap: 2rem; /* Espacio entre links */
 }
 
-/* Enlaces del menú */
 .header__navegacion a {
-  font-size: 1rem;
-  /* tamaño estándar */
-  font-weight: 500;
-  /* peso medio */
-  color: var(--color-texto);
-  /* color oscuro por defecto */
-  font-family: var(--fuente-titulos);
-  /* usa la fuente de títulos */
+  font-size: 1rem; /* Tamaño link */
+  font-weight: 500; /* Peso medio */
+  color: var(--color-texto); /* Color base */
+  font-family: var(--fuente-titulos); /* Fuente títulos */
 }
 
-/* Hover del menú (al pasar el mouse) */
 .header__navegacion a:hover {
-  color: var(--color-principal);
-  transition: color 0.3s ease;
+  color: var(--color-principal); /* Color hover */
+  transition: color 0.3s ease; /* Animación hover */
 }
 
-
-/* ============================
-   2 HERO CON TEXTO SOBRE LA IMAGEN
-============================ */
-
+/* =========================
+   HERO
+========================= */
 .hero {
-  width: 100%; /* ancho completo de la ventana */
-  max-width: 100%; /* evita desbordamiento horizontal */
-  margin: 0; /* elimina margen por defecto */
-  padding: 0; /* elimina padding por defecto */
-
-  background-image: url('../img/banner-viajes.webp');   /* Imagen de fondo de hero */
-  background-repeat: no-repeat; /* No repetir la imagen */
-  background-size: cover; /* Asegura que la imagen cubra todo el área */
-  background-position: center; /* Centra la imagen */
-
-  height: 600px; /* altura fija para el hero */
-
-  display: flex; /* usa flexbox para centrar contenido */
-  align-items: center; /* centra verticalmente */
-  justify-content: center; /* centra horizontalmente */
+  width: 100%; /* Ancho completo */
+  max-width: 100%; /* Evita overflow */
+  margin: 0; /* Sin márgenes */
+  padding: 0; /* Sin padding */
+  background-image: url('../img/banner-viajes.webp'); /* Fondo hero */
+  background-repeat: no-repeat; /* No repetir */
+  background-size: cover; /* Cubre el área */
+  background-position: center; /* Centra imagen */
+  height: 600px; /* Alto hero */
+  display: flex; /* Centrado */
+  align-items: center; /* Centra vertical */
+  justify-content: center; /* Centra horizontal */
 }
 
 .hero__contenedor {
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
-  padding: 40px 60px; /* Espaciado interno */
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay para legibilidad */
+  padding: 40px 60px; /* Aire interno */
   border-radius: 15px; /* Bordes redondeados */
-  max-width: 1000px; /* Ancho máximo del recuadro */
-  width: 90%; /* Ancho responsive */
-  min-height: 280px; /* Altura mínima fija para todos los heros */
-  text-align: center; /* Centra el texto */
-  display: flex; /* Activa flexbox */
-  flex-direction: column; /* Elementos en columna */
-  align-items: center; /* Centra horizontalmente el contenido */
-  justify-content: center; /* Centra verticalmente el contenido */
+  max-width: 1000px; /* Ancho máximo */
+  width: 90%; /* Responsivo */
+  min-height: 280px; /* Altura mínima */
+  text-align: center; /* Texto centrado */
+  display: flex; /* Centrado */
+  flex-direction: column; /* Apila contenido */
+  align-items: center; /* Centra horizontal */
+  justify-content: center; /* Centra vertical */
 }
-
-/* Hero angosto para página de servicios */
-.hero-servicios-angosto {
-  height: 40vh;
-  /* altura reducida */
-  background-size: cover;
-  /* la imagen cubre todo el área */
-  background-position: center;
-  /* centra la imagen */
-  object-fit: cover;
-  /* recorta sin deformar */
-}
-
-/* Título posicionado sobre el hero angosto */
-.titulo-servicios-posicionado {
-  position: relative;
-  /* posicionamiento relativo */
-  margin-left: 40px;
-  /* espacio desde la izquierda */
-  margin-top: -80px;
-  /* sube el título sobre la imagen */
-  color: #ffffff;
-  /* texto blanco */
-  font-size: 2.2rem;
-  /* tamaño grande y legible */
-  text-align: left;
-  /* alineado a la izquierda */
-  max-width: 1200px;
-  /* ancho máximo del contenedor */
-  padding: 0 20px;
-  /* padding lateral */
-} 
 
 .hero__texto h1 {
-  color: var(--color-blanco); /* Color blanco para el título del hero */
+  color: var(--color-blanco); /* Título blanco */
 }
 
-/* Etiqueta específica del hero */
 .hero__texto .hero__etiqueta {
-  color: var(--color-blanco); /* Color blanco */
-  font-family: var(--fuente-principal); /* Mantiene Inter en lugar de Playfair */
-  font-size: 1rem; /* Tamaño más pequeño que el párrafo normal */
-  letter-spacing: 2px; /* Espaciado entre letras para look elegante */
-  text-transform: uppercase; /* Todo en mayúsculas */
-  margin-bottom: 1.5rem; /* Espacio debajo antes de los botones */
+  color: var(--color-blanco); /* Texto blanco */
+  font-family: var(--fuente-principal); /* Fuente base */
+  font-size: 1rem; /* Tamaño etiqueta */
+  letter-spacing: 2px; /* Tracking */
+  text-transform: uppercase; /* Mayúsculas */
+  margin-bottom: 1.5rem; /* Aire inferior */
 }
 
 .hero__texto a {
-  display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
-  margin-top: 1rem; /* Espacio encima del botón */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  background-color: var(--color-acento); /* Naranja cálido para CTAs principales */
-  color: var(--color-blanco);  /* Color del texto del botón */
-  border-radius: 4px; /* Bordes redondeados */
-  font-weight: bold; /* Texto en negrita */
-  font-size: 1rem; /* Tamaño del texto del botón */
+  display: inline-block; /* Botón-enlace */
+  margin-top: 1rem; /* Aire superior */
+  padding: 10px 20px; /* Tamaño clickable */
+  background-color: var(--color-acento); /* Fondo CTA */
+  color: var(--color-blanco); /* Texto blanco */
+  border-radius: 4px; /* Bordes */
+  font-weight: bold; /* Negrita */
+  font-size: 1rem; /* Tamaño texto */
 }
 
 .hero__texto a:hover {
-  background-color: var(--color-secundario); /* Verde oscuro al pasar el mouse */
-  color: var(--color-blanco);  /* Color del texto del botón */
-  transition: background-color 0.3s ease; /* Efecto de transición */
+  background-color: var(--color-secundario); /* Hover oscuro */
+  color: var(--color-blanco); /* Mantiene blanco */
+  transition: background-color 0.3s ease; /* Animación */
 }
 
-/* Contenedor de los botones del hero */
 .hero__botones {
-  display: flex; /* Propiedad: activa Flexbox (layout flexible en fila o columna) */
-  gap: 40px; /* Propiedad: espacio entre elementos hijos (solo entre, no en bordes) */
-  justify-content: center; /* Propiedad: alinea elementos horizontalmente al centro */
-  flex-wrap: wrap; /* Propiedad: permite que elementos pasen a siguiente línea si no caben */
+  display: flex; /* Botones en fila */
+  gap: 40px; /* Separación */
+  justify-content: center; /* Centrado */
+  flex-wrap: wrap; /* Salta línea si no cabe */
 }
 
 .hero__botones > * {
-  flex: 0 1 240px;    /* base 240px, pueden encoger si falta espacio */
-  min-width: 120px;   /* no se hagan demasiado pequeños */
-  max-width: 260px;   /* limite superior para que no ocupen demasiado */
-  padding: 10px 16px; /* reduce un poco el padding visual */
-  box-sizing: border-box;
-}
-
-/*HERO SECUNDARIO*/
-
-.hero--secundario {
-  width: 100%;
-  height: 320px;                  /* Altura tipo banner angosto */
-  min-height: 320px;
-  background-image: url("../img/banner-viajes.webp"); /* Ajusta tu imagen */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;            /* Centra el contenido verticalmente */
-  position: relative;
-}
-
-/* Overlay sutil para legibilidad del texto */
-.hero--secundario::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-
-/* Contenedor interno */
-.hero--secundario .hero__contenedor {
-  position: relative;             /* Para estar sobre el overlay */
-  background: transparent;        /* Sin fondo adicional */
-  display: flex;
-  flex-direction: column;         /* Coloca los elementos en columna */
-  justify-content: center;        /* Centra verticalmente */
-  align-items: center;            /* Centra horizontalmente */
-  text-align: center;             /* Centra el texto dentro */
-  max-width: 600px;               /* Limita el ancho máximo */
-  margin: 0 auto;                 /* Centra horizontalmente */
-  border-radius: 10px;            /* Bordes redondeados */
-}
-
-/* Texto del hero */
-.hero__texto h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.4rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.hero__etiqueta {
-  font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
-  color: #f28c28;                 /* Naranjo marca */
-  font-weight: 500;
-}
-
-
-
-/* ============================
-   3 SECCIÓN SOBRE MÍ
-============================ */
-
-.sobre-mi {
-  padding: 60px 20px; /* Espaciado interno */
-}
-
-.sobre-mi__contenedor {
-  max-width: 1000px; /* Ancho máximo del contenedor */
-  margin: 0 auto; /* Centra el contenedor */
-  display: flex; /* Usa flexbox para diseño */
-  flex-direction: row; /* Mantiene los elementos en fila */
-  justify-content: space-between; /* Espacio entre texto e imagen */
-  gap: 100px; /* Espacio entre los elementos */
-  align-items: center; /* Alinea verticalmente al centro */
-  padding-top: 30px; /* Espacio arriba */
-}
-
-
-.sobre-mi h2 {
-  margin-bottom: 2rem; /* Espacio debajo del título */
-  color: var(--color-texto); /* Color del texto */
-  text-align: center; /* Centra el título */
-}
-
-.sobre-mi p {
-  font-size: 1.1rem; /* Tamaño del párrafo */
-  line-height: 1.5; /* Altura de línea para mejor legibilidad */
-  color: var(--color-texto); /* Color del texto */
-  text-align: center; /* Centra el texto */
-}
-
-.sobre-mi__imagen img {
-  border-radius: 15px; /* Bordes redondeados para la imagen */
-  width: 100%; /* Se adapta al contenedor */
-  max-width: 600px; /* Pero no crece más de 600px */
-  height: auto; /* Altura automática para mantener proporción */
-}
-
-.sobre-mi__redes {
-  margin-top: 20px; /* Espacio reducido arriba */
-  text-align: center; /* Centra el contenido */
-}
-
-.sobre-mi__redes h3 {
-  font-size: 1.2rem; /* Tamaño del título */
-  margin: 50px 0 20px; /* top 50px, right/left 0, bottom 20px */
-  color: var(--color-texto); /* Color del texto */
-}
-
-.sobre-mi__redes nav {
-  display: flex; /* Coloca los íconos en fila */
-  justify-content: center; /* Centra los íconos */
-  gap: 20px; /* Espacio entre los íconos */
-}
-
-.sobre-mi__redes nav a {
-  transition: transform 0.3s ease; /* Efecto de transición */
-}
-
-.sobre-mi__redes nav a:hover {
-  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
-}
-
-/* ============================
-    4 SECCIÓN SERVICIOS
-============================ */ 
-.servicios {
-  padding: 60px 20px; /* Espaciado interno */
-  text-align: center; /* Centra elementos inline/inline-block hijos (ej. .subtitulo) */
-}
-
-.servicios h2 {
-  margin-bottom: 30px; /* Reducir espacio debajo del título */
-  color: var(--color-texto); /* Color del texto */
-  text-align: center; /* Centra el título */
+  flex: 0 1 240px; /* Base 240px */
+  min-width: 120px; /* Mínimo */
+  max-width: 260px; /* Máximo */
+  padding: 10px 16px; /* Padding */
+  box-sizing: border-box; /* Cálculo estable */
 }
 
 /* =========================
-   SECCIÓN CONTACTO DEL REY
-   ========================= */
+   HERO SECUNDARIO
+========================= */
+.hero--secundario {
+  width: 100%; /* Ancho completo */
+  height: 320px; /* Alto banner */
+  min-height: 320px; /* Alto mínimo */
+  background-image: url("../img/banner-viajes.webp"); /* Fondo */
+  background-size: cover; /* Cubre */
+  background-position: center; /* Centra */
+  display: flex; /* Centrado */
+  align-items: center; /* Centra vertical */
+  position: relative; /* Para overlay */
+}
 
+.hero--secundario::before {
+  content: ""; /* Crea overlay */
+  position: absolute; /* Cubre hero */
+  inset: 0; /* Top/right/bottom/left 0 */
+  background: rgba(0, 0, 0, 0.45); /* Oscurece */
+}
+
+.hero--secundario .hero__contenedor {
+  position: relative; /* Sobre overlay */
+  background: transparent; /* Sin caja negra */
+  display: flex; /* Centrado */
+  flex-direction: column; /* Apila */
+  justify-content: center; /* Centra vertical */
+  align-items: center; /* Centra horizontal */
+  text-align: center; /* Texto centrado */
+  max-width: 600px; /* Limita ancho */
+  margin: 0 auto; /* Centrado */
+  border-radius: 10px; /* Bordes */
+}
+
+/* Texto del hero (segunda definición, se mantiene) */
+.hero__texto h1 {
+  font-family: "Playfair Display", serif; /* Fuente títulos */
+  font-size: 2.4rem; /* Tamaño hero secundario */
+  color: #ffffff; /* Blanco */
+  margin-bottom: 10px; /* Aire inferior */
+}
+
+/* Etiqueta del hero (segunda definición, se mantiene) */
+.hero__etiqueta {
+  font-family: "Inter", sans-serif; /* Fuente base */
+  font-size: 1.1rem; /* Tamaño etiqueta */
+  color: #f28c28; /* Naranjo */
+  font-weight: 500; /* Peso medio */
+}
+
+/* =========================
+   SOBRE MÍ
+========================= */
+.sobre-mi {
+  padding: 60px 20px; /* Aire sección */
+}
+
+.sobre-mi__contenedor {
+  max-width: 1000px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado */
+  display: flex; /* Layout en fila */
+  flex-direction: row; /* Mantiene fila */
+  justify-content: space-between; /* Separa columnas */
+  gap: 100px; /* Separación */
+  align-items: center; /* Centra vertical */
+  padding-top: 30px; /* Aire superior */
+}
+
+.sobre-mi h2 {
+  margin-bottom: 2rem; /* Aire inferior */
+  color: var(--color-texto); /* Color texto */
+  text-align: center; /* Centra título */
+}
+
+.sobre-mi p {
+  font-size: 1.1rem; /* Tamaño texto */
+  line-height: 1.5; /* Legibilidad */
+  color: var(--color-texto); /* Color */
+  text-align: center; /* Centrado */
+}
+
+.sobre-mi__imagen img {
+  border-radius: 15px; /* Bordes redondeados */
+  width: 100%; /* Responsivo */
+  max-width: 600px; /* Máximo */
+  height: auto; /* Proporción */
+}
+
+.sobre-mi__redes {
+  margin-top: 20px; /* Aire superior */
+  text-align: center; /* Centrado */
+}
+
+.sobre-mi__redes h3 {
+  font-size: 1.2rem; /* Tamaño */
+  margin: 50px 0 20px; /* Aire */
+  color: var(--color-texto); /* Color */
+}
+
+.sobre-mi__redes nav {
+  display: flex; /* Íconos en fila */
+  justify-content: center; /* Centrado */
+  gap: 20px; /* Separación */
+}
+
+.sobre-mi__redes nav a {
+  transition: transform 0.3s ease; /* Animación */
+}
+
+.sobre-mi__redes nav a:hover {
+  transform: scale(1.1); /* Zoom leve */
+}
+
+/* =========================
+   SERVICIOS
+========================= */
+.servicios {
+  padding: 60px 20px; /* Aire sección */
+  text-align: center; /* Centra texto */
+}
+
+.servicios h2 {
+  margin-bottom: 30px; /* Aire inferior */
+  color: var(--color-texto); /* Color */
+  text-align: center; /* Centrado */
+}
+
+.servicios__item {
+  background-color: var(--color-blanco); /* Fondo tarjeta */
+  border: 1.5px solid var(--color-gris-suave); /* Borde suave */
+  border-radius: 10px; /* Bordes */
+  padding: 20px; /* Aire interno */
+  text-align: center; /* Contenido centrado */
+  min-height: 600px; /* Altura base */
+  display: flex; /* Layout vertical */
+  flex-direction: column; /* Apila */
+}
+
+.servicios__item:hover {
+  transform: translateY(-5px); /* Eleva tarjeta */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra */
+}
+
+.servicios__resumen {
+  font-size: 1.05rem; /* Tamaño */
+  color: var(--color-texto); /* Color */
+  line-height: 1.6; /* Legibilidad */
+  margin-top: 10px; /* Aire superior */
+  margin-bottom: 30px; /* Aire inferior */
+}
+
+.servicios__pack {
+  font-size: 1.2rem; /* Tamaño */
+  color: var(--color-principal); /* Color marca */
+  font-weight: 600; /* Peso */
+  margin: 30px 0 15px; /* Aire */
+  font-family: var(--fuente-principal); /* Fuente */
+  min-height: 3em; /* Alinea alturas */
+}
+
+.servicios__beneficios {
+  text-align: left; /* Lista alineada */
+  margin: 15px 0; /* Aire */
+  padding-left: 20px; /* Sangría */
+  list-style: disc; /* Viñetas */
+  flex-grow: 1; /* Empuja botón abajo */
+}
+
+.servicios__beneficios li {
+  margin-bottom: 10px; /* Aire */
+  font-size: 0.95rem; /* Tamaño */
+  line-height: 1.5; /* Legibilidad */
+  color: var(--color-texto); /* Color */
+}
+
+.servicios__precio {
+  font-size: 1.1rem; /* Tamaño */
+  color: var(--color-texto); /* Color */
+  margin: 40px 0 5px; /* Aire */
+  line-height: 1.6; /* Legibilidad */
+}
+
+.servicios__precio strong {
+  color: var(--color-acento); /* Resalta precio */
+  font-weight: 700; /* Más fuerte */
+}
+
+.servicios__texto {
+  font-size: 1.1rem; /* Tamaño */
+  color: var(--color-texto); /* Color */
+  margin: 20px 0; /* Aire */
+  text-align: center; /* Centrado */
+  flex-grow: 1; /* Empuja botón abajo */
+}
+
+.servicios__item .btn {
+  margin-top: 30px; /* Aire superior */
+  margin-bottom: 30px; /* Aire inferior */
+  max-width: 200px; /* Limita ancho */
+  width: 100%; /* Responsivo */
+  margin-left: auto; /* Centrado */
+  margin-right: auto; /* Centrado */
+  padding: 10px 20px; /* Tamaño */
+}
+
+/* =========================
+   CONTACTO DEL REY
+========================= */
 .contacto {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 20px;
-  max-width: 1100px;
-  background-color:var(--color-fondo);   /* fondo suave Del Rey */
-  border-radius: 18px;
-  margin: 0 auto;
+  display: flex; /* Dos columnas */
+  align-items: center; /* Centra vertical */
+  justify-content: space-between; /* Separa */
+  padding: 60px 20px; /* Aire */
+  max-width: 1100px; /* Ancho */
+  background-color: var(--color-fondo); /* Fondo suave */
+  border-radius: 18px; /* Bordes */
+  margin: 0 auto; /* Centrado */
 }
 
 .contacto__columna {
-  flex: 1;
+  flex: 1; /* Columna flexible */
 }
 
-/* Texto y títulos */
 .contacto__texto h2 {
-  margin-bottom: 50px;
+  margin-bottom: 50px; /* Aire */
 }
 
 .contacto__texto h2 span {
-  color: #FF7A1A; /* naranjo acento */
+  color: #FF7A1A; /* Destaca palabra */
 }
 
-
-/* Formulario */
-
 .contacto__form fieldset {
-  border: none;
-  padding: 0;
+  border: none; /* Quita borde */
+  padding: 0; /* Quita padding */
 }
 
 .contacto__form legend {
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: var(--color-texto);
-  font-size: 20px;
-  text-align: center;
+  font-weight: 600; /* Destaca */
+  margin-bottom: 15px; /* Aire */
+  color: var(--color-texto); /* Color */
+  font-size: 20px; /* Tamaño */
+  text-align: center; /* Centrado */
 }
 
 .contacto__campo {
-  margin-bottom: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 12px; /* Separación */
+  display: flex; /* Layout vertical */
+  flex-direction: column; /* Apila */
+  align-items: center; /* Centra */
 }
 
 .contacto__campo label {
-  display: block;
-  width: 100%;
-  font-size: 0.9rem;
-  margin-bottom: 4px;
-  font-weight: 600;
-  color: var(--color-texto);
-  text-align: center;
-  margin-left: 0;
+  display: block; /* Ocupa línea */
+  width: 100%; /* Ancho completo */
+  font-size: 0.9rem; /* Tamaño */
+  margin-bottom: 4px; /* Aire */
+  font-weight: 600; /* Destaca */
+  color: var(--color-texto); /* Color */
+  text-align: center; /* Centrado */
+  margin-left: 0; /* Resetea */
 }
 
 .contacto__campo input,
 .contacto__campo textarea {
-  width: 60%;
-  padding: 10px 10px;
-  margin-left: 0;
-  border-radius: 10px;
-  border: 1px solid #C3D7D2;
-  font-family: inherit;
-  font-size: 0.95rem;
-  background-color: #ffffff;
-  text-align: center;
+  width: 60%; /* Ancho del campo */
+  padding: 10px 10px; /* Aire */
+  margin-left: 0; /* Resetea */
+  border-radius: 10px; /* Bordes */
+  border: 1px solid #C3D7D2; /* Borde suave */
+  font-family: inherit; /* Hereda fuente */
+  font-size: 0.95rem; /* Tamaño */
+  background-color: #ffffff; /* Fondo */
+  text-align: center; /* Centrado */
 }
 
 .contacto__campo input:focus,
 .contacto__campo textarea:focus {
-  outline: none;
-  border-color: #1F6D63;
-  box-shadow: 0 0 0 2px rgba(31, 109, 99, 0.15);
+  outline: none; /* Quita outline */
+  border-color: #1F6D63; /* Enfatiza borde */
+  box-shadow: 0 0 0 2px rgba(31, 109, 99, 0.15); /* Glow suave */
 }
 
-/* Botón */
-
-.btn-margen {
-  margin: 20px auto 0;
-  display: block;
+.btn--margen {
+  margin: 20px auto 0; /* Centra y separa */
+  display: block; /* Ocupa línea */
 }
-
-.btn-contacto:hover {
-  background-color: #e56e18;
-}
-
-/* Imagen y redes */
 
 .contacto__imagen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
+  display: flex; /* Columna */
+  flex-direction: column; /* Apila */
+  align-items: center; /* Centra */
+  gap: 18px; /* Separación */
 }
 
 .contacto__imagen img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%; /* si la quieres circular: 50% */
-  margin-bottom: 20px;
-  object-fit: cover;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-
-/* Bloque redes dentro del contacto */
-
-.contacto-redes {
-  text-align: center;
-}
-
-.contacto-redes p {
-  font-weight: 600;
-  color: #1F3A37;
-  margin-bottom: 8px;
-}
-
-.contacto-redes nav a {
-  margin: 0 8px;
-  font-size: 1.2rem;
-  color: #1F6D63;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.contacto-redes nav a:hover {
-  transform: scale(1.15);
-  color: #FF7A1A;
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-  .contacto {
-    flex-direction: column;
-    padding: 40px 16px;
-  }
-
-  .contacto__imagen img {
-    width: 220px;
-    height: 220px;
-  }
+  width: 300px; /* Tamaño foto */
+  height: 300px; /* Tamaño foto */
+  border-radius: 50%; /* Imagen circular */
+  margin-bottom: 20px; /* Aire */
+  object-fit: cover; /* Recorta sin deformar */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra */
 }
 
 /* =========================
-   ESTILOS FOOTER
+   FOOTER
 ========================= */
-
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Centra contenido */
+  justify-content: center; /* Centrado */
+  align-items: center; /* Centrado */
 }
 
 .footer__logo-imagen{
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-.footer__parrafo{
- display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-acento);
+  display: block; /* Bloque centrable */
+  margin: 0 auto; /* Centra */
+  margin-bottom: 20px; /* Aire */
 }
 
+.footer__parrafo{
+  display: flex; /* Centra */
+  justify-content: center; /* Centra */
+  margin: 0 auto; /* Centra */
+  margin-bottom: 20px; /* (se mantiene) */
+  font-weight: bold; /* Destaca */
+  font-size: 1.2rem; /* Tamaño */
+  margin-bottom: 0.5rem; /* (se mantiene) */
+  color: var(--color-acento); /* Color acento */
+}
 
 .footer__redes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  font-size: 30px;
+  display: flex; /* Íconos en fila */
+  justify-content: center; /* Centra */
+  align-items: center; /* Centra */
+  gap: 10px; /* Separación */
+  margin-bottom: 10px; /* Aire */
+  font-size: 30px; /* Tamaño íconos */
 }
 
 .footer__logo-texto {
- margin-bottom: 10px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--color-texto);
+  margin-bottom: 10px; /* Aire */
+  text-align: center; /* Centrado */
+  font-size: 0.9rem; /* Tamaño */
+  color: var(--color-texto); /* Color */
 }
-
 
 /* =========================
-   ESTILOS ESPECÍFICOS PARA TARJETAS DE BLOG
+   BLOG (tarjetas)
 ========================= */
-
-/* Sección blog-resumen */
-.blog-resumen {
-  text-align: center; /* Centra el subtítulo */
+.blog__resumen {
+  text-align: center; /* Centra texto */
 }
 
-/* Tarjeta individual de post/artículo */
-.post {
-  background-color: var(--color-blanco);
-  border: 1.5px solid var(--color-gris-suave);
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  display: grid;
-  grid-template-rows: auto auto auto 1fr auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.blog__post {
+  background-color: var(--color-blanco); /* Fondo tarjeta */
+  border: 1.5px solid var(--color-gris-suave); /* Borde */
+  border-radius: 10px; /* Bordes */
+  padding: 20px; /* Aire interno */
+  text-align: center; /* Centra contenido */
+  display: grid; /* Layout */
+  grid-template-rows: auto auto auto 1fr auto; /* Estructura */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación */
 }
 
-.post:hover {
-  transform: translateY(-5px); /* Eleva la tarjeta al hover */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+.blog__post:hover {
+  transform: translateY(-5px); /* Eleva */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra */
 }
 
-/* Imagen del post */
-.post-imagen {
-  width: 100%;
-  height: 200px; /* Altura fija para uniformidad */
-  object-fit: cover; /* Recorta la imagen sin deformar */
-  border-radius: 8px;
-  margin-bottom: 15px;
+.blog__imagen {
+  width: 100%; /* Ancho completo */
+  height: 200px; /* Alto fijo */
+  object-fit: cover; /* Recorta sin deformar */
+  border-radius: 8px; /* Bordes */
+  margin-bottom: 15px; /* Aire */
 }
 
-/* Título del post */
-.post h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: var(--color-texto);
-  font-family: var(--fuente-titulos);
-  line-height: 1.3;
+.blog__post h3 {
+  font-size: 1.3rem; /* Tamaño */
+  margin-bottom: 10px; /* Aire */
+  color: var(--color-texto); /* Color */
+  font-family: var(--fuente-titulos); /* Fuente */
+  line-height: 1.3; /* Legibilidad */
 }
 
-/* Descripción del post */
-.post p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--color-texto);
-  margin-bottom: 15px;
-  text-align: center;
+.blog__post p {
+  font-size: 0.95rem; /* Tamaño */
+  line-height: 1.6; /* Legibilidad */
+  color: var(--color-texto); /* Color */
+  margin-bottom: 15px; /* Aire */
+  text-align: center; /* Centrado */
 }
 
-/* Botón dentro del post */
-.post .btn-primario {
-  margin-top: 20px;
-  max-width: 200px; /* Limita el ancho del botón */
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.blog__post .btn {
+  margin-top: 20px; /* Aire */
+  max-width: 200px; /* Limita ancho */
+  width: 100%; /* Responsivo */
+  margin-left: auto; /* Centrado */
+  margin-right: auto; /* Centrado */
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .contacto {
+    flex-direction: column; /* Apila columnas */
+    padding: 40px 16px; /* Reduce padding */
+  }
 
+  .contacto__imagen img {
+    width: 220px; /* Reduce foto */
+    height: 220px; /* Reduce foto */
+  }
+}
