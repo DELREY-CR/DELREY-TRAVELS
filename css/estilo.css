@@ -231,7 +231,7 @@ section p {
   max-width: 100%; /* Evita overflow */
   margin: 0; /* Sin márgenes */
   padding: 0; /* Sin padding */
-  background-image: url('../img/banner-viajes.webp'); /* Fondo hero */
+  background-image: url('../img/sitio/banner-viajes.webp'); /* Fondo hero */
   background-repeat: no-repeat; /* No repetir */
   background-size: cover; /* Cubre el área */
   background-position: center; /* Centra imagen */
@@ -303,7 +303,7 @@ section p {
   width: 100%; /* Ancho completo */
   height: 320px; /* Alto banner */
   min-height: 320px; /* Alto mínimo */
-  background-image: url("../img/banner-viajes.webp"); /* Fondo */
+  background-image: url("../img/sitio/banner-viajes.webp"); /* Fondo */
   background-size: cover; /* Cubre */
   background-position: center; /* Centra */
   display: flex; /* Centrado */
