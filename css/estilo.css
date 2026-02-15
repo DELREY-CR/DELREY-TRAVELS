@@ -416,6 +416,8 @@ section p {
 .servicios {
   padding: 60px 20px; /* Aire sección */
   text-align: center; /* Centra texto */
+  max-width: 900px; /* Ancho */
+  margin: 0 auto; /* Centrado */
 }
 
 .servicios h2 {
