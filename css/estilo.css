@@ -199,7 +199,7 @@ section p {
 }
 
 .btn--secundario {
-  background-color: var(--color-fondo);
+  background-color: var(--color-secundario);
   /* Fondo verde */
   color: var(--color-blanco);
   /* Texto blanco */
