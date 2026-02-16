@@ -2,14 +2,22 @@
    VARIABLES DE COLOR Y TIPOGRAFÍA
 ========================= */
 :root {
-  --color-fondo: #2a7e8630; /* Fondo suave/transparente */
-  --color-texto: #1F3A37; /* Color base de texto */
-  --color-principal: #3b6e69; /* Color marca principal */
-  --color-secundario: #FF7A1A; /* Color secundario */
-  --color-blanco: #ffffff; /* Blanco para fondos */
-  --color-gris-suave: #e0e0e0; /* Bordes/sombras suaves */
-  --fuente-principal: 'Inter', sans-serif; /* Fuente base */
-  --fuente-titulos: 'Playfair Display', serif; /* Fuente títulos */
+  --color-fondo: #2a7e8630;
+  /* Fondo suave/transparente */
+  --color-texto: #1F3A37;
+  /* Color base de texto */
+  --color-principal: #3b6e69;
+  /* Color marca principal */
+  --color-secundario: #FF7A1A;
+  /* Color secundario */
+  --color-blanco: #ffffff;
+  /* Blanco para fondos */
+  --color-gris-suave: #e0e0e0;
+  /* Bordes/sombras suaves */
+  --fuente-principal: 'Inter', sans-serif;
+  /* Fuente base */
+  --fuente-titulos: 'Playfair Display', serif;
+  /* Fuente títulos */
 }
 
 /* =========================
@@ -18,152 +26,228 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* Incluye padding/border en el tamaño */
-  margin: 0; /* Quita márgenes */
-  padding: 0; /* Quita paddings */
+  box-sizing: border-box;
+  /* Incluye padding/border en el tamaño */
+  margin: 0;
+  /* Quita márgenes */
+  padding: 0;
+  /* Quita paddings */
 }
 
 /* =========================
   ESTILOS BASE (globales)
 ========================= */
 body {
-  font-family: var(--fuente-principal); /* Tipografía general */
-  background-color: var(--color-blanco); /* Fondo general */
-  color: var(--color-texto); /* Color base de texto */
-  line-height: 1.6; /* Legibilidad */
+  font-family: var(--fuente-principal);
+  /* Tipografía general */
+  background-color: var(--color-blanco);
+  /* Fondo general */
+  color: var(--color-texto);
+  /* Color base de texto */
+  line-height: 1.6;
+  /* Legibilidad */
 }
 
 ul {
-  list-style: none; /* Quita viñetas de listas */
+  list-style: none;
+  /* Quita viñetas de listas */
 }
 
 a {
-  text-decoration: none; /* Quita subrayado */
-  color: inherit; /* Hereda color del contenedor */
-  font-family: var(--fuente-principal); /* Fuente base */
+  text-decoration: none;
+  /* Quita subrayado */
+  color: inherit;
+  /* Hereda color del contenedor */
+  font-family: var(--fuente-principal);
+  /* Fuente base */
 }
 
 img {
-  max-width: 100%; /* Evita desbordes */
-  height: auto; /* Mantiene proporción */
-  display: block; /* Quita espacio inferior */
+  max-width: 100%;
+  /* Evita desbordes */
+  height: auto;
+  /* Mantiene proporción */
+  display: block;
+  /* Quita espacio inferior */
 }
 
 main {
-  margin: 0; /* Quita margen por defecto */
-  padding: 0; /* Quita padding por defecto */
-  width: 100%; /* Ocupa todo el ancho */
+  margin: 0;
+  /* Quita margen por defecto */
+  padding: 0;
+  /* Quita padding por defecto */
+  width: 100%;
+  /* Ocupa todo el ancho */
 }
 
 section {
-  padding: 40px 0; /* Espaciado vertical estándar */
-  margin-bottom: 0; /* Sin separación extra abajo */
-  scroll-margin-top: 110px; /* Compensa header fijo en scroll */
+  padding: 40px 0;
+  /* Espaciado vertical estándar */
+  margin-bottom: 0;
+  /* Sin separación extra abajo */
+  scroll-margin-top: 110px;
+  /* Compensa header fijo en scroll */
 }
 
 /* =========================
   TIPOGRAFÍA (jerarquía títulos)
 ========================= */
-h1, h2, h3 {
-  font-family: var(--fuente-titulos); /* Fuente de títulos */
-  color: var(--color-texto); /* Color de títulos */
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  /* Fuente de títulos */
+  color: var(--color-texto);
+  /* Color de títulos */
 }
 
 h1 {
-  font-size: 2.5rem; /* Tamaño de título principal */
+  font-size: 2.5rem;
+  /* Tamaño de título principal */
 }
 
+
 h2 {
-  font-size: 2.2rem; /* Tamaño de título de sección */
-  line-height: 1.2; /* Compacta el título */
-  margin-bottom: 10px; /* Separación inferior */
+  font-size: 2.2rem;
+  /* Tamaño de título de sección */
+  line-height: 1.2;
+  /* Compacta el título */
+  margin-bottom: 10px;
+  /* Separación inferior */
 }
 
 h2 span {
-  color: var(--color-secundario); /* Resalta palabra en h2 */
+  color: var(--color-secundario);
+  /* Resalta palabra en h2 */
 }
 
 h3 {
-  font-size: 1.5rem; /* Tamaño de subtítulo */
+  font-size: 1.5rem;
+  /* Tamaño de subtítulo */
 }
 
 section h2 {
-  text-align: center; /* Centra títulos en secciones */
-  margin-bottom: 1rem; /* Aire inferior */
+  text-align: center;
+  /* Centra títulos en secciones */
+  margin-bottom: 1rem;
+  /* Aire inferior */
 }
 
 section p {
-  max-width: 800px; /* Ancho cómodo de lectura */
-  margin: 0.5rem auto; /* Centrado con separación */
+  max-width: 800px;
+  /* Ancho cómodo de lectura */
+  margin: 0.5rem auto;
+  /* Centrado con separación */
 }
 
 /* =========================
    UTILIDADES / REUTILIZABLES
 ========================= */
 .separador {
-  width: 100%; /* Ocupa todo el ancho */
-  padding: 50px 0; /* Aire vertical */
-  background-color: var(--color-blanco); /* Fondo limpio */
-  display: flex; /* Permite centrar la línea */
-  justify-content: center; /* Centra la línea */
+  width: 100%;
+  /* Ocupa todo el ancho */
+  padding: 50px 0;
+  /* Aire vertical */
+  background-color: var(--color-blanco);
+  /* Fondo limpio */
+  display: flex;
+  /* Permite centrar la línea */
+  justify-content: center;
+  /* Centra la línea */
 }
 
 .separador::before {
-  content: ''; /* Dibuja el separador */
-  width: 120px; /* Largo de la línea */
-  height: 2px; /* Grosor de la línea */
-  background-color: var(--color-texto); /* Color de línea */
-  border-radius: 10px; /* Bordes suavizados */
-}
-
-.blog__subtitulo,
-.servicios__subtitulo {
-  color: var(--color-texto); /* Color texto */
-  font-size: 1rem; /* Tamaño subtítulo */
-  text-align: center; /* Centrado */
-  margin-bottom: 20px; /* Aire inferior */
-  display: block; /* Ocupa ancho completo */
-  max-width: 900px; /* Limita ancho */
-  margin-left: auto; /* Centra */
-  margin-right: auto; /* Centra */
+  content: '';
+  /* Dibuja el separador */
+  width: 120px;
+  /* Largo de la línea */
+  height: 2px;
+  /* Grosor de la línea */
+  background-color: var(--color-texto);
+  /* Color de línea */
+  border-radius: 10px;
+  /* Bordes suavizados */
 }
 
 .btn {
-  display: inline-block; /* Se comporta como botón */
-  padding: 10px 20px; /* Tamaño clickable */
-  border-radius: 4px; /* Bordes redondeados */
-  font-weight: bold; /* Destaca texto */
-  border: none; /* Sin borde */
-  cursor: pointer; /* Mano en hover */
-  transition: background-color 0.3s ease; /* Animación */
+  display: inline-block;
+  /* Se comporta como botón */
+  padding: 10px 20px;
+  /* Tamaño clickable */
+  border-radius: 4px;
+  /* Bordes redondeados */
+  font-weight: bold;
+  /* Destaca texto */
+  border: none;
+  /* Sin borde */
+  cursor: pointer;
+  /* Mano en hover */
+  transition: background-color 0.3s ease;
+  /* Animación */
 }
 
 .btn--primario {
-  background-color: var(--color-secundario); /* Fondo CTA */
-  color: var(--color-blanco); /* Texto blanco */
+  background-color: var(--color-secundario);
+  /* Fondo CTA */
+  color: var(--color-blanco);
+  /* Texto blanco */
 }
 
 .btn--primario:hover {
-  background-color: var(--color-principal); /* Hover oscuro */
+  background-color: var(--color-principal);
+  /* Hover oscuro */
+}
+
+.btn--secundario {
+  background-color: var(--color-fondo);
+  /* Fondo verde */
+  color: var(--color-blanco);
+  /* Texto blanco */
+}
+
+.btn--secundario:hover {
+  background-color: var(--color-secundario);
+  /* Hover naranja */
 }
 
 /* =========================
    ICONOS (FontAwesome)
 ========================= */
-.fa-envelope { color: #D44638; } /* Color ícono correo */
-.fa-instagram { color: #E1306C; } /* Color ícono Instagram */
-.fa-flickr { color: #0063dc; } /* Color ícono Flickr */
-.fa-tiktok { color: #000000; } /* Color ícono TikTok */
+.fa-envelope {
+  color: #D44638;
+}
+
+/* Color ícono correo */
+.fa-instagram {
+  color: #E1306C;
+}
+
+/* Color ícono Instagram */
+.fa-flickr {
+  color: #0063dc;
+}
+
+/* Color ícono Flickr */
+.fa-tiktok {
+  color: #000000;
+}
+
+/* Color ícono TikTok */
 
 .sobre-mi__redes i {
-  font-size: 30px; /* Tamaño íconos */
-  margin-right: 10px; /* Separación entre íconos */
-  transition: 0.25s ease; /* Animación */
+  font-size: 30px;
+  /* Tamaño íconos */
+  margin-right: 10px;
+  /* Separación entre íconos */
+  transition: 0.25s ease;
+  /* Animación */
 }
 
 .sobre-mi__redes a i:hover {
-  transform: scale(1.15); /* Agranda al hover */
-  opacity: 0.85; /* Baja opacidad */
+  transform: scale(1.15);
+  /* Agranda al hover */
+  opacity: 0.85;
+  /* Baja opacidad */
 }
 
 /* =========================
@@ -171,531 +255,730 @@ section p {
 ========================= */
 .servicios__tarjetas,
 .blog__tarjetas {
-  max-width: 1200px; /* Ancho máximo */
-  margin: 0 auto; /* Centrado */
-  display: grid; /* Grid de tarjetas */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
-  gap: 30px; /* Separación */
-  padding: 30px 0; /* Aire vertical */
+  max-width: 1200px;
+  /* Ancho máximo */
+  margin: 0 auto;
+  /* Centrado */
+  display: grid;
+  /* Grid de tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsivo */
+  gap: 30px;
+  /* Separación */
+  padding: 30px 0;
+  /* Aire vertical */
 }
 
 /* =========================
    HEADER
 ========================= */
 .header {
-  background-color: var(--color-blanco); /* Fondo header */
-  border-bottom: 1px solid var(--color-gris-suave); /* Línea inferior */
-  padding: 0.5rem 0; /* Aire vertical */
-  position: sticky; /* Se queda arriba al scroll */
-  top: 0; /* Pegado al tope */
-  z-index: 1000; /* Encima de todo */
+  background-color: var(--color-blanco);
+  /* Fondo header */
+  border-bottom: 1px solid var(--color-gris-suave);
+  /* Línea inferior */
+  padding: 0.5rem 0;
+  /* Aire vertical */
+  position: sticky;
+  /* Se queda arriba al scroll */
+  top: 0;
+  /* Pegado al tope */
+  z-index: 1000;
+  /* Encima de todo */
 }
 
 .header__contenedor {
-  max-width: 1200px; /* Ancho del header */
-  margin: 0 auto; /* Centrado */
-  padding: 0 1rem; /* Padding lateral */
-  display: flex; /* Logo + nav en fila */
-  align-items: center; /* Centra vertical */
-  justify-content: space-between; /* Separa extremos */
+  max-width: 1200px;
+  /* Ancho del header */
+  margin: 0 auto;
+  /* Centrado */
+  padding: 0 1rem;
+  /* Padding lateral */
+  display: flex;
+  /* Logo + nav en fila */
+  align-items: center;
+  /* Centra vertical */
+  justify-content: space-between;
+  /* Separa extremos */
 }
 
 .header__logo img {
-  width: 90px; /* Tamaño logo */
-  height: 90px; /* Tamaño logo */
-  object-fit: cover; /* Recorta sin deformar */
+  width: 90px;
+  /* Tamaño logo */
+  height: 90px;
+  /* Tamaño logo */
+  object-fit: cover;
+  /* Recorta sin deformar */
 }
 
 .header__navegacion ul {
-  display: flex; /* Links en fila */
-  gap: 2rem; /* Espacio entre links */
+  display: flex;
+  /* Links en fila */
+  gap: 2rem;
+  /* Espacio entre links */
 }
 
 .header__navegacion a {
-  font-size: 1rem; /* Tamaño link */
-  font-weight: 500; /* Peso medio */
-  color: var(--color-texto); /* Color base */
-  font-family: var(--fuente-titulos); /* Fuente títulos */
+  font-size: 1rem;
+  /* Tamaño link */
+  font-weight: 500;
+  /* Peso medio */
+  color: var(--color-texto);
+  /* Color base */
+  font-family: var(--fuente-titulos);
+  /* Fuente títulos */
 }
 
 .header__navegacion a:hover {
-  color: var(--color-principal); /* Color hover */
-  transition: color 0.3s ease; /* Animación hover */
+  color: var(--color-principal);
+  /* Color hover */
+  transition: color 0.3s ease;
+  /* Animación hover */
 }
 
 /* =========================
    HERO
 ========================= */
 .hero {
-  width: 100%; /* Ancho completo */
-  max-width: 100%; /* Evita overflow */
-  margin: 0; /* Sin márgenes */
-  padding: 0; /* Sin padding */
-  background-image: url('../img/sitio/banner-viajes.webp'); /* Fondo hero */
-  background-repeat: no-repeat; /* No repetir */
-  background-size: cover; /* Cubre el área */
-  background-position: center; /* Centra imagen */
-  height: 600px; /* Alto hero */
-  display: flex; /* Centrado */
-  align-items: center; /* Centra vertical */
-  justify-content: center; /* Centra horizontal */
+  width: 100%;
+  padding: 80px 0;
+  background-color: var(--color-blanco);
+  /* Fondo claro limpio */
 }
 
 .hero__contenedor {
-  background-color: rgba(0, 0, 0, 0.5); /* Overlay para legibilidad */
-  padding: 40px 60px; /* Aire interno */
-  border-radius: 15px; /* Bordes redondeados */
-  max-width: 1000px; /* Ancho máximo */
-  width: 90%; /* Responsivo */
-  min-height: 280px; /* Altura mínima */
-  text-align: center; /* Texto centrado */
-  display: flex; /* Centrado */
-  flex-direction: column; /* Apila contenido */
-  align-items: center; /* Centra horizontal */
-  justify-content: center; /* Centra vertical */
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
 
-.hero__texto .hero__etiqueta {
-  color: var(--color-blanco); /* Texto blanco */
-  font-family: var(--fuente-principal); /* Fuente base */
-  font-size: 1rem; /* Tamaño etiqueta */
-  letter-spacing: 2px; /* Tracking */
-  text-transform: uppercase; /* Mayúsculas */
-  margin-bottom: 1.5rem; /* Aire inferior */
+.hero__texto {
+  margin-bottom: 30px;
+  flex: 6;
+  justify-content: center;
 }
 
-.hero__texto a {
-  display: inline-block; /* Botón-enlace */
-  margin-top: 1rem; /* Aire superior */
-  padding: 10px 20px; /* Tamaño clickable */
-  background-color: var(--color-secundario); /* Fondo CTA */
-  color: var(--color-blanco); /* Texto blanco */
-  border-radius: 4px; /* Bordes */
-  font-weight: bold; /* Negrita */
-  font-size: 1rem; /* Tamaño texto */
+.hero__texto h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  color: var(--color-secundario);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.hero__texto a:hover {
-  background-color: var(--color-principal); /* Hover oscuro */
-  color: var(--color-blanco); /* Mantiene blanco */
-  transition: background-color 0.3s ease; /* Animación */
+.hero__etiqueta {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-texto);
+  margin-bottom: 30px;
+  flex: 6;
+  text-align: center;
 }
 
 .hero__botones {
-  display: flex; /* Botones en fila */
-  gap: 40px; /* Separación */
-  justify-content: center; /* Centrado */
-  flex-wrap: wrap; /* Salta línea si no cabe */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.hero__botones > * {
-  flex: 0 1 240px; /* Base 240px */
-  min-width: 120px; /* Mínimo */
-  max-width: 260px; /* Máximo */
-  padding: 10px 16px; /* Padding */
-  box-sizing: border-box; /* Cálculo estable */
+.hero__imagen {
+  flex: 4;
+  display: flex;
+  justify-content: center;
 }
 
-/* =========================
-   HERO SECUNDARIO
-========================= */
-.hero--secundario {
-  width: 100%; /* Ancho completo */
-  height: 320px; /* Alto banner */
-  min-height: 320px; /* Alto mínimo */
-  background-image: url("../img/sitio/banner-viajes.webp"); /* Fondo */
-  background-size: cover; /* Cubre */
-  background-position: center; /* Centra */
-  display: flex; /* Centrado */
-  align-items: center; /* Centra vertical */
-  position: relative; /* Para overlay */
-}
-
-.hero--secundario::before {
-  content: ""; /* Crea overlay */
-  position: absolute; /* Cubre hero */
-  inset: 0; /* Top/right/bottom/left 0 */
-  background: rgba(0, 0, 0, 0.45); /* Oscurece */
-}
-
-.hero--secundario .hero__contenedor {
-  position: relative; /* Sobre overlay */
-  background: transparent; /* Sin caja negra */
-  display: flex; /* Centrado */
-  flex-direction: column; /* Apila */
-  justify-content: center; /* Centra vertical */
-  align-items: center; /* Centra horizontal */
-  text-align: center; /* Texto centrado */
-  max-width: 600px; /* Limita ancho */
-  margin: 0 auto; /* Centrado */
-  border-radius: 10px; /* Bordes */
-}
-
-/* Texto del hero (segunda definición, se mantiene) */
-.hero__texto h1 {
-  font-family: "Playfair Display", serif; /* Fuente títulos */
-  font-size: 2.4rem; /* Tamaño hero secundario */
-  color: #ffffff; /* Blanco */
-  margin-bottom: 10px; /* Aire inferior */
-}
-
-/* Etiqueta del hero (segunda definición, se mantiene) */
-.hero__etiqueta {
-  font-family: "Inter", sans-serif; /* Fuente base */
-  font-size: 1.1rem; /* Tamaño etiqueta */
-  color: #f28c28; /* Naranjo */
-  font-weight: 500; /* Peso medio */
+.hero__imagen img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
 }
 
 /* =========================
    SOBRE MÍ
 ========================= */
 .sobre-mi {
-  padding: 60px 20px; /* Aire sección */
+  padding: 60px 20px;
+  /* Aire sección */
 }
 
 .sobre-mi__contenedor {
-  max-width: 1000px; /* Ancho máximo */
-  margin: 0 auto; /* Centrado */
-  display: flex; /* Layout en fila */
-  flex-direction: row; /* Mantiene fila */
-  justify-content: space-between; /* Separa columnas */
-  gap: 100px; /* Separación */
-  align-items: center; /* Centra vertical */
-  padding-top: 30px; /* Aire superior */
+  max-width: 1000px;
+  /* Ancho máximo */
+  margin: 0 auto;
+  /* Centrado */
+  display: flex;
+  /* Layout en fila */
+  flex-direction: row;
+  /* Mantiene fila */
+  justify-content: space-between;
+  /* Separa columnas */
+  gap: 100px;
+  /* Separación */
+  align-items: center;
+  /* Centra vertical */
+  padding-top: 30px;
+  /* Aire superior */
 }
 
 .sobre-mi h2 {
-  margin-bottom: 2rem; /* Aire inferior */
-  color: var(--color-texto); /* Color texto */
-  text-align: center; /* Centra título */
+  margin-bottom: 2rem;
+  /* Aire inferior */
+  color: var(--color-texto);
+  /* Color texto */
+  text-align: center;
+  /* Centra título */
 }
 
 .sobre-mi p {
-  font-size: 1.1rem; /* Tamaño texto */
-  line-height: 1.5; /* Legibilidad */
-  color: var(--color-texto); /* Color */
-  text-align: center; /* Centrado */
+  font-size: 1.1rem;
+  /* Tamaño texto */
+  line-height: 1.5;
+  /* Legibilidad */
+  color: var(--color-texto);
+  /* Color */
+  text-align: center;
+  /* Centrado */
 }
 
 .sobre-mi__imagen img {
-  border-radius: 15px; /* Bordes redondeados */
-  width: 100%; /* Responsivo */
-  max-width: 600px; /* Máximo */
-  height: auto; /* Proporción */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  width: 100%;
+  /* Responsivo */
+  max-width: 600px;
+  /* Máximo */
+  height: auto;
+  /* Proporción */
 }
 
 .sobre-mi__redes {
-  margin-top: 20px; /* Aire superior */
-  text-align: center; /* Centrado */
+  margin-top: 20px;
+  /* Aire superior */
+  text-align: center;
+  /* Centrado */
 }
 
 .sobre-mi__redes h3 {
-  font-size: 1.2rem; /* Tamaño */
-  margin: 50px 0 20px; /* Aire */
-  color: var(--color-texto); /* Color */
+  font-size: 1.2rem;
+  /* Tamaño */
+  margin: 50px 0 20px;
+  /* Aire */
+  color: var(--color-texto);
+  /* Color */
 }
 
 .sobre-mi__redes nav {
-  display: flex; /* Íconos en fila */
-  justify-content: center; /* Centrado */
-  gap: 20px; /* Separación */
+  display: flex;
+  /* Íconos en fila */
+  justify-content: center;
+  /* Centrado */
+  gap: 20px;
+  /* Separación */
 }
 
 .sobre-mi__redes nav a {
-  transition: transform 0.3s ease; /* Animación */
+  transition: transform 0.3s ease;
+  /* Animación */
 }
 
 .sobre-mi__redes nav a:hover {
-  transform: scale(1.1); /* Zoom leve */
+  transform: scale(1.1);
+  /* Zoom leve */
 }
 
 /* =========================
    SERVICIOS
 ========================= */
 .servicios {
-  padding: 60px 20px; /* Aire sección */
-  text-align: center; /* Centra texto */
-  max-width: 900px; /* Ancho */
-  margin: 0 auto; /* Centrado */
+  padding: 60px 20px;
+  /* Aire sección */
+  text-align: center;
+  /* Centra texto */
+  max-width: 900px;
+  /* Ancho */
+  margin: 0 auto;
+  /* Centrado */
 }
 
 .servicios h2 {
-  margin-bottom: 30px; /* Aire inferior */
-  color: var(--color-texto); /* Color */
-  text-align: center; /* Centrado */
+  margin-bottom: 30px;
+  /* Aire inferior */
+  color: var(--color-texto);
+  /* Color */
+  text-align: center;
+  /* Centrado */
+}
+
+.servicios__subtitulo {
+  color: var(--color-texto);
+  /* Color texto */
+  font-size: 1rem;
+  /* Tamaño subtítulo */
+  text-align: center;
+  /* Centrado */
+  margin-bottom: 20px;
+  /* Aire inferior */
+  display: block;
+  /* Ocupa ancho completo */
+  max-width: 900px;
+  /* Limita ancho */
+  margin-left: auto;
+  /* Centra */
+  margin-right: auto;
+  /* Centra */
 }
 
 .servicios__item {
-  background-color: var(--color-blanco); /* Fondo tarjeta */
-  border: 1.5px solid var(--color-gris-suave); /* Borde suave */
-  border-radius: 10px; /* Bordes */
-  padding: 20px; /* Aire interno */
-  text-align: center; /* Contenido centrado */
-  min-height: 600px; /* Altura base */
-  display: flex; /* Layout vertical */
-  flex-direction: column; /* Apila */
+  background-color: var(--color-blanco);
+  /* Fondo tarjeta */
+  border: 1.5px solid var(--color-gris-suave);
+  /* Borde suave */
+  border-radius: 10px;
+  /* Bordes */
+  padding: 20px;
+  /* Aire interno */
+  text-align: center;
+  /* Contenido centrado */
+  min-height: 600px;
+  /* Altura base */
+  display: flex;
+  /* Layout vertical */
+  flex-direction: column;
+  /* Apila */
 }
 
 .servicios__item:hover {
-  transform: translateY(-5px); /* Eleva tarjeta */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra */
+  transform: translateY(-5px);
+  /* Eleva tarjeta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* Sombra */
 }
 
 .servicios__resumen {
-  font-size: 1.05rem; /* Tamaño */
-  color: var(--color-texto); /* Color */
-  line-height: 1.6; /* Legibilidad */
-  margin-top: 10px; /* Aire superior */
-  margin-bottom: 30px; /* Aire inferior */
+  font-size: 1.05rem;
+  /* Tamaño */
+  color: var(--color-texto);
+  /* Color */
+  line-height: 1.6;
+  /* Legibilidad */
+  margin-top: 10px;
+  /* Aire superior */
+  margin-bottom: 30px;
+  /* Aire inferior */
 }
 
 .servicios__pack {
-  font-size: 1.2rem; /* Tamaño */
-  color: var(--color-principal); /* Color marca */
-  font-weight: 600; /* Peso */
-  margin: 30px 0 15px; /* Aire */
-  font-family: var(--fuente-principal); /* Fuente */
-  min-height: 3em; /* Alinea alturas */
+  font-size: 1.2rem;
+  /* Tamaño */
+  color: var(--color-principal);
+  /* Color marca */
+  font-weight: 600;
+  /* Peso */
+  margin: 30px 0 15px;
+  /* Aire */
+  font-family: var(--fuente-principal);
+  /* Fuente */
+  min-height: 3em;
+  /* Alinea alturas */
 }
 
 .servicios__beneficios {
-  text-align: left; /* Lista alineada */
-  margin: 15px 0; /* Aire */
-  padding-left: 20px; /* Sangría */
-  list-style: disc; /* Viñetas */
-  flex-grow: 1; /* Empuja botón abajo */
+  text-align: left;
+  /* Lista alineada */
+  margin: 15px 0;
+  /* Aire */
+  padding-left: 20px;
+  /* Sangría */
+  list-style: disc;
+  /* Viñetas */
+  flex-grow: 1;
+  /* Empuja botón abajo */
 }
 
 .servicios__beneficios li {
-  margin-bottom: 10px; /* Aire */
-  font-size: 0.95rem; /* Tamaño */
-  line-height: 1.5; /* Legibilidad */
-  color: var(--color-texto); /* Color */
+  margin-bottom: 10px;
+  /* Aire */
+  font-size: 0.95rem;
+  /* Tamaño */
+  line-height: 1.5;
+  /* Legibilidad */
+  color: var(--color-texto);
+  /* Color */
 }
 
 .servicios__precio {
-  font-size: 1.1rem; /* Tamaño */
-  color: var(--color-texto); /* Color */
-  margin: 40px 0 5px; /* Aire */
-  line-height: 1.6; /* Legibilidad */
+  font-size: 1.1rem;
+  /* Tamaño */
+  color: var(--color-texto);
+  /* Color */
+  margin: 40px 0 5px;
+  /* Aire */
+  line-height: 1.6;
+  /* Legibilidad */
 }
 
 .servicios__precio strong {
-  color: var(--color-secundario); /* Resalta precio */
-  font-weight: 700; /* Más fuerte */
+  color: var(--color-secundario);
+  /* Resalta precio */
+  font-weight: 700;
+  /* Más fuerte */
 }
 
 .servicios__texto {
-  font-size: 1.1rem; /* Tamaño */
-  color: var(--color-texto); /* Color */
-  margin: 20px 0; /* Aire */
-  text-align: center; /* Centrado */
-  flex-grow: 1; /* Empuja botón abajo */
+  font-size: 1.1rem;
+  /* Tamaño */
+  color: var(--color-texto);
+  /* Color */
+  margin: 20px 0;
+  /* Aire */
+  text-align: center;
+  /* Centrado */
+  flex-grow: 1;
+  /* Empuja botón abajo */
 }
 
 .servicios__item .btn {
-  margin-top: 30px; /* Aire superior */
-  margin-bottom: 30px; /* Aire inferior */
-  max-width: 200px; /* Limita ancho */
-  width: 100%; /* Responsivo */
-  margin-left: auto; /* Centrado */
-  margin-right: auto; /* Centrado */
-  padding: 10px 20px; /* Tamaño */
+  margin-top: 30px;
+  /* Aire superior */
+  margin-bottom: 30px;
+  /* Aire inferior */
+  max-width: 200px;
+  /* Limita ancho */
+  width: 100%;
+  /* Responsivo */
+  margin-left: auto;
+  /* Centrado */
+  margin-right: auto;
+  /* Centrado */
+  padding: 10px 20px;
+  /* Tamaño */
 }
 
 /* =========================
    CONTACTO DEL REY
 ========================= */
 .contacto {
-  display: flex; /* Dos columnas */
-  align-items: center; /* Centra vertical */
-  justify-content: space-between; /* Separa */
-  padding: 60px 20px; /* Aire */
-  max-width: 1100px; /* Ancho */
-  background-color: var(--color-fondo); /* Fondo suave */
-  border-radius: 18px; /* Bordes */
-  margin: 0 auto; /* Centrado */
+  display: flex;
+  /* Dos columnas */
+  align-items: center;
+  /* Centra vertical */
+  justify-content: space-between;
+  /* Separa */
+  padding: 60px 20px;
+  /* Aire */
+  max-width: 1100px;
+  /* Ancho */
+  background-color: var(--color-fondo);
+  /* Fondo suave */
+  border-radius: 18px;
+  /* Bordes */
+  margin: 0 auto;
+  /* Centrado */
 }
 
 .contacto__columna {
-  flex: 1; /* Columna flexible */
+  flex: 1;
+  /* Columna flexible */
 }
 
 .contacto__texto h2 {
-  margin-bottom: 50px; /* Aire */
+  margin-bottom: 50px;
+  /* Aire */
 }
 
 .contacto__texto h2 span {
-  color: #FF7A1A; /* Destaca palabra */
+  color: #FF7A1A;
+  /* Destaca palabra */
 }
 
 .contacto__form fieldset {
-  border: none; /* Quita borde */
-  padding: 0; /* Quita padding */
+  border: none;
+  /* Quita borde */
+  padding: 0;
+  /* Quita padding */
 }
 
 .contacto__form legend {
-  font-weight: 600; /* Destaca */
-  margin-bottom: 15px; /* Aire */
-  color: var(--color-texto); /* Color */
-  font-size: 20px; /* Tamaño */
-  text-align: center; /* Centrado */
+  font-weight: 600;
+  /* Destaca */
+  margin-bottom: 15px;
+  /* Aire */
+  color: var(--color-texto);
+  /* Color */
+  font-size: 20px;
+  /* Tamaño */
+  text-align: center;
+  /* Centrado */
 }
 
 .contacto__campo {
-  margin-bottom: 12px; /* Separación */
-  display: flex; /* Layout vertical */
-  flex-direction: column; /* Apila */
-  align-items: center; /* Centra */
+  margin-bottom: 12px;
+  /* Separación */
+  display: flex;
+  /* Layout vertical */
+  flex-direction: column;
+  /* Apila */
+  align-items: center;
+  /* Centra */
 }
 
 .contacto__campo label {
-  display: block; /* Ocupa línea */
-  width: 100%; /* Ancho completo */
-  font-size: 0.9rem; /* Tamaño */
-  margin-bottom: 4px; /* Aire */
-  font-weight: 600; /* Destaca */
-  color: var(--color-texto); /* Color */
-  text-align: center; /* Centrado */
-  margin-left: 0; /* Resetea */
+  display: block;
+  /* Ocupa línea */
+  width: 100%;
+  /* Ancho completo */
+  font-size: 0.9rem;
+  /* Tamaño */
+  margin-bottom: 4px;
+  /* Aire */
+  font-weight: 600;
+  /* Destaca */
+  color: var(--color-texto);
+  /* Color */
+  text-align: center;
+  /* Centrado */
+  margin-left: 0;
+  /* Resetea */
 }
 
 .contacto__campo input,
 .contacto__campo textarea {
-  width: 60%; /* Ancho del campo */
-  padding: 10px 10px; /* Aire */
-  margin-left: 0; /* Resetea */
-  border-radius: 10px; /* Bordes */
-  border: 1px solid #C3D7D2; /* Borde suave */
-  font-family: inherit; /* Hereda fuente */
-  font-size: 0.95rem; /* Tamaño */
-  background-color: #ffffff; /* Fondo */
-  text-align: center; /* Centrado */
+  width: 60%;
+  /* Ancho del campo */
+  padding: 10px 10px;
+  /* Aire */
+  margin-left: 0;
+  /* Resetea */
+  border-radius: 10px;
+  /* Bordes */
+  border: 1px solid #C3D7D2;
+  /* Borde suave */
+  font-family: inherit;
+  /* Hereda fuente */
+  font-size: 0.95rem;
+  /* Tamaño */
+  background-color: #ffffff;
+  /* Fondo */
+  text-align: center;
+  /* Centrado */
 }
 
 .contacto__campo input:focus,
 .contacto__campo textarea:focus {
-  outline: none; /* Quita outline */
-  border-color: #1F6D63; /* Enfatiza borde */
-  box-shadow: 0 0 0 2px rgba(31, 109, 99, 0.15); /* Glow suave */
+  outline: none;
+  /* Quita outline */
+  border-color: #1F6D63;
+  /* Enfatiza borde */
+  box-shadow: 0 0 0 2px rgba(31, 109, 99, 0.15);
+  /* Glow suave */
 }
 
 .btn--margen {
-  margin: 20px auto 0; /* Centra y separa */
-  display: block; /* Ocupa línea */
+  margin: 20px auto 0;
+  /* Centra y separa */
+  display: block;
+  /* Ocupa línea */
 }
 
 .contacto__imagen {
-  display: flex; /* Columna */
-  flex-direction: column; /* Apila */
-  align-items: center; /* Centra */
-  gap: 18px; /* Separación */
+  display: flex;
+  /* Columna */
+  flex-direction: column;
+  /* Apila */
+  align-items: center;
+  /* Centra */
+  gap: 18px;
+  /* Separación */
 }
 
 .contacto__imagen img {
-  width: 300px; /* Tamaño foto */
-  height: 300px; /* Tamaño foto */
-  border-radius: 50%; /* Imagen circular */
-  margin-bottom: 20px; /* Aire */
-  object-fit: cover; /* Recorta sin deformar */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra */
+  width: 300px;
+  /* Tamaño foto */
+  height: 300px;
+  /* Tamaño foto */
+  border-radius: 50%;
+  /* Imagen circular */
+  margin-bottom: 20px;
+  /* Aire */
+  object-fit: cover;
+  /* Recorta sin deformar */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* Sombra */
 }
 
 /* =========================
    FOOTER
 ========================= */
 .footer {
-  display: flex; /* Centra contenido */
-  justify-content: center; /* Centrado */
-  align-items: center; /* Centrado */
+  display: flex;
+  /* Centra contenido */
+  justify-content: center;
+  /* Centrado */
+  align-items: center;
+  /* Centrado */
 }
 
-.footer__logo-imagen{
-  display: block; /* Bloque centrable */
-  margin: 0 auto; /* Centra */
-  margin-bottom: 20px; /* Aire */
+.footer__logo-imagen {
+  display: block;
+  /* Bloque centrable */
+  margin: 0 auto;
+  /* Centra */
+  margin-bottom: 20px;
+  /* Aire */
 }
 
-.footer__parrafo{
-  display: flex; /* Centra */
-  justify-content: center; /* Centra */
-  margin: 0 auto; /* Centra */
-  font-weight: bold; /* Destaca */
-  font-size: 1.2rem; /* Tamaño */
-  margin-bottom: 0.5rem; /* (se mantiene) */
-  color: var(--color-secundario); /* Color acento */
+.footer__parrafo {
+  display: flex;
+  /* Centra */
+  justify-content: center;
+  /* Centra */
+  margin: 0 auto;
+  /* Centra */
+  font-weight: bold;
+  /* Destaca */
+  font-size: 1.2rem;
+  /* Tamaño */
+  margin-bottom: 0.5rem;
+  /* (se mantiene) */
+  color: var(--color-secundario);
+  /* Color acento */
 }
 
-.footer__redes{
-  display: flex; /* Íconos en fila */
-  justify-content: center; /* Centra */
-  align-items: center; /* Centra */
-  gap: 10px; /* Separación */
-  margin-bottom: 10px; /* Aire */
-  font-size: 30px; /* Tamaño íconos */
+.footer__redes {
+  display: flex;
+  /* Íconos en fila */
+  justify-content: center;
+  /* Centra */
+  align-items: center;
+  /* Centra */
+  gap: 10px;
+  /* Separación */
+  margin-bottom: 10px;
+  /* Aire */
+  font-size: 30px;
+  /* Tamaño íconos */
 }
 
 .footer__logo-texto {
-  margin-bottom: 10px; /* Aire */
-  text-align: center; /* Centrado */
-  font-size: 0.9rem; /* Tamaño */
-  color: var(--color-texto); /* Color */
+  margin-bottom: 10px;
+  /* Aire */
+  text-align: center;
+  /* Centrado */
+  font-size: 0.9rem;
+  /* Tamaño */
+  color: var(--color-texto);
+  /* Color */
 }
 
 /* =========================
    BLOG (tarjetas)
 ========================= */
 .blog__resumen {
-  text-align: center; /* Centra texto */
+  text-align: center;
+  /* Centra texto */
+}
+
+.blog__subtitulo {
+  color: var(--color-texto);
+  /* Color texto */
+  font-size: 1rem;
+  /* Tamaño subtítulo */
+  text-align: center;
+  /* Centrado */
+  margin-bottom: 20px;
+  /* Aire inferior */
+  display: block;
+  /* Ocupa ancho completo */
+  max-width: 900px;
+  /* Limita ancho */
+  margin-left: auto;
+  /* Centra */
+  margin-right: auto;
+  /* Centra */
 }
 
 .blog__post {
-  background-color: var(--color-blanco); /* Fondo tarjeta */
-  border: 1.5px solid var(--color-gris-suave); /* Borde */
-  border-radius: 10px; /* Bordes */
-  padding: 20px; /* Aire interno */
-  text-align: center; /* Centra contenido */
-  display: grid; /* Layout */
-  grid-template-rows: auto auto auto 1fr auto; /* Estructura */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación */
+  background-color: var(--color-blanco);
+  /* Fondo tarjeta */
+  border: 1.5px solid var(--color-gris-suave);
+  /* Borde */
+  border-radius: 10px;
+  /* Bordes */
+  padding: 20px;
+  /* Aire interno */
+  text-align: center;
+  /* Centra contenido */
+  display: grid;
+  /* Layout */
+  grid-template-rows: auto auto auto 1fr auto;
+  /* Estructura */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animación */
 }
 
 .blog__post:hover {
-  transform: translateY(-5px); /* Eleva */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra */
+  transform: translateY(-5px);
+  /* Eleva */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* Sombra */
 }
 
 .blog__imagen {
-  width: 100%; /* Ancho completo */
-  height: 200px; /* Alto fijo */
-  object-fit: cover; /* Recorta sin deformar */
-  border-radius: 8px; /* Bordes */
-  margin-bottom: 15px; /* Aire */
+  width: 100%;
+  /* Ancho completo */
+  height: 200px;
+  /* Alto fijo */
+  object-fit: cover;
+  /* Recorta sin deformar */
+  border-radius: 8px;
+  /* Bordes */
+  margin-bottom: 15px;
+  /* Aire */
 }
 
 .blog__post h3 {
-  font-size: 1.3rem; /* Tamaño */
-  margin-bottom: 10px; /* Aire */
-  color: var(--color-texto); /* Color */
-  font-family: var(--fuente-titulos); /* Fuente */
-  line-height: 1.3; /* Legibilidad */
+  font-size: 1.3rem;
+  /* Tamaño */
+  margin-bottom: 10px;
+  /* Aire */
+  color: var(--color-texto);
+  /* Color */
+  font-family: var(--fuente-titulos);
+  /* Fuente */
+  line-height: 1.3;
+  /* Legibilidad */
 }
 
 .blog__post p {
-  font-size: 0.95rem; /* Tamaño */
-  line-height: 1.6; /* Legibilidad */
-  color: var(--color-texto); /* Color */
-  margin-bottom: 15px; /* Aire */
-  text-align: center; /* Centrado */
+  font-size: 0.95rem;
+  /* Tamaño */
+  line-height: 1.6;
+  /* Legibilidad */
+  color: var(--color-texto);
+  /* Color */
+  margin-bottom: 15px;
+  /* Aire */
+  text-align: center;
+  /* Centrado */
 }
 
 .blog__post .btn {
-  margin-top: 20px; /* Aire */
-  max-width: 200px; /* Limita ancho */
-  width: 100%; /* Responsivo */
-  margin-left: auto; /* Centrado */
-  margin-right: auto; /* Centrado */
+  margin-top: 20px;
+  /* Aire */
+  max-width: 200px;
+  /* Limita ancho */
+  width: 100%;
+  /* Responsivo */
+  margin-left: auto;
+  /* Centrado */
+  margin-right: auto;
+  /* Centrado */
 }
 
 /* =========================
@@ -703,12 +986,16 @@ section p {
 ========================= */
 @media (max-width: 768px) {
   .contacto {
-    flex-direction: column; /* Apila columnas */
-    padding: 40px 16px; /* Reduce padding */
+    flex-direction: column;
+    /* Apila columnas */
+    padding: 40px 16px;
+    /* Reduce padding */
   }
 
   .contacto__imagen img {
-    width: 220px; /* Reduce foto */
-    height: 220px; /* Reduce foto */
+    width: 220px;
+    /* Reduce foto */
+    height: 220px;
+    /* Reduce foto */
   }
 }
