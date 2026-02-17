@@ -116,9 +116,10 @@ h2 {
   /* Separación inferior */
 }
 
-h2 span {
+h2 span,
+h3 span {
   color: var(--color-secundario);
-  /* Resalta palabra en h2 */
+  /* Resalta palabra en h2 y h3 */
 }
 
 h3 {
@@ -206,7 +207,7 @@ section p {
 }
 
 .btn--secundario:hover {
-  background-color: var(--color-secundario);
+  background-color: var(--color-principal);
   /* Hover naranja */
 }
 
@@ -214,22 +215,22 @@ section p {
    ICONOS (FontAwesome)
 ========================= */
 .fa-envelope {
-  color: #D44638;
+  color:var(--color-principal);
 }
 
 /* Color ícono correo */
 .fa-instagram {
-  color: #E1306C;
+  color: var(--color-principal);
 }
 
 /* Color ícono Instagram */
 .fa-flickr {
-  color: #0063dc;
+  color: var(--color-principal);
 }
 
 /* Color ícono Flickr */
 .fa-tiktok {
-  color: #000000;
+  color: var(--color-principal);
 }
 
 /* Color ícono TikTok */
@@ -244,11 +245,11 @@ section p {
 }
 
 .sobre-mi__redes a i:hover {
-  transform: scale(1.15);
-  /* Agranda al hover */
-  opacity: 0.85;
-  /* Baja opacidad */
+color: var(--color-secundario);
+  transform: translateY(-0.5px);
 }
+
+
 
 /* =========================
    TARJETAS / GRIDS (contenedores)
@@ -350,7 +351,6 @@ section p {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -358,16 +358,14 @@ section p {
 }
 
 .hero__texto {
-  margin-bottom: 30px;
   flex: 6;
   justify-content: center;
 }
-
 .hero__texto h1 {
   font-family: "Playfair Display", serif;
   font-size: 3.5rem;
   color: var(--color-secundario);
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem; /* 24px aprox */
   text-align: center;
 }
 
@@ -375,14 +373,13 @@ section p {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: var(--color-texto);
-  margin-bottom: 30px;
-  flex: 6;
+  margin-bottom: 2rem; /* 32px */
   text-align: center;
 }
 
 .hero__botones {
   display: flex;
-  gap: 20px;
+  gap: 1.2rem; /* más armónico que 20px */
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -680,6 +677,7 @@ section p {
   /* Bordes */
   margin: 0 auto;
   /* Centrado */
+  
 }
 
 .contacto__columna {
@@ -846,7 +844,7 @@ section p {
   /* Tamaño */
   margin-bottom: 0.5rem;
   /* (se mantiene) */
-  color: var(--color-secundario);
+  color: var(--color-texto);
   /* Color acento */
 }
 
@@ -863,6 +861,16 @@ section p {
   /* Aire */
   font-size: 30px;
   /* Tamaño íconos */
+}
+
+.footer__redes i:hover {
+  color: var(--color-principal);
+  transform: translateY(-1px);
+}
+
+.footer__redes i {
+  color: var(--color-secundario);
+  /* Color naranja para iconos del footer */
 }
 
 .footer__logo-texto {
