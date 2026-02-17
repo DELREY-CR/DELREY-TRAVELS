@@ -215,7 +215,7 @@ section p {
    ICONOS (FontAwesome)
 ========================= */
 .fa-envelope {
-  color:var(--color-principal);
+  color: var(--color-principal);
 }
 
 /* Color ícono correo */
@@ -245,7 +245,7 @@ section p {
 }
 
 .sobre-mi__redes a i:hover {
-color: var(--color-secundario);
+  color: var(--color-secundario);
   transform: translateY(-0.5px);
 }
 
@@ -321,20 +321,14 @@ color: var(--color-secundario);
 
 .header__navegacion a {
   font-size: 1rem;
-  /* Tamaño link */
-  font-weight: 500;
-  /* Peso medio */
+  font-weight: 600;
   color: var(--color-texto);
-  /* Color base */
   font-family: var(--fuente-titulos);
-  /* Fuente títulos */
 }
 
 .header__navegacion a:hover {
-  color: var(--color-principal);
+  color: var(--color-secundario);
   /* Color hover */
-  transition: color 0.3s ease;
-  /* Animación hover */
 }
 
 /* =========================
@@ -361,11 +355,13 @@ color: var(--color-secundario);
   flex: 6;
   justify-content: center;
 }
+
 .hero__texto h1 {
   font-family: "Playfair Display", serif;
   font-size: 3.5rem;
   color: var(--color-secundario);
-  margin-bottom: 1.5rem; /* 24px aprox */
+  margin-bottom: 1.5rem;
+  /* 24px aprox */
   text-align: center;
 }
 
@@ -373,13 +369,15 @@ color: var(--color-secundario);
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: var(--color-texto);
-  margin-bottom: 2rem; /* 32px */
+  margin-bottom: 2rem;
+  /* 32px */
   text-align: center;
 }
 
 .hero__botones {
   display: flex;
-  gap: 1.2rem; /* más armónico que 20px */
+  gap: 1.2rem;
+  /* más armónico que 20px */
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -677,7 +675,7 @@ color: var(--color-secundario);
   /* Bordes */
   margin: 0 auto;
   /* Centrado */
-  
+
 }
 
 .contacto__columna {
