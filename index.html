@@ -41,28 +41,43 @@
       </nav>
   </header>
 
- 
- <!-- HERO / PORTADA -->
-<main id="inicio">
-  <section class="hero">
-    <div class="hero__overlay"></div>
 
-    <div class="hero__contenedor">
-      <div class="hero__texto">
-        <h1>Planifica con estrategia y viaja con confianza.</h1>
+  <!-- HERO / PORTADA -->
+  <main id="inicio">
+ <section class="hero">
 
-        <h2 class="hero__etiqueta">
-         Asesoría estratégica • Itinerarios personalizados • Experiencias bien organizadas
-        </h2>
+  <!-- Imagen principal (responsive: móvil vs desktop) -->
+  <picture class="hero__picture">
+    <source srcset="../img/sitio/viajero-banner-mobile.webp" media="(max-width: 768px)">
+    <img
+      src="../img/sitio/viajero-banner.webp"
+      alt="Planifica con estrategia y viaja con confianza"
+      class="hero__img"
+      loading="eager"
+      fetchpriority="high">
+  </picture>
 
-        <div class="hero__botones">
-          <a class="btn btn--primario" href="servicios.html">Diseñar mi viaje</a>
-          <a class="btn btn--secundario" href="blog.html#ultimas-publicaciones">Explorar el blog</a>
-        </div>
+  <!-- Overlay oscuro -->
+  <div class="hero__overlay"></div>
+
+  <!-- Contenido -->
+  <div class="hero__contenedor">
+    <div class="hero__texto">
+      <h1>Planifica con estrategia y viaja con confianza.</h1>
+
+      <h2 class="hero__etiqueta">
+        Asesoría estratégica • Itinerarios personalizados • Experiencias bien organizadas
+      </h2>
+
+      <div class="hero__botones">
+        <a class="btn btn--primario" href="servicios.html">Diseñar mi viaje</a>
+        <a class="btn btn--secundario" href="blog.html#ultimas-publicaciones">Explorar el blog</a>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+
+</section>
+
 
 
     <div class="separador"></div>
