@@ -334,11 +334,20 @@ section p {
 /* =========================
    HERO
 ========================= */
+
 .hero {
   width: 100%;
-  padding: 80px 0;
-  background-color: var(--color-blanco);
-  /* Fondo claro limpio */
+  height: 95vh;
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../img/sitio/viajero-banner.webp");
+
+  background-size: cover;
+  background-position: 20% top; /* Desktop */
+  background-repeat: no-repeat;
 }
 
 .hero__contenedor {
@@ -346,52 +355,70 @@ section p {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  justify-content: flex-end;
 }
 
 .hero__texto {
-  flex: 6;
-  justify-content: center;
+  max-width: 550px;
+  color: var(--color-blanco);
+  text-align: center;
 }
 
 .hero__texto h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--fuente-titulos);
   font-size: 3.5rem;
-  color: var(--color-secundario);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: var(--color-blanco);
   margin-bottom: 1.5rem;
-  /* 24px aprox */
-  text-align: center;
 }
 
 .hero__etiqueta {
-  font-family: "Inter", sans-serif;
+  font-family: var(--fuente-principal);
   font-size: 1.1rem;
-  color: var(--color-texto);
   margin-bottom: 2rem;
-  /* 32px */
-  text-align: center;
+  opacity: 0.9;
+  color: var(--color-blanco);
 }
 
 .hero__botones {
   display: flex;
   gap: 1.2rem;
-  /* más armónico que 20px */
-  justify-content: center;
   flex-wrap: wrap;
-}
-
-.hero__imagen {
-  flex: 4;
-  display: flex;
   justify-content: center;
 }
 
-.hero__imagen img {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
+/* =========================
+   HERO MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 85vh;
+    background-position: center top;
+  }
+
+  .hero__contenedor {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__texto {
+    max-width: 100%;
+  }
+
+  .hero__texto h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero__etiqueta {
+    font-size: 1rem;
+  }
+
+  .hero__botones {
+    justify-content: center;
+  }
 }
 
 /* =========================
@@ -619,7 +646,7 @@ section p {
 }
 
 .servicios__precio strong {
-  color: var(--color-texto);
+  color: var(--color-);
   /* Resalta precio */
   font-weight: 700;
   /* Más fuerte */
