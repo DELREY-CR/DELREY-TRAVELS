@@ -2,7 +2,7 @@
    VARIABLES DE COLOR Y TIPOGRAFÍA
 ========================= */
 :root {
-  --color-fondo: #2a7e8630;
+  --color-fondo: #3b6e6930;
   /* Fondo suave/transparente */
   --color-texto: #1F3A37;
   /* Color base de texto */
@@ -619,7 +619,7 @@ section p {
 }
 
 .servicios__precio strong {
-  color: var(--color-secundario);
+  color: var(--color-texto);
   /* Resalta precio */
   font-weight: 700;
   /* Más fuerte */
@@ -654,6 +654,34 @@ section p {
   padding: 10px 20px;
   /* Tamaño */
 }
+
+.servicios__media {
+  width: 100%;
+  height: 220px;                 /* ajusta a tu gusto */
+  border-radius: 14px;
+  background: var(--color-principal);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+  margin-bottom: 1rem;
+}
+
+/* iconos */
+.servicios__iconos {
+  display: flex;
+  gap: 22px;
+  font-size: 2.2rem;
+  color: var(--color-blanco);
+  opacity: 0.95;
+}
+
+/* hover opcional, elegante */
+.servicios__item:hover .servicios__media {
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+  transition: 0.25s ease;
+}
+
 
 /* =========================
    CONTACTO DEL REY
