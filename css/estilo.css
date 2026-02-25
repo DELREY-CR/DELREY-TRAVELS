@@ -515,6 +515,26 @@ section p {
 }
 
 /* =========================
+   SOBRE MÍ MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .sobre-mi__contenedor {
+    flex-direction: column;   /* Apila imagen y texto */
+    gap: 40px;                /* Reduce separación */
+    padding-top: 0;
+  }
+
+  .sobre-mi__imagen img {
+    max-width: 100%;
+  }
+
+  .sobre-mi p {
+    font-size: 1rem;          /* Ajusta lectura móvil */
+    padding: 0 10px;          /* Aire lateral */
+  }
+}
+/* =========================
    SERVICIOS
 ========================= */
 .servicios {
@@ -709,7 +729,6 @@ section p {
   transition: 0.25s ease;
 }
 
-
 /* =========================
    CONTACTO DEL REY
 ========================= */
@@ -730,6 +749,7 @@ section p {
   /* Bordes */
   margin: 0 auto;
   /* Centrado */
+  align-items: center;
 
 }
 
@@ -849,18 +869,34 @@ section p {
 }
 
 .contacto__imagen img {
-  width: 300px;
-  /* Tamaño foto */
-  height: 300px;
-  /* Tamaño foto */
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
-  /* Imagen circular */
-  margin-bottom: 20px;
-  /* Aire */
   object-fit: cover;
-  /* Recorta sin deformar */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  /* Sombra */
+  object-position: center 30%;
+}
+/* =========================
+   CONTACTO MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .contacto {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .contacto__campo input,
+  .contacto__campo textarea {
+    width: 100%;      /* Ocupa todo el ancho en móvil */
+  }
+
+  .contacto__imagen img {
+    width: 180px;
+    height: 180px;
+  }
+
 }
 
 /* =========================
