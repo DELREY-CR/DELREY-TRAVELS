@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.delreytravels.cl/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.delreytravels.cl/blog.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.delreytravels.cl/blog/tu-primer-viaje-al-extranjero/</loc>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
