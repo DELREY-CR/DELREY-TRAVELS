@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Blog de Del Rey Travels: guías, itinerarios reales, presupuestos y consejos para organizar mejor tus viajes.">
+  <meta name="author" content="Del Rey Travels">
+  <link rel="icon" href="/img/sitio/favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="/css/estilo.css">
+
+  <!-- Google Fonts: IMPORTANTE - Mantener en TODOS los archivos HTML para formato consistente -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Íconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <title>Blog de Del Rey Travels — Guías, itinerarios y tips de viaje</title>
+</head>
+
+<body>
+  <!-- HEADER / NAVEGACIÓN -->
+  <header class="header">
+    <div class="header__contenedor">
+      <a href="/" class="header__logo">
+        <img src="/img/sitio/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="100" height="100">
+      </a>
+
+      <nav class="header__navegacion" aria-label="Navegación principal">
+      <ul>
+        <li><a href="/#inicio">Inicio</a></li>
+        <li><a href="/#sobre-mi">Sobre mí</a></li>
+        <li><a href="/#servicio-listados">Servicios</a></li>
+        <li><a href="/#contacto">Contacto</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero">
+    <div class="hero__overlay"></div>
+
+    <div class="hero__contenedor">
+      <div class="hero__texto">
+        <h1>Planifica con estrategia y viaja con confianza.</h1>
+
+        <h2 class="hero__etiqueta">
+         Asesoría estratégica • Itinerarios personalizados • Experiencias bien organizadas
+        </h2>
+
+        <div class="hero__botones">
+          <a class="btn btn--primario" href="/servicios.html">Diseñar mi viaje</a>
+          <a class="btn btn--secundario" href="/blog/#ultimas-publicaciones">Explorar el blog</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="separador"></div>
+
+    <!-- LISTADO DE ARTÍCULOS -->
+    <section id="ultimas-publicaciones" class="blog__resumen">
+      <h2>Guías y consejos para <br> <span>viajar mejor y sin estrés</span></h2>
+      <p class="blog__subtitulo">Experiencias reales, consejos útiles y errores evitables.</p>
+
+      <!-- POST 1 -->
+      <div class="blog__tarjetas">
+        <article class="blog__post">
+          <a href="/blog/tu-primer-viaje-al-extranjero/">
+            <img src="/img/blog/tu-primer-viaje-al-extranjero/consejos-viajes.webp" alt="Consejos de viaje para tu primer viaje" class="blog__imagen">
+            <h3>Tu primer viaje al extranjero: Consejos clave para disfrutar sin estrés</h3>
+            </a>
+            <a href="/blog/tu-primer-viaje-al-extranjero/" class="btn btn--primario">Leer artículo</a>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="blog__post">
+          <a href="/blog/tu-primer-viaje-al-extranjero/"></a>
+          <img src="/img/sitio/yo-soy.webp" alt="Persona con mochila frente a un paisaje" class="blog__imagen">
+          <h3>Cómo organizar un viaje largo sin morir en el intento de viajes en todo</h3>
+          <a href="#" class="btn btn--primario">Leer artículo</a>
+        </article>
+
+        <!-- POST 3 -->
+        <article class="blog__post">
+            <img src="/img/blog/tu-primer-viaje-al-extranjero/consejos-viajes.webp" alt="Consejos de viaje para tu primer viaje" class="blog__imagen">
+          <h3>Errores comunes al reservar alojamientos para todo los viajes del mundo</h3>
+          <a href="#" class="btn btn--primario">Leer artículo</a>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <!-- CONTACTO: estructura en dos columnas -->
+    <section id="contacto" class="contacto">
+      <div class="contacto__columna contacto__texto">
+
+        <form action="https://formspree.io/f/mzzjordv" method="POST" class="contacto__form">
+          <fieldset>
+            <legend>Dejame tus datos</legend>
+            <div class="contacto__campo">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="contacto__campo">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="_replyto" autocomplete="email" required>
+            </div>
+
+            <div class="contacto__campo">
+              <label for="phone">Teléfono:</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+
+            <div class="contacto__campo">
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" rows="4" placeholder="Cuéntame destino, fechas y tipo de viaje."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primario btn--margen">Enviar mensaje</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="contacto__columna contacto__imagen">
+        <h2>Conversemos sobre<br><span>tu próximo destino</span></h2>
+        <img src="/img/sitio/contacto-viajero.webp" alt="Planificación de itinerarios personalizados" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <div class="separador"></div>
+
+
+  <!-- FOOTER -->
+ <footer class="footer">
+    <div class="footer__logo">
+      <a href="/">
+        <img class="footer__logo-imagen" src="/img/sitio/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="80"
+          height="80" loading="lazy">
+      </a>
+
+      <nav class="footer__redes" aria-label="Redes sociales">
+        <a href="mailto:contacto@delreytravels.com" aria-label="Correo">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="https://www.instagram.com/delrey.travels?igsh=N255dGRhNTFlZXZl&utm_source=qr" target="_blank"
+          rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.flickr.com/photos/198182539@N03/" target="_blank" rel="noopener noreferrer"
+          aria-label="Flickr">
+          <i class="fa-brands fa-flickr"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@delreytravels?_r=1&_t=ZM-91jToXag3Tf" target="_blank" rel="noopener noreferrer"
+          aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+      </nav>
+      <p class="footer__parrafo">Sígueme y viaja conmigo</p>
+      <p class="footer__logo-texto">Todos los derechos reservados © <span id="year"></span> Del Rey Travels</p>
+
+      <!-- SCRIPT PARA EL AÑO -->
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+    </div>
+  </footer>
+</body>
+
+</html>
