@@ -403,6 +403,18 @@ section p {
   flex-wrap: wrap;
   justify-content: center;
 }
+.hero.hero--blog {
+  height: 48vh;
+}
+
+.hero.hero--blog .hero__contenedor {
+  justify-content: center;
+}
+
+.hero.hero--blog .hero__texto {
+  text-align: center;
+}
+
 
 /* =========================
    HERO MOBILE
