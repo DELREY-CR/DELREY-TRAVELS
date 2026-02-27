@@ -47,13 +47,30 @@
 
   <main id="inicio">
     <!-- HERO -->
-    <section class="hero hero--secundario">
+<section class="hero hero--blog">
+
+      <!-- Imagen principal (responsive: móvil vs desktop) -->
+      <picture class="hero__picture">
+        <source srcset="/img/sitio/hero-2-mobile.webp" media="(max-width: 768px)">
+
+        <img src="/img/sitio/hero-2-viajes.webp" alt="Planifica con estrategia y viaja con confianza" class="hero__img"
+          loading="eager" fetchpriority="high">
+      </picture>
+
+      <!-- Overlay oscuro -->
+      <div class="hero__overlay"></div>
+
+      <!-- Contenido -->
       <div class="hero__contenedor">
         <div class="hero__texto">
-          <h1>Artículos y consejos</h1>
-          <h2 class="hero__etiqueta">Asesoría • Itinerarios • Experiencias</h2>
+          <h1>Artículos de blog</h1>
+
+          <h2 class="hero__etiqueta">
+            Guías • Itinerarios • Consejos de viaje
+          </h2>
         </div>
       </div>
+
     </section>
 
     <div class="separador"></div>
