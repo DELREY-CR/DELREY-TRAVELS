@@ -359,8 +359,8 @@ section p {
 /* Overlay oscuro */
 .hero__overlay {
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  inset: 0; /* Cubre toda el área */
+  background: rgba(0, 0, 0, 0.40);
   z-index: 1;
 }
 
@@ -405,6 +405,10 @@ section p {
 }
 .hero.hero--blog {
   height: 48vh;
+}
+
+.hero.hero--blog .hero__img {
+  object-position: center top;
 }
 
 .hero.hero--blog .hero__contenedor {
