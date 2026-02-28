@@ -493,23 +493,17 @@ section p {
 
 .sobre-mi__contenedor {
   max-width: 1000px;
-  /* Ancho máximo */
   margin: 0 auto;
-  /* Centrado */
   display: flex;
-  /* Layout en fila */
-  flex-direction: row;
-  /* Mantiene fila */
   justify-content: space-between;
-  /* Separa columnas */
-  gap: 100px;
-  /* Separación */
   align-items: center;
-  /* Centra vertical */
-  padding-top: 30px;
-  /* Aire superior */
+  gap: 60px;              /* más elegante */
+  padding: 40px 20px 0;   /* mejor respiración */
 }
-
+.sobre-mi__texto {
+  text-align: center;
+  max-width: 520px;
+}
 .sobre-mi h2 {
   margin-bottom: 2rem;
   /* Aire inferior */
@@ -522,7 +516,7 @@ section p {
 .sobre-mi p {
   font-size: 1.1rem;
   /* Tamaño texto */
-  line-height: 1.5;
+  line-height: 1.7;
   /* Legibilidad */
   color: var(--color-texto);
   /* Color */
@@ -531,14 +525,18 @@ section p {
 }
 
 .sobre-mi__imagen img {
-  border-radius: 15px;
+  border-radius: 24px;
   /* Bordes redondeados */
   width: 100%;
   /* Responsivo */
-  max-width: 600px;
+  max-width: 320px;
   /* Máximo */
   height: auto;
   /* Proporción */
+}
+
+.sobre-mi__imagen{
+  margin-top: 8px;
 }
 
 .sobre-mi__redes {
