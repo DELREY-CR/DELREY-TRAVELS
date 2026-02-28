@@ -368,7 +368,7 @@ section p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% top; /* Ajuste posición imagen arriba o abajo */
+  object-position: 30% top; /* Ajuste posición imagen arriba o abajo */
   z-index: 0;
 }
 
