@@ -376,7 +376,7 @@ section p {
 .hero__overlay {
   position: absolute;
   inset: 0; /* Cubre toda el área */
-  background: rgba(0, 0, 0, 0.40); /* Oscurece imagen */
+  background: rgba(0, 0, 0, 0.50); /* Oscurece imagen */
   z-index: 1;
 }
 
