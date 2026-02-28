@@ -80,6 +80,11 @@ main {
   /* Ocupa todo el ancho */
 }
 
+.pagina-blog-articulo main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 section {
   padding: 40px 0;
   /* Espaciado vertical estándar */
@@ -421,6 +426,25 @@ section p {
 .hero.hero--blog .hero__texto {
   text-align: center;
 }
+
+/* =========================
+   Articulos de blog hero,textos , imagenes.
+========================= */
+
+ .hero--articulo .hero__contenedor { 
+  justify-content: center; }
+
+.hero.hero--articulo{
+  height: 60vh;
+}
+
+
+.pagina-blog-articulo .articulo__imagen {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
 
 
 /* =========================
