@@ -454,7 +454,7 @@ section p {
 @media (max-width: 768px) {
 
   .hero {
-    height: 85vh;
+    height: 65vh;
   }
 
   .hero__img {
