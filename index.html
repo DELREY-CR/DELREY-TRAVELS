@@ -18,8 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Preload de imagen principal (solo para esta página) -->
-  <link rel="preload" as="image" href="/img/sitio/hero-viajes.webp">
+  <!-- Preload del hero correcto según dispositivo (mejora LCP) -->
+  <link rel="preload" as="image" href="/img/sitio/hero-viajes-mobile.webp" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="/img/sitio/hero-viajes.webp" media="(min-width: 769px)">
 
   <!-- Google Fonts -->
   <link
