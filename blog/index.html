@@ -4,21 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description"
-    content="Blog de Del Rey Travels: guías, itinerarios reales, presupuestos y consejos para organizar mejor tus viajes.">
+    content="Del Rey Travels: viajero apasionado que te ayuda a planificar tu próxima aventura con itinerarios personalizados, asesoría y tips reales de viaje.">
   <meta name="author" content="Del Rey Travels">
+
+  <title>Del Rey Travels — Viajes, itinerarios y asesoría personalizada</title>
+
+  <!-- Favicon -->
   <link rel="icon" href="/img/sitio/favicon.jpg" type="image/jpeg">
+
+  <!-- Preconnect (mejora rendimiento móvil) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload de imagen blog para mejorar LCP -->
+  <link rel="preload" as="image" href="/img/sitio/hero-blog.webp">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/estilo.css">
 
-  <!-- Google Fonts: IMPORTANTE - Mantener en TODOS los archivos HTML para formato consistente -->
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
     rel="stylesheet">
 
-  <!-- Íconos Font Awesome -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <title>Blog de Del Rey Travels — Guías, itinerarios y tips de viaje</title>
+  <meta name="google-site-verification" content="IuDc5PXA0Drz2KIQ99UAPIbLUuRJ4DbIn0-_ZRxJJOI" />
+  <!-- Verificación de Google Search Console -->
 </head>
 
 <body>
@@ -30,13 +45,13 @@
       </a>
 
       <nav class="header__navegacion" aria-label="Navegación principal">
-      <ul>
-        <li><a href="/#inicio">Inicio</a></li>
-        <li><a href="/#sobre-mi">Sobre mí</a></li>
-        <li><a href="/#servicio-listados">Servicios</a></li>
-        <li><a href="/#contacto">Contacto</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
+        <ul>
+          <li><a href="/#inicio">Inicio</a></li>
+          <li><a href="/#sobre-mi">Sobre mí</a></li>
+          <li><a href="/#servicio-listados">Servicios</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -44,20 +59,17 @@
   <!-- CONTENIDO PRINCIPAL -->
   <main id="inicio">
     <!-- HERO -->
-<section class="hero hero--blog">
+    <section class="hero hero--blog">
 
-      <!-- Imagen principal (responsive: móvil vs desktop) -->
       <picture class="hero__picture">
         <source srcset="/img/sitio/hero-blog-mobile.webp" media="(max-width: 768px)">
 
-        <img src="/img/sitio/hero-blog.webp" alt="Planifica con estrategia y viaja con confianza" class="hero__img"
-          loading="eager" fetchpriority="high">
+        <img src="/img/sitio/hero-blog.webp" alt="Tips y guías para viajar mejor" class="hero__img" width="1920"
+          height="1080" loading="eager" fetchpriority="high" decoding="async">
       </picture>
 
-      <!-- Overlay oscuro -->
       <div class="hero__overlay"></div>
 
-      <!-- Contenido -->
       <div class="hero__contenedor">
         <div class="hero__texto">
           <h1>Tips y guías para viajar mejor</h1>
@@ -81,10 +93,11 @@
       <div class="blog__tarjetas">
         <article class="blog__post">
           <a href="/blog/tu-primer-viaje-al-extranjero/">
-            <img src="/img/blog/tu-primer-viaje-al-extranjero/consejos-viajes.webp" alt="Consejos de viaje para tu primer viaje" class="blog__imagen">
+            <img src="/img/blog/tu-primer-viaje-al-extranjero/consejos-viajes.webp"
+              alt="Consejos de viaje para tu primer viaje" class="blog__imagen">
             <h3>Tu primer viaje al extranjero: Consejos clave para disfrutar sin estrés</h3>
-            </a>
-            <a href="/blog/tu-primer-viaje-al-extranjero/" class="btn btn--primario">Leer artículo</a>
+          </a>
+          <a href="/blog/tu-primer-viaje-al-extranjero/" class="btn btn--primario">Leer artículo</a>
         </article>
 
         <!-- POST 2 -->
@@ -97,7 +110,8 @@
 
         <!-- POST 3 -->
         <article class="blog__post">
-            <img src="/img/blog/tu-primer-viaje-al-extranjero/consejos-viajes.webp" alt="Consejos de viaje para tu primer viaje" class="blog__imagen">
+          <img src="/img/blog/tu-primer-viaje-al-extranjero/consejos-viajes.webp"
+            alt="Consejos de viaje para tu primer viaje" class="blog__imagen">
           <h3>Errores comunes al reservar alojamientos para todo los viajes del mundo</h3>
           <a href="#" class="btn btn--primario">Leer artículo</a>
         </article>
@@ -151,7 +165,7 @@
 
 
   <!-- FOOTER -->
- <footer class="footer">
+  <footer class="footer">
     <div class="footer__logo">
       <a href="/">
         <img class="footer__logo-imagen" src="/img/sitio/logo-viajes.webp" alt="Logotipo Del Rey Travels" width="80"

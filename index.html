@@ -18,6 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Preload de imagen principal para mejorar LCP -->
+  <link rel="preload" as="image" href="/img/sitio/hero-viajes.webp">
+
   <!-- CSS -->
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/estilo.css">
@@ -59,18 +62,15 @@
   <main id="inicio">
     <section class="hero">
 
-      <!-- Imagen principal (responsive: móvil vs desktop) -->
       <picture class="hero__picture">
         <source srcset="/img/sitio/hero-viajes-mobile.webp" media="(max-width: 768px)">
 
         <img src="/img/sitio/hero-viajes.webp" alt="Planifica con estrategia y viaja con confianza" class="hero__img"
-          loading="eager" fetchpriority="high">
+          width="1920" height="1355" loading="eager" fetchpriority="high" decoding="async">
       </picture>
 
-      <!-- Overlay oscuro -->
       <div class="hero__overlay"></div>
 
-      <!-- Contenido -->
       <div class="hero__contenedor">
         <div class="hero__texto">
           <h1>Planifica con estrategia y viaja con confianza.</h1>
