@@ -349,7 +349,6 @@ section p {
   position: relative;
   overflow: hidden;
 }
-
 /* Contenedor contenido */
 .hero__contenedor {
   position: relative;
@@ -495,6 +494,14 @@ section p {
   .hero__botones {
     justify-content: center;
     text-align: center;
+  }
+
+}
+@media (max-width:900px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    min-height: 420px;
+    padding: 60px 20px;
   }
 }
 
