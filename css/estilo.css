@@ -503,6 +503,10 @@ section p {
     min-height: 420px;
     padding: 60px 20px;
   }
+
+  .hero.hero--blog .hero__img {
+    object-position: center 80%;
+  }
 }
 
 /* =========================
