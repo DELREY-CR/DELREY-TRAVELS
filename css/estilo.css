@@ -416,43 +416,25 @@ section p {
 }
 
 .hero.hero--blog {
-  height: 60vh;
+  height: 65vh;
 }
 
 .hero.hero--blog .hero__img {
-  object-position: center 72%;
+  object-position: center 40%;
 
 }
 
 .hero.hero--blog .hero__contenedor {
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: clamp(2rem, 10vw, 10rem); 
 }
 
 .hero.hero--blog .hero__texto {
-  text-align: center;
+  text-align: left;
 }
 
 .hero.hero--blog .hero__etiqueta {
-  text-align: center;
-}
-
-/* =========================
-   Articulos de blog hero,textos , imagenes.
-========================= */
-
-.hero--articulo .hero__contenedor {
-  justify-content: center;
-}
-
-.hero.hero--articulo {
-  height: 60vh;
-}
-
-
-.pagina-blog-articulo .articulo__imagen {
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
+  text-align: left;
 }
 
 
@@ -460,43 +442,6 @@ section p {
 /* =========================
    HERO MOBILE
 ========================= */
-
-@media (max-width: 768px) {
-
-  .hero {
-    height: 65vh;
-  }
-
-  .hero__img {
-    object-position: center top;
-  }
-
-  .hero__contenedor {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .hero__texto {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .hero__texto h1 {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .hero__etiqueta {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .hero__botones {
-    justify-content: center;
-    text-align: center;
-  }
-
-}
 @media (max-width:900px) and (orientation: landscape) {
   .hero {
     height: auto;
@@ -506,126 +451,6 @@ section p {
 
   .hero.hero--blog .hero__img {
     object-position: center 80%;
-  }
-}
-
-/* =========================
-   SOBRE MÍ
-========================= */
-.sobre-mi {
-  padding: 60px 20px;
-  /* Aire sección */
-}
-
-.sobre-mi__contenedor {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-  /* más elegante */
-  padding: 40px 20px 0;
-  /* mejor respiración */
-}
-
-.sobre-mi__texto {
-  text-align: center;
-  max-width: 520px;
-}
-
-.sobre-mi h2 {
-  margin-bottom: 2rem;
-  /* Aire inferior */
-  color: var(--color-texto);
-  /* Color texto */
-  text-align: center;
-  /* Centra título */
-}
-
-.sobre-mi p {
-  font-size: 1.1rem;
-  /* Tamaño texto */
-  line-height: 1.7;
-  /* Legibilidad */
-  color: var(--color-texto);
-  /* Color */
-  text-align: center;
-  /* Centrado */
-}
-
-.sobre-mi__imagen img {
-  border-radius: 24px;
-  /* Bordes redondeados */
-  width: 100%;
-  /* Responsivo */
-  max-width: 320px;
-  /* Máximo */
-  height: auto;
-  /* Proporción */
-}
-
-.sobre-mi__imagen {
-  margin-top: 8px;
-}
-
-.sobre-mi__redes {
-  margin-top: 20px;
-  /* Aire superior */
-  text-align: center;
-  /* Centrado */
-}
-
-.sobre-mi__redes h3 {
-  font-size: 1.2rem;
-  /* Tamaño */
-  margin: 50px 0 20px;
-  /* Aire */
-  color: var(--color-texto);
-  /* Color */
-}
-
-.sobre-mi__redes nav {
-  display: flex;
-  /* Íconos en fila */
-  justify-content: center;
-  /* Centrado */
-  gap: 20px;
-  /* Separación */
-}
-
-.sobre-mi__redes nav a {
-  transition: transform 0.3s ease;
-  /* Animación */
-}
-
-.sobre-mi__redes nav a:hover {
-  transform: scale(1.1);
-  /* Zoom leve */
-}
-
-/* =========================
-   SOBRE MÍ MOBILE
-========================= */
-@media (max-width: 768px) {
-
-  .sobre-mi__contenedor {
-    flex-direction: column;
-    /* Apila imagen y texto */
-    gap: 40px;
-    /* Reduce separación */
-    padding-top: 0;
-  }
-
-  .sobre-mi__imagen img {
-    max-width: 100%;
-  }
-
-  .sobre-mi p {
-    font-size: 1rem;
-    /* Ajusta lectura móvil */
-    padding: 0 10px;
-    /* Aire lateral */
   }
 }
 
@@ -761,7 +586,7 @@ section p {
 }
 
 .servicios__precio strong {
-  color: var(--color-);
+  color: var(--color-principal);
   /* Resalta precio */
   font-weight: 700;
   /* Más fuerte */
@@ -824,6 +649,228 @@ section p {
   transform: translateY(-2px);
   transition: 0.25s ease;
 }
+
+/* =========================
+   SOBRE MÍ
+========================= */
+.sobre-mi {
+  padding: 60px 20px;
+  /* Aire sección */
+}
+
+.sobre-mi__contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  /* más elegante */
+  padding: 40px 20px 0;
+  /* mejor respiración */
+}
+
+.sobre-mi__texto {
+  text-align: center;
+  max-width: 520px;
+}
+
+.sobre-mi h2 {
+  margin-bottom: 2rem;
+  /* Aire inferior */
+  color: var(--color-texto);
+  /* Color texto */
+  text-align: center;
+  /* Centra título */
+}
+
+.sobre-mi p {
+  font-size: 1.1rem;
+  /* Tamaño texto */
+  line-height: 1.7;
+  /* Legibilidad */
+  color: var(--color-texto);
+  /* Color */
+  text-align: center;
+  /* Centrado */
+}
+
+.sobre-mi__imagen img {
+  border-radius: 24px;
+  /* Bordes redondeados */
+  width: 100%;
+  /* Responsivo */
+  max-width: 320px;
+  /* Máximo */
+  height: auto;
+  /* Proporción */
+}
+
+.sobre-mi__imagen {
+  margin-top: 8px;
+}
+
+.sobre-mi__redes {
+  margin-top: 20px;
+  /* Aire superior */
+  text-align: center;
+  /* Centrado */
+}
+
+.sobre-mi__redes h3 {
+  font-size: 1.2rem;
+  /* Tamaño */
+  margin: 50px 0 20px;
+  /* Aire */
+  color: var(--color-texto);
+  /* Color */
+}
+
+.sobre-mi__redes nav {
+  display: flex;
+  /* Íconos en fila */
+  justify-content: center;
+  /* Centrado */
+  gap: 20px;
+  /* Separación */
+}
+
+.sobre-mi__redes nav a {
+  transition: transform 0.3s ease;
+  /* Animación */
+}
+
+.sobre-mi__redes nav a:hover {
+  transform: scale(1.1);
+  /* Zoom leve */
+}
+
+
+/* =========================
+   BLOG PAGINA PRINCIPAL
+========================= */
+.blog__resumen {
+  text-align: center;
+  /* Centra texto */
+}
+
+.blog__subtitulo {
+  color: var(--color-texto);
+  /* Color texto */
+  font-size: 1rem;
+  /* Tamaño subtítulo */
+  text-align: center;
+  /* Centrado */
+  margin-bottom: 20px;
+  /* Aire inferior */
+  display: block;
+  /* Ocupa ancho completo */
+  max-width: 900px;
+  /* Limita ancho */
+  margin-left: auto;
+  /* Centra */
+  margin-right: auto;
+  /* Centra */
+}
+
+.blog__post {
+  background-color: var(--color-blanco);
+  /* Fondo tarjeta */
+  border: 1.5px solid var(--color-gris-suave);
+  /* Borde */
+  border-radius: 10px;
+  /* Bordes */
+  padding: 20px;
+  /* Aire interno */
+  text-align: center;
+  /* Centra contenido */
+  display: grid;
+  /* Layout */
+  grid-template-rows: auto auto auto 1fr auto;
+  /* Estructura */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animación */
+}
+
+.blog__post:hover {
+  transform: translateY(-5px);
+  /* Eleva */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+}
+
+.blog__imagen {
+  width: 100%;
+  /* Ancho completo */
+  height: 200px;
+  /* Alto fijo */
+  object-fit: cover;
+  /* Recorta sin deformar */
+  border-radius: 8px;
+  /* Bordes */
+  margin-bottom: 15px;
+  /* Aire */
+}
+
+.blog__post h3 {
+  font-size: 1.3rem;
+  /* Tamaño */
+  margin-bottom: 10px;
+  /* Aire */
+  color: var(--color-texto);
+  /* Color */
+  font-family: var(--fuente-titulos);
+  /* Fuente */
+  line-height: 1.3;
+  /* Legibilidad */
+}
+
+.blog__post p {
+  font-size: 0.95rem;
+  /* Tamaño */
+  line-height: 1.6;
+  /* Legibilidad */
+  color: var(--color-texto);
+  /* Color */
+  margin-bottom: 15px;
+  /* Aire */
+  text-align: center;
+  /* Centrado */
+}
+
+.blog__post .btn {
+  margin-top: 20px;
+  /* Aire */
+  max-width: 200px;
+  /* Limita ancho */
+  width: 100%;
+  /* Responsivo */
+  margin-left: auto;
+  /* Centrado */
+  margin-right: auto;
+  /* Centrado */
+}
+
+/* =========================
+   Articulos de blog hero,textos , imagenes.
+========================= */
+
+.hero--articulo .hero__contenedor {
+  justify-content: center;
+}
+
+.hero.hero--articulo {
+  height: 60vh;
+}
+
+
+.pagina-blog-articulo .articulo__imagen {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+
 
 /* =========================
    CONTACTO DEL REY
@@ -972,30 +1019,6 @@ section p {
   object-position: center 30%;
 }
 
-/* =========================
-   CONTACTO MOBILE
-========================= */
-@media (max-width: 768px) {
-
-  .contacto {
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .contacto__campo input,
-  .contacto__campo textarea {
-    width: 100%;
-    /* Ocupa todo el ancho en móvil */
-  }
-
-  .contacto__imagen img {
-    width: 180px;
-    height: 180px;
-  }
-
-}
 
 /* =========================
    FOOTER
@@ -1072,119 +1095,74 @@ section p {
 }
 
 /* =========================
-   BLOG (tarjetas)
-========================= */
-.blog__resumen {
-  text-align: center;
-  /* Centra texto */
-}
-
-.blog__subtitulo {
-  color: var(--color-texto);
-  /* Color texto */
-  font-size: 1rem;
-  /* Tamaño subtítulo */
-  text-align: center;
-  /* Centrado */
-  margin-bottom: 20px;
-  /* Aire inferior */
-  display: block;
-  /* Ocupa ancho completo */
-  max-width: 900px;
-  /* Limita ancho */
-  margin-left: auto;
-  /* Centra */
-  margin-right: auto;
-  /* Centra */
-}
-
-.blog__post {
-  background-color: var(--color-blanco);
-  /* Fondo tarjeta */
-  border: 1.5px solid var(--color-gris-suave);
-  /* Borde */
-  border-radius: 10px;
-  /* Bordes */
-  padding: 20px;
-  /* Aire interno */
-  text-align: center;
-  /* Centra contenido */
-  display: grid;
-  /* Layout */
-  grid-template-rows: auto auto auto 1fr auto;
-  /* Estructura */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Animación */
-}
-
-.blog__post:hover {
-  transform: translateY(-5px);
-  /* Eleva */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  /* Sombra */
-}
-
-.blog__imagen {
-  width: 100%;
-  /* Ancho completo */
-  height: 200px;
-  /* Alto fijo */
-  object-fit: cover;
-  /* Recorta sin deformar */
-  border-radius: 8px;
-  /* Bordes */
-  margin-bottom: 15px;
-  /* Aire */
-}
-
-.blog__post h3 {
-  font-size: 1.3rem;
-  /* Tamaño */
-  margin-bottom: 10px;
-  /* Aire */
-  color: var(--color-texto);
-  /* Color */
-  font-family: var(--fuente-titulos);
-  /* Fuente */
-  line-height: 1.3;
-  /* Legibilidad */
-}
-
-.blog__post p {
-  font-size: 0.95rem;
-  /* Tamaño */
-  line-height: 1.6;
-  /* Legibilidad */
-  color: var(--color-texto);
-  /* Color */
-  margin-bottom: 15px;
-  /* Aire */
-  text-align: center;
-  /* Centrado */
-}
-
-.blog__post .btn {
-  margin-top: 20px;
-  /* Aire */
-  max-width: 200px;
-  /* Limita ancho */
-  width: 100%;
-  /* Responsivo */
-  margin-left: auto;
-  /* Centrado */
-  margin-right: auto;
-  /* Centrado */
-}
-
-/* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
+  .hero {
+    height: 65vh;
+  }
+
+  .hero__img {
+    object-position: center top;
+  }
+
+  .hero__contenedor {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__texto {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero__texto h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .hero__etiqueta {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero__botones {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sobre-mi__contenedor {
+    flex-direction: column;
+    /* Apila imagen y texto */
+    gap: 40px;
+    /* Reduce separación */
+    padding-top: 0;
+  }
+
+  .sobre-mi__imagen img {
+    max-width: 100%;
+  }
+
+  .sobre-mi p {
+    font-size: 1rem;
+    /* Ajusta lectura móvil */
+    padding: 0 10px;
+    /* Aire lateral */
+  }
+
   .contacto {
     flex-direction: column;
+    gap: 40px;
     /* Apila columnas */
     padding: 40px 16px;
     /* Reduce padding */
+    text-align: center;
+  }
+
+  .contacto__campo input,
+  .contacto__campo textarea {
+    width: 100%;
+    /* Ocupa todo el ancho en móvil */
   }
 
   .contacto__imagen img {

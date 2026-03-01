@@ -1,0 +1,129 @@
+/* =========================
+   SERVICIOS
+========================= */
+.servicios {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.servicios h2 {
+  margin-bottom: 30px;
+  color: var(--color-texto);
+  text-align: center;
+}
+
+.servicios__subtitulo {
+  color: var(--color-texto);
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicios__item {
+  background-color: var(--color-blanco);
+  border: 1.5px solid var(--color-gris-suave);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicios__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.servicios__resumen {
+  font-size: 1.05rem;
+  color: var(--color-texto);
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.servicios__pack {
+  font-size: 1.2rem;
+  color: var(--color-principal);
+  font-weight: 600;
+  margin: 30px 0 15px;
+  font-family: var(--fuente-principal);
+  min-height: 3em;
+}
+
+.servicios__beneficios {
+  text-align: left;
+  margin: 15px 0;
+  padding-left: 20px;
+  list-style: disc;
+  flex-grow: 1;
+}
+
+.servicios__beneficios li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-texto);
+}
+
+.servicios__precio {
+  font-size: 1.1rem;
+  color: var(--color-texto);
+  margin: 40px 0 5px;
+  line-height: 1.6;
+}
+
+.servicios__precio strong {
+  color: var(--color-principal);
+  font-weight: 700;
+}
+
+.servicios__texto {
+  font-size: 1.1rem;
+  color: var(--color-texto);
+  margin: 20px 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.servicios__item .btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+}
+
+.servicios__media {
+  width: 100%;
+  height: 220px;
+  border-radius: 14px;
+  background: var(--color-principal);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
+  margin-bottom: 1rem;
+}
+
+.servicios__iconos {
+  display: flex;
+  gap: 22px;
+  font-size: 2.2rem;
+  color: var(--color-blanco);
+  opacity: 0.95;
+}
+
+.servicios__item:hover .servicios__media {
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+  transition: 0.25s ease;
+}

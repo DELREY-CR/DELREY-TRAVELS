@@ -1,0 +1,69 @@
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    height: 65vh;
+  }
+
+  .hero__img {
+    object-position: center top;
+  }
+
+  .hero__contenedor {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__texto {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero__texto h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .hero__etiqueta {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero__botones {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sobre-mi__contenedor {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 0;
+  }
+
+  .sobre-mi__imagen img {
+    max-width: 100%;
+  }
+
+  .sobre-mi p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .contacto {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .contacto__campo input,
+  .contacto__campo textarea {
+    width: 100%;
+  }
+
+  .contacto__imagen img {
+    width: 220px;
+    height: 220px;
+  }
+}

@@ -1,0 +1,80 @@
+/* =========================
+   UTILIDADES / REUTILIZABLES
+========================= */
+.separador {
+  width: 100%;
+  padding: 50px 0;
+  background-color: var(--color-blanco);
+  display: flex;
+  justify-content: center;
+}
+
+.separador::before {
+  content: '';
+  width: 120px;
+  height: 2px;
+  background-color: var(--color-texto);
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn--primario {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
+
+.btn--primario:hover {
+  background-color: var(--color-principal);
+}
+
+.btn--secundario {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
+
+.btn--secundario:hover {
+  background-color: var(--color-principal);
+}
+
+/* =========================
+   ICONOS (FontAwesome)
+========================= */
+.fa-envelope,
+.fa-instagram,
+.fa-flickr,
+.fa-tiktok {
+  color: var(--color-principal);
+}
+
+.sobre-mi__redes i {
+  font-size: 30px;
+  margin-right: 10px;
+  transition: 0.25s ease;
+}
+
+.sobre-mi__redes a i:hover {
+  color: var(--color-secundario);
+  transform: translateY(-0.5px);
+}
+
+/* =========================
+   TARJETAS / GRIDS (contenedores)
+========================= */
+.servicios__tarjetas,
+.blog__tarjetas {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 30px 0;
+}

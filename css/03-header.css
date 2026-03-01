@@ -1,0 +1,42 @@
+/* =========================
+   HEADER
+========================= */
+.header {
+  background-color: var(--color-blanco);
+  border-bottom: 1px solid var(--color-gris-suave);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.header__navegacion ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.header__navegacion a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-texto);
+  font-family: var(--fuente-titulos);
+}
+
+.header__navegacion a:hover {
+  color: var(--color-secundario);
+}
