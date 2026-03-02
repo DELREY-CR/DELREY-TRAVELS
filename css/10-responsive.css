@@ -66,4 +66,12 @@
     width: 220px;
     height: 220px;
   }
+
+  .pagina-blog-articulo .articulo__contenedor {
+    --espacio-h2-parrafo: 14px;
+    --espacio-parrafo-imagen: 18px;
+    --espacio-imagen-subtitulo: 28px;
+    --espacio-subtitulo-superior: 30px;
+    --espacio-subtitulo-inferior: 12px;
+  }
 }
