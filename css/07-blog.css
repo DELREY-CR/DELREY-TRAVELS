@@ -75,6 +75,13 @@
   height: 60vh;
 }
 
+.pagina-blog-articulo .articulo__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
 .pagina-blog-articulo .articulo__contenedor {
   --espacio-hero-h2: 22px;
   --espacio-h2-parrafo: 22px;
@@ -121,4 +128,20 @@
 .pagina-blog-articulo .articulo__titulo {
   font-size: 1.8rem;
   line-height: 1.2;
+}
+
+.pagina-blog-articulo .articulo__aside {
+  margin-top: 22px;
+  border: 1px solid var(--color-gris-suave);
+  border-radius: 10px;
+  padding: 24px;
+  background-color: var(--color-blanco);
+}
+
+.pagina-blog-articulo .articulo__aside .articulo__subtitulo {
+  margin-top: 0px;
+}
+
+.pagina-blog-articulo .articulo__aside .articulo__parrafo {
+  margin-bottom: 20px;
 }

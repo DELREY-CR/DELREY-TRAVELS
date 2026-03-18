@@ -74,4 +74,13 @@
     --espacio-subtitulo-superior: 30px;
     --espacio-subtitulo-inferior: 12px;
   }
+
+  .pagina-blog-articulo .articulo__layout {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pagina-blog-articulo .articulo__aside {
+    margin-top: 8px;
+  }
 }

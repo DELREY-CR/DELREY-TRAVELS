@@ -9,7 +9,13 @@
   --color-blanco: #ffffff;
   --color-gris-suave: #e0e0e0;
   --fuente-principal: 'Inter', sans-serif;
-  --fuente-titulos: 'Playfair Display', serif;
+  --fuente-titulos: 'Playfair Display', 'Inter';
+}
+
+.ibm-plex-serif-light {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* =========================
