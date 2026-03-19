@@ -61,11 +61,6 @@ main {
   width: 100%;
 }
 
-.pagina-blog-articulo main {
-  max-width: 820px;
-  margin: 0 auto;
-}
-
 section {
   padding: 40px 0;
   margin-bottom: 0;
